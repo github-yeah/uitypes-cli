@@ -1,5 +1,4 @@
 class FakeCast<T> {
-
     /**
      * @description 类型转换
      * @template T
