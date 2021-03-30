@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "pretty": true,
+        "lib": ["ESNext"],
+        "target": "es5",
+        "rootDir": ".",
+
+        "strict": true,
+        "composite": true,
+
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "noEmitOnError": true,
+        "removeComments": true,
+        // "esModuleInterop": true,    /**如果想使用 import Module from './module' 来代替 `import * as Module from './module'` 请打开此选项*/
+
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictPropertyInitialization": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+
+        "skipLibCheck": true,
+
+        "alwaysStrict": true,
+        "preserveConstEnums": true,
+    }
+}

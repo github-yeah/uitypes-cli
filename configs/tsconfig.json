@@ -1,0 +1,9 @@
+{
+    "extends": "../tsconfig-noncomposite-base.json",
+    "compilerOptions": {
+        "lib": [],
+        "resolveJsonModule": true,
+        "outDir": "../dist"
+    },
+    "files": ["uit-settings.json"]
+}

@@ -1,0 +1,18 @@
+{
+    "input": {
+        "name": "输入根目录",
+        "value": "."
+    },
+    "output": {
+        "name": "输出根目录",
+        "value": "."
+    },
+    "ns": {
+        "name": "根命名空间",
+        "value": "uit"
+    },
+    "outFile": {
+        "name": "输出文件名",
+        "value": "uit.types"
+    }
+}

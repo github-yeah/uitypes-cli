@@ -1,0 +1,9 @@
+{
+    "extends": "../tsconfig-noncomposite-base.json",
+    "compilerOptions": {
+        "outFile": "../dist/uit.js"
+    },
+    "references": [
+        { "path": "../src/tsconfig.json", "prepend": true }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "uitypes-cli",
+  "version": "1.0.1",
+  "description": "ui types fairygui",
+  "private": true,
+  "bin": {
+    "uitypes": "dist/uit.js"
+  },
+  "scripts": {
+    "build": "tsc -b --clean && tsc -b",
+    "dev": "tsc -b --clean && tsc -b --watch"
+  },
+  "keywords": [
+    "ui",
+    "uitypes",
+    "types",
+    "fairygui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github-yeah/uitypes-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/github-yeah/uitypes-cli/issues"
+  },
+  "homepage": "https://github.com/github-yeah/uitypes-cli#readme",
+  "author": "github-yeah",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.35",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.2.0",
+    "xml-js": "^1.6.11"
+  }
+}
