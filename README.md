@@ -2,6 +2,16 @@
 
 前置： 本工具暂时只支持fariygui的组件类型生成
 
+安装：
+
+```bash
+# 全局安装
+npm install uitypes-cli -g
+
+# 本地安装，可以用 npx uitypes
+npm install uitypes-cli --save
+```
+
 使用：
 
 ```bash
