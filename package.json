@@ -1,8 +1,7 @@
 {
   "name": "uitypes-cli",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "ui types fairygui",
-  "private": true,
   "bin": {
     "uitypes": "dist/uit.js"
   },
@@ -15,6 +14,9 @@
     "uitypes",
     "types",
     "fairygui"
+  ],
+  "files": [
+    "dist"
   ],
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 namespace uit {
 
     /**@description settings path*/
-    const settings_path = './configs/uit-settings.json';
+    const settings_path = uit.path.resolve(__dirname, 'configs/uit-settings.json');
 
     // FlatSettings
     type FlatSettings = Omit<uit.project.CompilerOptions, 'packages'>;
