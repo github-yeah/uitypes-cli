@@ -8,11 +8,6 @@ namespace cli.loader {
         cli.settings.loader
     ];
 
-
-
-
-
-
     /**
      * @description 加载所有命令
      * @author xfy

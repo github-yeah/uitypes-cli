@@ -1,11 +1,11 @@
 {
     "input": {
         "name": "输入根目录",
-        "value": "."
+        "value": "./test/FairyGUI-Project/assets"
     },
     "output": {
         "name": "输出根目录",
-        "value": "."
+        "value": "./test/fairygui/uitypes"
     },
     "ns": {
         "name": "根命名空间",

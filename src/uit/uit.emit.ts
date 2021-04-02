@@ -23,7 +23,7 @@ namespace uit {
             uit.fs.readdirSync(output).forEach(file => {
                 const filePath = uit.path.join(output, file);
                 const stats = uit.fs.statSync(filePath);
-                if (stats.isFile()) {
+                if (stats.isFile() && /\.d\.ts$/.test(filePath)) {
                     uit.fs.unlinkSync(filePath);
                 }
             });
@@ -61,20 +61,41 @@ namespace uit {
      * @returns {uit.snipet.Snipet[]}
      */
     export function packageToSnipets(pkg: uit.project.Package, rootNameSpace?: string): uit.snipet.Snipet[] {
-        const { name, components } = pkg;
-        const snipets = Object.entries(components).reduce(
-            (packageSnipets, [componentPkg, componentList]) => {
-                const componentSnipets = componentToSnipts(componentList, componentPkg);
-                packageSnipets.push(...componentSnipets)
+        const { id, name, components } = pkg;
 
-                return packageSnipets;
+        // 根据组件包分组
+        const group: Record<string, uit.snipet.Snipet[]> = {};
+        for (const component of components) {
+            const existing = group[component.package];
+            const snpts = existing ?? [];
+            if (!existing) {
+                group[component.package] = snpts;
             }
-            , [] as uit.snipet.Snipet[]
-        );
+            const componentSnpts = snipetsOfComponent(component);
+            snpts.push(...componentSnpts);
+        }
+
+        const snipets: uit.snipet.Snipet[] = [];
+        for (const pkg in group) {
+            const snpts = group[pkg];
+            if (pkg.length > 0) {
+                snipets.push(...uit.snipet.generator('namespace', pkg, snpts));
+            }
+            else {
+                snipets.push(...snpts);
+            }
+        }
+
 
         if (name.length > 0) {
-            const ns = rootNameSpace ? `${rootNameSpace}.${name}` : name;
-            return uit.snipet.generator('namespace', ns, snipets, rootNameSpace ? 'declare' : undefined);
+            const nsSnipts = uit.snipet.generator('namespace', name, snipets);
+            // 设置包的命名空间别名
+            nsSnipts.unshift(`export import ${id} = ${name};`);
+            if (rootNameSpace) {
+                return uit.snipet.generator('namespace', rootNameSpace, nsSnipts, 'declare');
+            }
+
+            return nsSnipts;
         }
         return snipets;
     }
@@ -83,26 +104,18 @@ namespace uit {
      * @description Component =>  uit.snipet.Snipet[]
      * @author xfy
      * @export
-     * @param {(uit.project.Component | uit.project.Component[])} components
+     * @param {uit.project.Component} component
+     * @param {string} [packageName]
      * @returns {uit.snipet.Snipet[]}
      */
-    export function componentToSnipts(components: uit.project.Component | uit.project.Component[], packageName?: string): uit.snipet.Snipet[] {
-        components = Array.isArray(components) ? components : [components];
-        const snipets = components.reduce(
-            (snpts, component) => {
-                const { name, attributes } = component;
-                const contents = attributes.map(attribute => `${attribute.name}: ${attribute.type};`);
-                const componentSnipts = uit.snipet.generator("interface", name, contents);
-                snpts.push(...componentSnipts);
-                return snpts;
-            }
-            , [] as uit.snipet.Snipet[]
-        );
+    export function snipetsOfComponent(component: uit.project.Component, packageName?: string): uit.snipet.Snipet[] {
+        const { name, attributes } = component;
+        const contents = attributes.map(attribute => `${attribute.name}: ${attribute.type};`);
+        const snipets = uit.snipet.generator("interface", name, contents);
 
         if (packageName && packageName.length > 0) {
             return uit.snipet.generator("namespace", packageName, snipets);
         }
-
         return snipets;
     }
 }

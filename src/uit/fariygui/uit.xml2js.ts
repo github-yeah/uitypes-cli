@@ -20,7 +20,9 @@ namespace uit.xml2json {
 
         const buffer = uit.fs.readFileSync(xmlPath);
         const raw = buffer.toString();
-        const jsonRaw = xml2js.xml2json(raw, { compact: true });
+        // const jsonRaw = xml2js.xml2json(raw, { compact: true });
+        const jsonRaw = xml2js.xml2json(raw);
+        // console.log(jsonRaw);
         const json = JSON.parse(jsonRaw);
 
         return {
@@ -33,15 +35,20 @@ namespace uit.xml2json {
     /** @description xml 返回对象*/
     export type Type = {
         raw: string;
-        json: X2JElement;
+        json: File;
     };
 
-    // X2JElement < { version: string, encoding: string } >
+    /** @description 文件类型*/
+    export type File = {
+        declaration: { attributes: { version: string, encoding: string } };
+        elements?: Element[];
+    }
 
-    /** @description Element对象*/
-    export type X2JElement<Attrubutes = undefined, Declaration = undefined> = {
-        _declaration?: Declaration;
-        _attributes?: Attrubutes;
-        [n: string]: any;
-    };
+    /** @description Element类型*/
+    export type Element<Attribute = any> = {
+        type: string,
+        name: string,
+        attributes?: Attribute,
+        elements?: Element[]
+    }
 }

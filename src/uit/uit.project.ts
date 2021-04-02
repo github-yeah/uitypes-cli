@@ -1,32 +1,27 @@
 namespace uit.project {
     /**
-     * @description 启动 project
+     * @description 属性
      * @author xfy
      * @export
-     * @param {CompilerOptions} options
-     * @param {Compiler} compiler
      */
-    export function startup(options: CompilerOptions, compiler: Compiler): void {
-        const packages = compiler(options);
-        uit.emit(packages, options);
+    export interface Attribute {
+        // 名称
+        name: string;
+        // 类型
+        type: string;
     }
 
     /**
      * @description 组件
      * @author xfy
      */
-    export interface Component {
+    export interface Component<T extends Attribute = Attribute> {
         // 组件名称
-        name: string;
+        readonly name: string;
         // 包名
-        package?: string;
+        readonly package: string;
         // 子显示对象列表
-        attributes: {
-            // 名称
-            name: string;
-            // 类型
-            type: string;
-        }[];
+        readonly attributes: T[];
     };
 
     /**
@@ -34,10 +29,12 @@ namespace uit.project {
      * @author xfy
      */
     export interface Package {
+        // id
+        readonly id: string;
         // 包名
         readonly name: string;
-        // components{组件包名: 相同包下的组件列表}
-        readonly components: Record<string, Component[]>;
+        // components 组件列表
+        readonly components: Component[];
     };
 
     /** @description 编译选项*/
@@ -50,7 +47,7 @@ namespace uit.project {
         ns: string;
         // 如果所有的component公用一个d.ts文件，请设置此项（文件名，不含后缀）
         outFile?: string
-        // ui 包列表
+        // 待编译 ui包列表
         packages?: string[];
     };
 
@@ -66,4 +63,21 @@ namespace uit.project {
          */
         (options: CompilerOptions): Package[];
     };
+
+    /**
+    * @description 启动 project
+    * @author xfy
+    * @export
+    * @param {CompilerOptions} options
+    * @param {Compiler} compiler
+    */
+    export function startup(options: CompilerOptions, compiler: Compiler): void {
+        const startTime = Date.now();
+        const packages = compiler(options);
+        uit.emit(packages, options);
+        const endTime = Date.now();
+        const time = (endTime - startTime) * 0.001;
+        console.log(`编译完成，耗时：${time.toFixed(2)}秒`);
+
+    }
 }

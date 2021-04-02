@@ -1,6 +1,5 @@
 namespace cli.compiler {
 
-
     /** @description compiler loader*/
     export const loader: cli.loader.CommandLoader = program => {
         const cmd = program
@@ -37,6 +36,6 @@ namespace cli.compiler {
         const input = compilerOptions.input ?? '';
         compilerOptions.input ??= uit.path.isAbsolute(input) ? input : uit.path.join(process.cwd(), input);
         // 暂时只支持编译fairygui项目
-        uit.project.startup(compilerOptions, uit.fairygui.compiler);
+        uit.project.startup(compilerOptions, fairygui.compiler);
     }
 }

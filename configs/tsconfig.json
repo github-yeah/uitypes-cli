@@ -5,5 +5,5 @@
         "resolveJsonModule": true,
         "outDir": "../dist"
     },
-    "files": ["uit-settings.json"]
+    "files": ["uit-settings.json", "uit-settings-templete.json", "uit-fairygui-mapping.json"]
 }

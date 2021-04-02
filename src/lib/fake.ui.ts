@@ -1,3 +1,48 @@
+
+
+
+
+interface TestUI {
+    a: 1;
+    b: [1, 2];
+}
+
+interface TestUI2 {
+    c: 1;
+    d: [1, TestUI]
+}
+
+
+interface FK<T> {
+    get<K extends keyof T>(key: K): (
+        T[K] extends [any, any]
+        ?
+        // T[K][0]
+        {
+            raw: T[K][0];
+            reference: FK<T[K][1]>;
+        }
+        : T[K]
+    );
+}
+
+
+
+function test<T>(value: T): FK<T> {
+    return value as any;
+}
+
+
+// const b = test({} as TestUI2);
+// const c = b.get("c");
+// const d = b.get("d");
+// const e = d.reference.get("b").reference.get("")
+// const f = d.reference.get("b").reference.get("toFixed");
+
+
+
+
+
 class FakeCast<T> {
     /**
      * @description 类型转换
@@ -54,3 +99,4 @@ class FakeCast<T> {
         this._displayList = undefined;
     }
 }
+
