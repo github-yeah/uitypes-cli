@@ -176,6 +176,7 @@ namespace fairygui.ComponentConfig {
                 if (existing[name] === undefined && utils.isLegalName(name)) {
                     // 设置组件基本类型
                     attribute.type = utils.typeMapping(element.name);
+                    existing[name] = true;
                     attributes.push(attribute);
                 }
             }
