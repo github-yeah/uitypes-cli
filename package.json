@@ -1,6 +1,6 @@
 {
   "name": "uitypes-cli",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "ui types fairygui",
   "bin": {
     "uitypes": "dist/uit.js"

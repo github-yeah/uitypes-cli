@@ -35,7 +35,6 @@ namespace cli.compiler {
 
         const input = compilerOptions.input ?? '';
         compilerOptions.input ??= uit.path.isAbsolute(input) ? input : uit.path.join(process.cwd(), input);
-        // 暂时只支持编译fairygui项目
-        uit.project.startup(compilerOptions, fairygui.compiler);
+        uit.project.compile(compilerOptions);
     }
 }

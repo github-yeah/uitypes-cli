@@ -22,4 +22,32 @@ namespace uit.utils {
             .replace(/\/|\\/g, '.');
     }
 
+
+    /**
+     * @description 强制创建文件夹
+     * @author xfy
+     * @export
+     * @param {string} directory
+     */
+    export async function mkDirForce(directory: string) {
+        let directroyString = directory.toString();
+        const dirs: string[] = [];
+        while (!fs.existsSync(directroyString)) {
+            dirs.push(uit.path.basename(directroyString));
+            directroyString = uit.path.dirname(directroyString);
+            if (!directroyString) {
+                break;
+            }
+        }
+
+        await dirs.reduceRight(
+            (prev, curr) => {
+                prev = uit.path.join(prev, curr);
+                fs.mkdirSync(prev);
+                return prev;
+            },
+            directroyString
+        );
+
+    }
 }

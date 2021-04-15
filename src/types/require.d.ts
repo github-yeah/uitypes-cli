@@ -3,14 +3,14 @@
 
 declare namespace RTypes {
 
-    import * as _fs from "node:fs";
+    import type * as _fs from "node:fs";
 
     /**@description fs*/
     export type fs = typeof _fs;
 
     /**@description path*/
-    export { PlatformPath as path } from "node:path";
+    export type { PlatformPath as path } from "node:path";
 
     /**@description stream*/
-    export * as stream from "node:stream";
+    export type * as stream from "node:stream";
 }

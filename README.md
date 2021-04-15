@@ -78,4 +78,3 @@ const loader = viewChildOf("loader");
 ## 未完待续
 
 1. 新增dts压缩选项设置
-2. 递归寻找类型｛1. 剔除内容为空的接口 2. 获取引用组件的 extension属性作为引用类型｝
