@@ -44,6 +44,15 @@ namespace uit {
     }
 
 
+    const Header = `/**
+* @example
+* const view = fairygui.UIPackage.createObject('pkg', 'pkgRes') as uit.[namespace].[interface];
+ * const child = view.getChild('childName');  // 不明类型的返回值
+ * const typedChild = view.getChild('childName', true);  // 明确类型的返回值
+*/
+`;
+
+
     /**
      * @description 保存
      * @author xfy
@@ -51,8 +60,9 @@ namespace uit {
      * @param {string} contents
      */
     function save(file: string, contents: string): void {
-        contents = `/**const view = fairygui.UIPackage.createObject('pkg', 'pkgRes') as uit.xxx.xxxx*/\n${contents}`;
+        contents = `${Header}${contents}`;
         uit.fs.writeFileSync(file, contents);
     }
+
 }
 

@@ -91,7 +91,7 @@ namespace fairygui {
             // 属性列表
             const attributeSnpts = this.attributesToSnipets(component, pkgConfig);
             return [
-                `type ${component.name} = ${extention} & __UIComponent<{`,
+                `type ${component.name} =  __UIComponent<${extention}, {`,
                 attributeSnpts,
                 `}, ${controllerNames}, ${transitionNames}>;`
             ];
@@ -188,9 +188,9 @@ namespace fairygui {
      */
     function createHeaderSnipets(name: string = '__UIComponent'): uit.snipet.Snipet[] {
         return [
-            `type ${name}<Children, Controllers extends string = string, Transitions extends string = string> = {`,
+            `type ${name}<Base, Children, Controllers extends string = string, Transitions extends string = string> = Base & {`,
             [
-                'getChild<Key extends keyof Children>(name: Key): Children[Key];',
+                'getChild<Key extends keyof Children>(name: Key, explicitType: true): Children[Key];',
                 'getController(name: Controllers): fairygui.Controller;',
                 'getTransition(transName: Transitions): fairygui.Transition;'
             ],
