@@ -22,6 +22,8 @@ namespace fairygui {
          */
         compile(): uit.project.CompilationResult {
             const result: uit.project.CompilationResult = new Map();
+            result.set('', createHeaderSnipets());
+
             this.packages.forEach(pkgConfig => {
                 const snpts = this.packageToSnipets(pkgConfig);
                 result.set(pkgConfig.name, snpts);
@@ -80,9 +82,19 @@ namespace fairygui {
          * @memberof Project
          */
         componentToSnipets(component: Component, pkgConfig: Package): uit.snipet.Snipet[] {
+            // controller names
+            const controllerNames = component.config.controllers?.join('|') ?? 'string';
+            // transition names
+            const transitionNames = component.config.transitions?.join('|') ?? 'string';
+            // 扩展类型
+            const extention = utils.typeMapping(component.config.extention ?? 'component');
+            // 属性列表
             const attributeSnpts = this.attributesToSnipets(component, pkgConfig);
-            const snpts = uit.snipet.ts.generator('interface', component.name, attributeSnpts);
-            return snpts;
+            return [
+                `type ${component.name} = ${extention} & __UIComponent<{`,
+                attributeSnpts,
+                `}, ${controllerNames}, ${transitionNames}>;`
+            ];
         }
 
         /**
@@ -98,7 +110,7 @@ namespace fairygui {
 
             // 解析属性列表
             const attributes: uit.snipet.Snipet[] = [];
-            component.config.attributes?.forEach(attribute => {
+            component.config.children?.forEach(attribute => {
                 if (!attribute.src) {
                     // 非引用类型
                     attributes.push(`${attribute.name}: ${attribute.type};`);
@@ -127,14 +139,6 @@ namespace fairygui {
                     (attribute.pkg === undefined ? refComponent.address : `${refPkgCFG.name}.${refComponent.address}`);
                 attributes.push(`${attribute.name}: ${type};`);
             });
-
-            if (attributes.length === 0) {
-                // 处理空属性列表的组件，考虑此类组件是否设置为type而不是interface
-            }
-
-            // 解析扩展类型，设置supertype
-            const extention = utils.typeMapping(component.config.extention ?? 'component');
-            attributes.push(`__supertype: ${extention};`);
 
             return attributes;
         }
@@ -172,6 +176,26 @@ namespace fairygui {
             return new Project(directory, packages);
         }
 
+    }
+
+
+
+    /**
+     * @description 创建顶层类型对象
+     * @author xfy
+     * @param {string} [name='__UIComponent']
+     * @returns {uit.snipet.Snipet[]}
+     */
+    function createHeaderSnipets(name: string = '__UIComponent'): uit.snipet.Snipet[] {
+        return [
+            `type ${name}<Children, Controllers extends string = string, Transitions extends string = string> = {`,
+            [
+                'getChild<Key extends keyof Children>(name: Key): Children[Key];',
+                'getController(name: Controllers): fairygui.Controller;',
+                'getTransition(transName: Transitions): fairygui.Transition;'
+            ],
+            '};'
+        ];
     }
 
 }

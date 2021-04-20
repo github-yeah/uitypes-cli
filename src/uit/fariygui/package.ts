@@ -82,7 +82,7 @@ namespace fairygui.Package {
             }
 
             // 没属性的组件，直接使用扩展类型
-            if (!component.config.attributes?.length) {
+            if (!component.config.children?.length) {
                 components.set(e.attributes.id, utils.typeMapping(component.config.extention ?? e.name));
                 return;
             }

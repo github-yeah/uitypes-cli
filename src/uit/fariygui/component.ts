@@ -31,16 +31,22 @@ namespace fairygui {
         /** @description 组件扩展类型*/
         readonly extention?: string;
 
-        /** @description 属性列表*/
-        readonly attributes?: Attribute[];
+        /** @description 子显示对象列表*/
+        readonly children?: Child[];
+
+        /** @description controller 名称列表*/
+        readonly controllers?: string[];
+
+        /** @description transition 名称列表*/
+        readonly transitions?: string[];
     }
 
     /**
-     * @description 组件属性类型
+     * @description 子显示对象
      * @author xfy
-     * @interface Attribute
+     * @interface Child
      */
-    interface Attribute {
+    interface Child {
         /** @description 属性id */
         readonly id: string;
 
@@ -135,7 +141,7 @@ namespace fairygui.Component {
 
 namespace fairygui.ComponentConfig {
     // 属性类型 
-    type Attribute = Exclude<ComponentConfig["attributes"], undefined> extends (infer R)[] ? Record<keyof R, string> : never;
+    type Attribute = Exclude<ComponentConfig["children"], undefined> extends (infer R)[] ? Record<keyof R, string> : never;
 
     /**
      * @description 加载组件配置
@@ -154,21 +160,52 @@ namespace fairygui.ComponentConfig {
 
         // 扩展类型
         const extention = root.attributes?.extention;
-
-        // 获取显示列表
-        const displayList = root.elements
-            ?.find(e => e.name === 'displayList')
-            ?.elements as uit.xml2json.Element<Attribute>[] | undefined;
-
-        if (displayList === undefined || displayList.length === 0) {
-            // 属性列表为空
-            return { extention };
+        if (!root.elements) {
+            return { extention }
         }
 
+        // controller 名字列表
+        const controllers: string[] = [];
+        // transition 名字列表
+        const transitions: string[] = [];
+        // 字显示对象列表
+        let children: Attribute[] | undefined;
+
+        for (const e of root.elements) {
+            switch (e.name) {
+                case 'displayList':
+                    if (e.elements !== undefined) {
+                        children = readChildren(e.elements);
+                    }
+                    break;
+                case 'controller':
+                    const cname: string | undefined = e.attributes.name;
+                    if (cname !== undefined) {
+                        controllers.push(`'${cname}'`);
+                    }
+                    break;
+                case 'transition':
+                    const tname: string | undefined = e.attributes.name;
+                    if (tname !== undefined) {
+                        transitions.push(`'${tname}'`);
+                    }
+                    break;
+            }
+        }
+        return { extention, children, controllers: controllers.length > 0 ? controllers : undefined, transitions: transitions.length > 0 ? transitions : undefined };
+    }
+
+    /**
+     * @description 读取子显示对象列表
+     * @author xfy
+     * @param {uit.xml2json.Element<Attribute>[]} elements
+     * @returns {(Attribute[] | undefined)}
+     */
+    function readChildren(elements: uit.xml2json.Element<Attribute>[]): Attribute[] | undefined {
         // 已存在的属性名，防止重名（重名的使用第一个）
         const existing: Record<string, true | undefined> = {};
-        const attributes: Attribute[] = [];
-        for (const element of displayList) {
+        const children: Attribute[] = [];
+        for (const element of elements) {
             const attribute = element.attributes;
             if (attribute?.name !== undefined) {
                 const name = attribute.name;
@@ -177,11 +214,10 @@ namespace fairygui.ComponentConfig {
                     // 设置组件基本类型
                     attribute.type = utils.typeMapping(element.name);
                     existing[name] = true;
-                    attributes.push(attribute);
+                    children.push(attribute);
                 }
             }
         }
-        return { extention, attributes };
+        return children.length > 0 ? children : undefined;
     }
-
 }

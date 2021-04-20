@@ -51,9 +51,7 @@ namespace uit {
      * @param {string} contents
      */
     function save(file: string, contents: string): void {
-
-        contents = `/**__supertype为内置类型，请勿使用*/\n${contents}`;
-
+        contents = `/**const view = fairygui.UIPackage.createObject('pkg', 'pkgRes') as uit.xxx.xxxx*/\n${contents}`;
         uit.fs.writeFileSync(file, contents);
     }
 }
