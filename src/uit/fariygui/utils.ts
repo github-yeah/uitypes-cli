@@ -36,4 +36,48 @@ namespace fairygui.utils {
         return `fairygui.G${type.substr(0, 1).toUpperCase()}${type.substr(1)}`
     }
 
+
+    /**
+     * @description 生成组件代码片段
+     * @author xfy
+     * @export
+     * @param {string} name 组件名称
+     * @param {string} supertype 父类型
+     * @param {uit.snipet.Snipet[]} children 子显示列表代码片段
+     * @param {string} controllers  controller names
+     * @param {string} transitions transition names
+     * @returns {uit.snipet.Snipet[]}
+     */
+    export function toComponentSnipets(
+        name: string,
+        supertype: string,
+        children: uit.snipet.Snipet[],
+        controllers: string,
+        transitions: string): uit.snipet.Snipet[] {
+        const lines: uit.snipet.Snipet[] = [
+            `type ${name} =  __UIComponent<${supertype}, {`,
+            children,
+            `}, ${controllers}, ${transitions}>;`
+        ];
+        return lines;
+    }
+
+    /**
+    * @description 创建顶层类型对象
+    * @author xfy
+    * @param {string} [name='__UIComponent']
+    * @returns {uit.snipet.Snipet[]}
+    */
+    export function createHeaderSnipets(name: string = '__UIComponent'): uit.snipet.Snipet[] {
+        return [
+            `type ${name}<Base, Children, Controllers extends string = string, Transitions extends string = string> = Base & {`,
+            [
+                'getChild<Key extends keyof Children>(name: Key, explicitType: true): Children[Key];',
+                'getController(name: Controllers): fairygui.Controller;',
+                'getTransition(transName: Transitions): fairygui.Transition;'
+            ],
+            '};'
+        ];
+    }
+
 }

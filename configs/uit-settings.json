@@ -12,7 +12,8 @@
         "value": "uit"
     },
     "outFile": {
-        "name": "输出文件名",
-        "value": "uit.types"
+        "name": "输出文件名，不跟参数则表示清空此项",
+        "value": "uit.types",
+        "optional": true
     }
 }

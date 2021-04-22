@@ -1,14 +1,9 @@
 namespace uit.project {
+
+    type Options = typeof uit.flatSettings;
+
     /** @description 编译选项*/
-    export interface CompilerOptions {
-        // UI 根目录
-        input: string;
-        // 输出路径
-        output: string;
-        // 主命名空间
-        ns: string;
-        // 如果所有的component公用一个d.ts文件，请设置此项（文件名，不含后缀）
-        outFile?: string
+    export interface CompilerOptions extends Options {
         // 待编译 ui包列表
         packages?: string[];
     };
@@ -45,15 +40,14 @@ namespace uit.project {
      * @param {ProjectGenerator} generator
      */
     export function compile(options: CompilerOptions): void {
-        const startTime = Date.now();
+        const timeLabel = '编译完成，耗时';
+        console.time(timeLabel);
         const project = projectFactory(options);
         if (project) {
             const result = project.compile();
             uit.emit(result, options);
         }
-        const endTime = Date.now();
-        const time = (endTime - startTime) * 0.001;
-        console.log(`编译完成，耗时：${time.toFixed(2)}秒`);
+        console.timeEnd(timeLabel);
     }
 
     /**
@@ -63,6 +57,6 @@ namespace uit.project {
      * @returns {(Project | undefined)}
      */
     function projectFactory(options: CompilerOptions): Project | undefined {
-        return fairygui.Project.read(options.input, options.packages);
+        return fairygui.UIProject.read(options.input, options.packages);
     }
 }

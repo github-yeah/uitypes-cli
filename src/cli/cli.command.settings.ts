@@ -7,20 +7,27 @@ namespace cli.settings {
             .alias('s')
             .description('本地设置，不设置参数则输出已有设置');
 
-        Object.entries(uit.settings).forEach(value => {
-            const [name, setting] = value;
-            cmd.option(`--${name} <${name}>`, setting.name);
-        });
 
+
+        const settings = uit.settings;
+        const keys = Reflect.ownKeys(settings) as (keyof typeof settings)[];
+        keys.forEach(key => {
+            const item = settings[key];
+            if (item === undefined) {
+                return;
+            }
+            const valueOption = item.optional ? `[${key}]` : `<${key}>`;
+            cmd.option(`--${key} ${valueOption}`, item.name);
+        })
         cmd.action(settingsAction);
     }
 
     /**@description settings action*/
-    function settingsAction(options: Record<keyof uit.Settings, string>) {
-        if (Object.keys(options).length === 0) {
+    function settingsAction(options: Partial<typeof uit.flatSettings>) {
+        if (Reflect.ownKeys(options).length === 0) {
             console.log(uit.settings);
             return;
         }
-        uit.mergeSettings(options);
+        uit.merge(options);
     }
 }

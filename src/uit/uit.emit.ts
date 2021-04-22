@@ -25,7 +25,7 @@ namespace uit {
             });
         }
 
-        if (outFile === undefined) {
+        if (outFile.length === 0) {
             // 每个包写入单独文件
             result.forEach((pkgSnipets, pkgName) => {
                 const outputPkgSnipets = uit.snipet.ts.generator('namespace', ns, pkgSnipets, 'declare');
