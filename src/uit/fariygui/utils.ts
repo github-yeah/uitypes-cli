@@ -3,7 +3,7 @@ namespace fairygui.utils {
     const useless_name_reg = /^(\-|[0-9]|n[0-9]*$)/;    // 数字或负号开头+n开头数字结尾
 
     /** @description 名称是否合法*/
-    export const isLegalName = (name: string) => !useless_name_reg.test(name);
+    export const isLegalName = (name: string) => name.length > 0 && !useless_name_reg.test(name);
 
     /** @description 获取合法的id（比如，防止出现数字开头的id）*/
     export const getLegalID = (id: string) => `_${id}`;
