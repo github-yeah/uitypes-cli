@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="162,15" extention="ProgressBar">
+  <displayList>
+    <component id="n1_v7hn" name="bar" src="iz2hilrk" fileName="Components/TopLeft/bar_hp.xml" xy="0,0"/>
+  </displayList>
+  <ProgressBar/>
+</component>

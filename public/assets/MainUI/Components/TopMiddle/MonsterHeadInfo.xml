@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,150">
+  <displayList>
+    <component id="n18_h3pa" name="barHp" src="h3pailnr" fileName="Components/TopMiddle/progressBar_monster.xml" xy="76,7">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <text id="n9_ptz8" name="txtName" xy="88,7" size="220,22" fontSize="18" color="#39c754" align="center" vAlign="middle" leading="5" autoSize="none" strokeColor="#000000" text="小怪名称八个字"/>
+    <text id="n19_fsxm" name="txtHp" xy="194,45" pivot="0.5,0.5" anchor="true" size="200,20" fontSize="16" color="#ffffff" align="center" vAlign="middle" leading="5" autoSize="none" strokeColor="#000000" text="9999.99万/9999.00万"/>
+    <image id="n20_btgd" name="n20" src="hwfiilon" fileName="Images/bossHead.png" pkg="rsvwcnw5" xy="6,-2" group="n22_btgd"/>
+    <group id="n22_btgd" name="n22" xy="6,-2" size="126,114" collapsed="true"/>
+    <loader id="n23_btgd" name="roleHead" xy="53,53" pivot="0.5,0.5" anchor="true" size="100,100" aspect="true" url="image/headIcon/11.png" align="center" vAlign="middle" fill="scaleFree" autoSize="true"/>
+    <text id="n25_btgd" name="textLv" xy="53,111" pivot="0.5,0.5" anchor="true" size="60,22" fontSize="18" color="#d7d1c8" align="center" vAlign="middle" leading="5" autoSize="none" strokeColor="#000000" text="999"/>
+  </displayList>
+</component>

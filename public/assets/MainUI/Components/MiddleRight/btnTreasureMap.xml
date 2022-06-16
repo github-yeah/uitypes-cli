@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="68,62" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n3_wssc" name="icon" xy="0,0" size="68,62" url="image/treasureMap/img_treasure_map_notice_go.png" autoSize="true"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.80"/>
+</component>

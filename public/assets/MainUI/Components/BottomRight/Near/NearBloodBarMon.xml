@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="268,23" extention="ProgressBar" designImageOffsetX="-741" designImageOffsetY="-144">
+  <displayList>
+    <image id="n2_g3qb" name="n2" src="g3qbillj" fileName="Near/near_bar_bg.png" pkg="ev17b9fd" xy="0,0" size="268,23"/>
+    <image id="n1_mi3z" name="bar" src="g3qbilli" fileName="Near/near_bar.png" pkg="ev17b9fd" xy="7,5" size="254,12"/>
+  </displayList>
+  <ProgressBar/>
+</component>

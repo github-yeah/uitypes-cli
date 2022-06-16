@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="153,68">
+  <controller name="bgCtrl" pages="0,,1,,2," selected="2"/>
+  <displayList>
+    <image id="n4_m9vs" name="bg" src="lxcliln8" fileName="Images/Near/near_bg.png" pkg="ev17b9fd" xy="0,-96" size="153,164">
+      <gearXY controller="bgCtrl" pages="1,2" values="0,-47|0,-96" default="0,0"/>
+      <relation target="n3_pxbx" sidePair="width-width,height-height"/>
+    </image>
+    <list id="n3_pxbx" name="upgradeList" xy="11,-84" size="133,144" overflow="scroll" lineGap="3" defaultItem="ui://uionr2r4p3lx5yzqx" autoClearItems="true">
+      <gearXY controller="bgCtrl" pages="1,2" values="11,-37|11,-84" default="11,10"/>
+      <gearSize controller="bgCtrl" pages="0,1" values="133,48,1,1|133,95,1,1" default="133,144,1,1"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

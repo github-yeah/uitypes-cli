@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="72,74" extention="ProgressBar">
+  <displayList>
+    <image id="n3_otph" name="iconBack" src="otphilvp" fileName="Images/TopLeft/vip/vipShareBack.png" xy="1,4"/>
+    <component id="n1_pv88" name="bar_v" src="fy7nilsy" fileName="Components/TopLeft/vip/comProgress.xml" xy="3,4" size="65,65"/>
+    <image id="n2_pv88" name="iconLingth" src="fy7nilsu" fileName="Images/TopLeft/vip/vipShareAl.png" xy="0,0"/>
+  </displayList>
+  <ProgressBar reverse="true"/>
+</component>

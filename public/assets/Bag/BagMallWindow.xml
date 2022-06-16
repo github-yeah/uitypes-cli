@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1092,622" designImage="ui://t55ptsa9rpqq1z" designImageOffsetX="-90" designImageOffsetY="-83" designImageAlpha="0" designImageLayer="1">
+  <displayList>
+    <loader id="n33_xs8g" name="loaderM" xy="457,0" size="178,622" url="image/bag/iconBackS.png" autoSize="true"/>
+    <loader id="n25_rpqq" name="loaderL" xy="-2,-1" size="477,624" url="image/bag/iconBackR.png" autoSize="true"/>
+    <loader id="n34_xs8g" name="loaderR" xy="618,-1" size="477,624" url="image/bag/iconBackR.png" autoSize="true"/>
+    <loader id="n8_jnkz" name="loaderArrow" xy="507,238" size="82,89" url="image/bag/iconArrow.png" autoSize="true"/>
+    <image id="n27_rpqq" name="iconFlowerL1" src="rpqq2i" fileName="Images/common/titleFlower.png" pkg="uionr2r4" xy="70,28"/>
+    <image id="n28_rpqq" name="iconFlowerL2" src="rpqq2i" fileName="Images/common/titleFlower.png" pkg="uionr2r4" xy="282,28" flip="hz"/>
+    <image id="n20_rpqq" name="iconFlowerR1" src="rpqq2i" fileName="Images/common/titleFlower.png" pkg="uionr2r4" xy="691,28"/>
+    <image id="n21_rpqq" name="iconFlowerR2" src="rpqq2i" fileName="Images/common/titleFlower.png" pkg="uionr2r4" xy="916,28" flip="hz"/>
+    <image id="n31_rpqq" name="iconBackListL" src="qjf9f" fileName="Images/iconFrameAttr.png" pkg="ugjpa7s2" xy="5,56" size="463,436"/>
+    <image id="n30_rpqq" name="iconBackListR" src="qjf9f" fileName="Images/iconFrameAttr.png" pkg="ugjpa7s2" xy="624,56" size="463,436"/>
+    <component id="n16_jnkz" name="btnBuy" src="p3lx5yzqx" fileName="Components/button/Button2_Orange.xml" pkg="uionr2r4" xy="144,526">
+      <Button title="购 买" titleFontSize="24"/>
+    </component>
+    <list id="n17_jnkz" name="listMall" xy="11,67" size="450,422" overflow="scroll" lineGap="4" defaultItem="ui://t55ptsa9jnkz1v" autoItemSize="false" align="center" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n22_rpqq" name="comList" src="ngti1f" fileName="Component/ListView.xml" xy="624,56" size="463,436"/>
+    <component id="n23_rpqq" name="comMoney" src="9n2n12" fileName="Components/money/MoneyView.xml" pkg="uionr2r4" xy="670,528" size="387,72"/>
+    <text id="n29_rpqq" name="txtNameMall" xy="204,18" size="75,28" fontSize="24" color="#c5b186" align="center" vAlign="middle" letterSpacing="11" strokeColor="#000000" text="道具"/>
+    <text id="n24_rpqq" name="txtNameBag" xy="816,18" size="93,28" fontSize="24" color="#c5b186" align="center" vAlign="middle" letterSpacing="-2" strokeColor="#000000" text="我的背包"/>
+    <text id="n35_n98v" name="txtCount" xy="950,495" size="137,26" fontSize="22" color="#dbb272" align="center" vAlign="middle" strokeColor="#000000" text="空间:200/200"/>
+  </displayList>
+</component>

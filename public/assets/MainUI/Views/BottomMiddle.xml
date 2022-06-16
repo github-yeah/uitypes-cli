@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="409,107" opaque="false" designImage="ui://tdl95htaviw31e" designImageOffsetX="-463" designImageOffsetY="-643" designImageAlpha="51">
+  <controller name="showCtrl" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n120_104sv" name="n120" src="104svilx4" fileName="Images/BottomMiddle/chatbgNew.png" xy="-28,4" size="462,90" group="n48_ak84"/>
+    <list id="n52_vy3x" name="listChat" xy="30,11" pivot="0.5,1" size="347,76" group="n48_ak84" overflow="scroll" scrollBarFlags="160" defaultItem="ui://tdl95htaqyacilq4" autoItemSize="false" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n82_jmr3" name="btnOpenChat" src="a1e7ilm9" fileName="Components/TopMiddle/BtnEmpty.xml" xy="38,11" size="339,80" group="n48_ak84"/>
+    <image id="n141_hd20" name="n141" src="104svilx6" fileName="Images/BottomMiddle/btn_petBg.png" xy="375,-18" group="n48_ak84"/>
+    <component id="n142_hd20" name="btnJobSwitch" src="hd20vilzh" fileName="Components/BottomMiddle/JobSwitch/JobSwitch.xml" xy="383,-3" group="n48_ak84"/>
+    <component id="n148_if9t" name="btnCharge" src="if9tvim0j" fileName="Components/BottomMiddle/ButtonReCharge.xml" xy="-91,-145" group="n48_ak84" visible="false"/>
+    <component id="n150_txlg" name="btnMillionMoney" src="txlgvim1a" fileName="Components/BottomMiddle/btnMillionMoney.xml" xy="-122,-191" group="n48_ak84" visible="false"/>
+    <group id="n48_ak84" name="TweenCom" xy="-122,-191" size="625,287" advanced="true" collapsed="true">
+      <gearDisplay controller="showCtrl" pages="0"/>
+      <gearXY controller="showCtrl" pages="0,1" values="-122,-191|-88,192" tween="true"/>
+    </group>
+    <component id="n93_v7hn" name="barExp" src="v7hnilpv" fileName="Components/BottomMiddle/expBar.xml" xy="204,99" pivot="0.5,0.5" anchor="true" size="1334,16">
+      <relation target="" sidePair="bottom-bottom"/>
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <image id="n94_v7hn" name="n94" src="v7hnilpw" fileName="Images/BottomMiddle/bg_exp2.png" xy="-139,95" size="3,8" group="n100_v7hn"/>
+    <image id="n95_v7hn" name="n95" src="v7hnilpw" fileName="Images/BottomMiddle/bg_exp2.png" xy="-306,95" size="3,8" group="n100_v7hn"/>
+    <image id="n96_v7hn" name="n96" src="v7hnilpw" fileName="Images/BottomMiddle/bg_exp2.png" xy="35,95" size="3,8" group="n100_v7hn"/>
+    <image id="n97_v7hn" name="n97" src="v7hnilpw" fileName="Images/BottomMiddle/bg_exp2.png" xy="526,95" size="3,8" group="n100_v7hn"/>
+    <image id="n98_v7hn" name="n98" src="v7hnilpw" fileName="Images/BottomMiddle/bg_exp2.png" xy="359,95" size="3,8" group="n100_v7hn"/>
+    <image id="n99_v7hn" name="n99" src="v7hnilpw" fileName="Images/BottomMiddle/bg_exp2.png" xy="693,95" size="3,8" group="n100_v7hn"/>
+    <image id="n112_dake" name="n112" src="v7hnilpw" fileName="Images/BottomMiddle/bg_exp2.png" xy="193,95" size="3,8" group="n100_v7hn"/>
+    <group id="n100_v7hn" name="n100" xy="-306,95" size="1002,8" advanced="true" collapsed="true">
+      <relation target="n93_v7hn" sidePair="center-center,middle-middle"/>
+    </group>
+    <component id="n118_tcdw" name="btnGm" src="p3lx5yzqx" fileName="Components/button/Button2_Orange.xml" pkg="uionr2r4" xy="-217,-61" size="126,60" group="n132_vjl2" visible="false">
+      <Button title="Gm指令"/>
+    </component>
+    <component id="n124_8vjk" name="btnMail" src="8vjkily7" fileName="Components/BottomMiddle/btnMail.xml" xy="-183,25" size="58,58" group="n132_vjl2"/>
+    <image id="n143_wt94" name="n143" src="wt94vilzt" fileName="Images/BottomMiddle/bg_mphp1.png" xy="-94,-21" group="n132_vjl2"/>
+    <component id="n130_q983" name="progressHp" src="q983vily9" fileName="Components/BottomMiddle/ProgressHp.xml" xy="-74,-16" group="n132_vjl2">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n131_q983" name="progressMp" src="q983vilya" fileName="Components/BottomMiddle/ProgressMp.xml" xy="-35,-15" group="n132_vjl2">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n133_l1tz" name="testBtnRide" src="l1tzvilyl" fileName="Components/BottomMiddle/btnRide.xml" xy="-238,25" group="n132_vjl2"/>
+    <component id="n146_ecs4" name="modFogHp" src="ecs4vilzy" fileName="Components/BottomMiddle/comModFogHp.xml" xy="-74,-16" group="n132_vjl2"/>
+    <component id="n144_d43j" name="comHp" src="d43jvilzu" fileName="Components/BottomMiddle/comModHp.xml" xy="-74,-16" group="n132_vjl2"/>
+    <component id="n147_ecs4" name="modFogMp" src="ecs4vilzz" fileName="Components/BottomMiddle/comModFogMp.xml" xy="-35,-14" group="n132_vjl2"/>
+    <component id="n145_dt43" name="comMp" src="dt43vilzv" fileName="Components/BottomMiddle/comModMp.xml" xy="-35,-14" group="n132_vjl2"/>
+    <loader id="n139_m517" name="imgHpMp" xy="-94,-21" size="129,122" group="n132_vjl2" url="ui://tdl95hta104svilxh"/>
+    <text id="n134_m517" name="txtHpMp" xy="-108,-49" size="163,34" group="n132_vjl2" fontSize="14" color="#00ff00" align="center" autoSize="none" strokeColor="#000000" text="123&#xA;345"/>
+    <component id="n149_dkke" name="btnMsg" src="dkkevim10" fileName="Components/BottomMiddle/btnMsg.xml" xy="-130,25" group="n132_vjl2"/>
+    <group id="n132_vjl2" name="n132" xy="-238,-61" size="293,162" advanced="true">
+      <gearDisplay controller="showCtrl" pages="0"/>
+      <gearXY controller="showCtrl" pages="0" values="-238,-61" default="-280,138" tween="true"/>
+    </group>
+  </displayList>
+</component>

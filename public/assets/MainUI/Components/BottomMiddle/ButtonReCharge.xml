@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="130,140" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="conLv" pages="0,,1,,2," selected="0">
+    <remark page="0" value="不显示"/>
+    <remark page="1" value="18级"/>
+    <remark page="2" value="55级"/>
+  </controller>
+  <displayList>
+    <image id="n3_if9t" name="n3" src="if9tvim0n" fileName="Images/BottomMiddle/firstCharge/img_plat.png" xy="0,20"/>
+    <image id="n4_if9t" name="n4" src="if9tvim0p" fileName="Images/BottomMiddle/firstCharge/40104010.png" xy="25,0"/>
+    <component id="n5_if9t" name="lvPro" src="if9tvim0q" fileName="Components/BottomMiddle/ProgressBar1.xml" xy="5,108">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <image id="n6_if9t" name="n6" src="if9tvim0m" fileName="Images/BottomMiddle/firstCharge/img_mflsc.png" xy="19,74"/>
+    <component id="n11_if9t" name="btnUse" src="g7qz65yzu5" fileName="Components/button/Button15.xml" pkg="uionr2r4" xy="25,103" size="76,30">
+      <Button title="使用(5)"/>
+    </component>
+    <image id="n12_if9t" name="n12" src="if9tvim0r" fileName="Images/BottomMiddle/firstCharge/arrow.png" xy="96,89" group="n14_if9t"/>
+    <image id="n13_if9t" name="n13" src="if9tvim0s" fileName="Images/BottomMiddle/firstCharge/textbox.png" xy="167,84" group="n14_if9t"/>
+    <text id="n15_if9t" name="n15" xy="212,103" size="101,28" group="n14_if9t" fontSize="24" color="#e0d7bd" text="点击使用"/>
+    <group id="n14_if9t" name="clickUseGroup" xy="96,84" size="261,67" advanced="true">
+      <relation target="" sidePair=""/>
+    </group>
+    <text id="n16_jrt3" name="n16" xy="1,53" size="128,20" fontSize="16" color="#f5f7e1" ubb="true" autoSize="none" strokeColor="#000000" text="[color=#41dc00]100级[/color]使用充值券"/>
+    <image id="n17_jrt3" name="n17" src="jrt3vim0u" fileName="Images/BottomMiddle/firstCharge/img_lv18.png" xy="50,-40">
+      <gearDisplay controller="conLv" pages="1"/>
+    </image>
+    <image id="n18_jrt3" name="n18" src="jrt3vim0v" fileName="Images/BottomMiddle/firstCharge/img_lv55.png" xy="50,-40">
+      <gearDisplay controller="conLv" pages="2"/>
+    </image>
+  </displayList>
+  <Button/>
+  <transition name="t0">
+    <item time="0" type="XY" target="n12_if9t" tween="true" startValue="96,89" endValue="119,89" duration="12"/>
+    <item time="0" type="XY" target="n13_if9t" tween="true" startValue="167,84" endValue="190,84" duration="12"/>
+    <item time="0" type="XY" target="n15_if9t" tween="true" startValue="212,103" endValue="235,103" duration="12"/>
+    <item time="12" type="XY" target="n12_if9t" tween="true" startValue="119,89" endValue="96,89" duration="12"/>
+    <item time="12" type="XY" target="n13_if9t" tween="true" startValue="190,84" endValue="167,84" duration="12"/>
+    <item time="12" type="XY" target="n15_if9t" tween="true" startValue="235,103" endValue="212,103" duration="12"/>
+  </transition>
+</component>

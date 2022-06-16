@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,180" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n3_txlg" name="n3" src="txlgvim18" fileName="Images/BottomMiddle/btn_bwzs.png" xy="0,0"/>
+    <image id="n4_txlg" name="n4" src="txlgvim19" fileName="Images/BottomMiddle/img_bwzs.png" xy="25,115"/>
+    <text id="n5_txlg" name="txtTime" xy="-20,152" size="240,22" fontSize="16" color="#41dc00" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="48:35:56后消失48:35:56后消失"/>
+    <image id="n6_txlg" name="redPoint" src="dfdo65yzsh" fileName="Images/common/icon_redIcon.png" pkg="uionr2r4" xy="118,39"/>
+  </displayList>
+  <Button/>
+</component>

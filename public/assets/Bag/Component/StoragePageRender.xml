@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="480,470" mask="n7_rpqq">
+  <displayList>
+    <graph id="n7_rpqq" name="mask" xy="0,0" size="480,470" type="rect">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <list id="n1_ktn8" name="listStorage" xy="0,0" size="480,470" layout="flow_hz" overflow="scroll" scrollBarFlags="128" lineGap="12" colGap="12" lineItemCount="6" defaultItem="ui://uionr2r49n2ng" align="center">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

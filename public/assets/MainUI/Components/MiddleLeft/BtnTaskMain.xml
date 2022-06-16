@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="50,100" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n7_lnjz" name="n7" src="lnjzvilxz" fileName="Images/MiddleLeft/task_select.png" xy="0,0"/>
+    <image id="n5_qhfk" name="n5" src="qhfkilwv" fileName="Images/MiddleLeft/task_unselect.png" xy="0,0">
+      <gearDisplay controller="button" pages="0,2"/>
+    </image>
+    <image id="n2_aujb" name="n2" src="l0ar2y" fileName="Images/MiddleLeft/act_wei_zi.png" xy="9,19">
+      <gearDisplay controller="button" pages="0,2"/>
+    </image>
+    <image id="n3_aujb" name="n3" src="l0ar2z" fileName="Images/MiddleLeft/act_xuan_zi.png" xy="9,19">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

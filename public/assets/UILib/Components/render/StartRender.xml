@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="31,33">
+  <controller name="conIsLight" pages="0,,1," selected="1">
+    <remark page="0" value="暗星"/>
+    <remark page="1" value="亮星"/>
+  </controller>
+  <displayList>
+    <loader id="n0_t5tt" name="loaderStart" xy="0,0" size="31,33" url="ui://uionr2r4ltvk5yzr0" autoSize="true">
+      <gearIcon controller="conIsLight" pages="0,1" values="ui://uionr2r4ltvk5yzr1|ui://uionr2r4ltvk5yzr0"/>
+    </loader>
+  </displayList>
+</component>

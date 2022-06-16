@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="117,56" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n8_lsmq" name="n8" src="lsmq65yzuu" fileName="Images/tab/tab10.png" xy="0,0">
+      <gearDisplay controller="button" pages="0,2"/>
+    </image>
+    <image id="n9_lsmq" name="n9" src="lsmq65yzuv" fileName="Images/tab/tab10_s.png" xy="0,0">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <text id="n5_lsmq" name="titleDown" xy="14,9" size="90,38" hideByEditor="true" fontSize="22" color="#f5f7e1" align="center" vAlign="middle" letterSpacing="2" autoSize="none" strokeColor="#000000" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n6_lsmq" name="title" xy="18,9" size="96,38" fontSize="22" color="#95998a" align="center" vAlign="middle" letterSpacing="1" autoSize="none" strokeColor="#000000" singleLine="true" text="">
+      <gearXY controller="button" pages="0,2" values="18,9|24,9" default="14,9"/>
+      <gearColor controller="button" pages="1,3" values="#f5f7e1,#000000|#f5f7e1,#000000" default="#95998a,#000000"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <image id="n7_lsmq" name="redPoint" src="dfdo65yzsh" fileName="Images/common/icon_redIcon.png" xy="98,3" visible="false"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

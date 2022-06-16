@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="82,84">
+  <controller name="iconState" pages="0,无,1,绝版,2,稀有,3,超值" selected="0"/>
+  <displayList>
+    <component id="n3_dvcu" name="itemRender" src="9n2nr" fileName="Components/render/RewardRender.xml" xy="0,0"/>
+    <loader id="n6_g3yg" name="nopay" xy="0,0" size="65,65" touchable="false" autoSize="true">
+      <gearXY controller="iconState" pages="1,2,3" values="-1,2|-1,2|-2,-7" default="0,0"/>
+      <gearIcon controller="iconState" pages="0,2,3" values="|image/uiLib/img_quality2.png|image/uiLib/img_quality3.png" default="image/uiLib/img_quality1.png"/>
+      <relation target="" sidePair="left-left,top-top"/>
+    </loader>
+  </displayList>
+</component>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="380,400">
+  <displayList>
+    <image id="n0_ilde" name="skillBg" src="n98v5yznn" fileName="Images/bg_tips.png" pkg="ugjpa7s2" xy="0,0" size="380,400">
+      <relation target="n7_ilde" sidePair="bottomext-bottom"/>
+    </image>
+    <richtext id="n3_ilde" name="txtDesc" xy="17,228" size="351,48" fontSize="18" color="#f5f7e1" leading="6" ubb="true" autoSize="none" strokeColor="#000000" autoClearText="true" text="尚未学习&#xA;等待配置数据&#xA;"/>
+    <image id="n6_ilde" name="n6" src="j3ye65yzrt" fileName="Images/common/img_tips_line_2.png" xy="7,172"/>
+    <richtext id="n7_ilde" name="txtNextDesc" xy="15,337" size="351,48" fontSize="18" color="#f5f7e1" leading="6" ubb="true" autoSize="none" strokeColor="#000000" autoClearText="true" text="尚未学习&#xA;等待配置数据&#xA;">
+      <relation target="n10_ilde" sidePair="top-bottom"/>
+    </richtext>
+    <image id="n8_ilde" name="n8" src="r1dp65yzu0" fileName="Images/common/img_tip_bg.png" xy="16,309" size="112,24" group="n10_ilde"/>
+    <text id="n9_ilde" name="n9" xy="16,311" size="113,22" group="n10_ilde" fontSize="18" color="#f5f7e1" strokeColor="#000000" text="【下级技能】"/>
+    <group id="n10_ilde" name="tfGroup" xy="16,309" size="113,24" advanced="true" collapsed="true">
+      <relation target="n14_ilde" sidePair="top-bottom"/>
+    </group>
+    <image id="n11_ilde" name="n11" src="r1dp65yzu0" fileName="Images/common/img_tip_bg.png" xy="16,197" group="n13_ilde"/>
+    <text id="n12_ilde" name="txtTile" xy="16,198" size="113,22" group="n13_ilde" fontSize="18" color="#f5f7e1" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="【当前技能】"/>
+    <group id="n13_ilde" name="smGroup" xy="16,197" size="113,24" advanced="true" collapsed="true"/>
+    <image id="n14_ilde" name="imgLine" src="j3ye65yzrt" fileName="Images/common/img_tips_line_2.png" xy="7,285">
+      <relation target="n3_ilde" sidePair="top-bottom"/>
+    </image>
+    <component id="n17_ilde" name="itemRender" src="sxlo65yzrj" fileName="Components/render/SkillPRender.xml" xy="33,58"/>
+    <richtext id="n18_ilde" name="txtName" xy="140,8" pivot="0.5,0" size="93,26" fontSize="22" color="#e6be78" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="技能名称">
+      <relation target="" sidePair="center-center"/>
+    </richtext>
+    <text id="n19_ilde" name="txtLevel" xy="206,73" size="50,22" fontSize="18" color="#41dc00" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="999级"/>
+    <text id="n20_ilde" name="n23" xy="154,73" size="59,22" fontSize="18" color="#ffe3a0" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="等级："/>
+    <text id="n21_ilde" name="n21" xy="154,105" size="95,22" fontSize="18" color="#ffe3a0" vAlign="middle" strokeColor="#000000" text="能量消耗："/>
+    <text id="n22_ilde" name="n22" xy="154,139" size="95,22" fontSize="18" color="#ffe3a0" text="冷却时间："/>
+    <text id="n23_ilde" name="txtCost" xy="242,105" size="68,22" fontSize="18" color="#41dc00" strokeColor="#000000" text="2点能量"/>
+    <text id="n24_ilde" name="txtCd" xy="242,139" size="32,22" fontSize="18" color="#41dc00" strokeColor="#000000" text="8秒"/>
+  </displayList>
+</component>

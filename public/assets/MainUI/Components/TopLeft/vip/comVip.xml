@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,16" overflow="hidden">
+  <displayList>
+    <image id="n3_cd48" name="n3" src="cd48ilty" fileName="Images/TopLeft/vip/vipBar.png" xy="0,0"/>
+  </displayList>
+</component>

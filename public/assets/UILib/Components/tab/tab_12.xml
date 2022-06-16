@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="146,58" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n8_hp0e" name="n8" src="hp0e65yzvf" fileName="Images/tab/tab12.png" xy="0,0">
+      <gearDisplay controller="button" pages="0,2"/>
+    </image>
+    <image id="n9_hp0e" name="n9" src="hp0e65yzvg" fileName="Images/tab/tab12_s.png" xy="0,0">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <text id="n5_hp0e" name="titleDown" xy="14,8" size="136,44" fontSize="22" color="#f5f7e1" align="center" vAlign="middle" letterSpacing="2" autoSize="none" strokeColor="#000000" text="">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n6_hp0e" name="title" xy="18,9" size="127,44" fontSize="22" color="#95998a" align="center" vAlign="middle" letterSpacing="1" autoSize="none" strokeColor="#000000" singleLine="true" text="">
+      <gearDisplay controller="button" pages="0,2"/>
+      <gearXY controller="button" pages="0,1,2" values="18,9|14,8|24,9" default="14,9"/>
+      <gearColor controller="button" pages="1,3" values="#f5f7e1,#000000|#f5f7e1,#000000" default="#95998a,#000000"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <image id="n7_hp0e" name="redPoint" src="dfdo65yzsh" fileName="Images/common/icon_redIcon.png" xy="124,3" visible="false"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

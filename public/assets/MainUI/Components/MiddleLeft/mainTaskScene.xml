@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="298,253">
+  <controller name="webCtr" pages="0,,1," selected="0"/>
+  <displayList>
+    <loader id="n9_nlsv" name="n9" xy="0,0" size="298,52"/>
+    <loader id="n7_fsp8" name="taskTitle" xy="90,3" size="105,41" align="center" vAlign="middle"/>
+    <text id="n0_9yhb" name="n0" xy="0,140" size="100,31" fontSize="19" color="#e3d2ae" align="center" vAlign="middle" leading="5" autoSize="none" strokeColor="#000000" text="任务目标："/>
+    <text id="n1_9yhb" name="bossName" xy="3,167" size="223,31" fontSize="19" color="#5acd41" align="center" vAlign="middle" leading="5" autoSize="none" strokeColor="#000000" text="击败骷髅教师"/>
+    <text id="n2_9yhb" name="n2" xy="0,56" size="100,31" fontSize="19" color="#e3d2ae" align="center" vAlign="middle" leading="5" autoSize="none" strokeColor="#000000" text="副本目标："/>
+    <text id="n3_9yhb" name="taskDesc" xy="3,84" size="297,58" fontSize="18" color="#d8bd41" vAlign="middle" leading="5" autoSize="none" strokeColor="#000000" text="发生的发生发撒旦法撒旦发生的发生发阿德发顺丰发发都发顺丰撒"/>
+    <text id="n8_9u30" name="taskCondition" xy="221,167" size="58,31" fontSize="19" color="#5acd41" align="center" vAlign="middle" leading="5" autoSize="none" strokeColor="#000000" text="(1/1)"/>
+  </displayList>
+</component>

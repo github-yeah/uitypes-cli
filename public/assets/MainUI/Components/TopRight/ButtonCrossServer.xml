@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="88,72" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="conState" pages="0,,1," selected="0"/>
+  <displayList>
+    <loader id="n3_gt95" name="icon" xy="0,0" size="88,72" url="image/icon/abtn_crossserver.png" autoSize="true"/>
+    <image id="n6_gt95" name="imgDay" src="gt95vim1e" fileName="Images/TopRight/img_cross_server_day.png" xy="0,0">
+      <gearDisplay controller="conState" pages="0"/>
+    </image>
+    <text id="n7_gt95" name="txtDay" xy="14,21" size="17,20" font="ui://tdl95htagt95vim1p" fontSize="18" color="#dcd2be" align="right" vAlign="middle" autoSize="none" text="3">
+      <gearDisplay controller="conState" pages="0"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.90"/>
+</component>

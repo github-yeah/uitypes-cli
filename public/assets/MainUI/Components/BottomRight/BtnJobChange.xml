@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,80" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="jobCtrl" pages="0,,1,,2," selected="2"/>
+  <displayList>
+    <image id="n0_v7hn" name="n0" src="dakeilmu" fileName="Images/btn_skillBg1.png" pkg="ev17b9fd" xy="0,0" size="80,80">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_phyj" name="n3" src="phyjilnd" fileName="Images/fa1.png" pkg="ev17b9fd" xy="6,6" group="n7_gr2u"/>
+    <image id="n1_v7hn" name="n1" src="v7hnilm1" fileName="Images/fa.png" pkg="ev17b9fd" xy="16,15" group="n7_gr2u"/>
+    <group id="n7_gr2u" name="faCom" xy="6,6" size="69,69" advanced="true" collapsed="true">
+      <gearDisplay controller="jobCtrl" pages="1"/>
+    </group>
+    <image id="n8_gr2u" name="n8" src="phyjilnb" fileName="Images/zhan1.png" pkg="ev17b9fd" xy="6,6" group="n10_gr2u"/>
+    <image id="n9_gr2u" name="n9" src="v7hnilm4" fileName="Images/zhan.png" pkg="ev17b9fd" xy="17,15" group="n10_gr2u"/>
+    <group id="n10_gr2u" name="zhanCom" xy="6,6" size="69,69" advanced="true" collapsed="true">
+      <gearDisplay controller="jobCtrl" pages="0"/>
+    </group>
+    <image id="n11_gr2u" name="n11" src="phyjilnc" fileName="Images/dao1.png" pkg="ev17b9fd" xy="6,6" group="n13_gr2u"/>
+    <image id="n12_gr2u" name="n12" src="v7hnillz" fileName="Images/dao.png" pkg="ev17b9fd" xy="18,15" group="n13_gr2u"/>
+    <group id="n13_gr2u" name="daoCom" xy="6,6" size="69,69" advanced="true" collapsed="true">
+      <gearDisplay controller="jobCtrl" pages="2"/>
+    </group>
+    <text id="n2_v7hn" name="title" xy="19,53" pivot="0.5,0.5" size="43,22" fontSize="18" color="#70ed7c" align="center" vAlign="middle" bold="true" strokeColor="#000000" text="100%">
+      <gearColor controller="jobCtrl" pages="0,2" values="#d8cb68,#000000|#70ed7c,#000000" default="#59bae0,#000000"/>
+    </text>
+    <component id="n4_gr2u" name="cdMask" src="uofs25" fileName="Components/BottomRight/mask.xml" xy="6,6" pivot="0.5,0.5" size="68,68" aspect="true" visible="false" alpha="0.5"/>
+    <graph id="n5_gr2u" name="cdGraph" xy="6,6" size="68,68" visible="false" type="rect" lineColor="#00000000" fillColor="#00000000"/>
+    <text id="n6_gr2u" name="cdTxt" xy="35,27" pivot="0.5,0.5" size="10,26" visible="false" fontSize="22" color="#ffffff" align="center" vAlign="middle" strokeColor="#000000" text=""/>
+  </displayList>
+  <Button/>
+</component>

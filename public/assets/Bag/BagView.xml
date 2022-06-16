@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="477,624">
+  <controller name="conType" pages="0,,1,,2," selected="0">
+    <remark page="0" value="全部"/>
+    <remark page="1" value="材料"/>
+    <remark page="2" value="装备"/>
+  </controller>
+  <displayList>
+    <loader id="n4_sey1" name="loaderR" xy="0,0" size="477,624" url="image/bag/iconBackR.png" fill="scaleFree" autoSize="true"/>
+    <image id="n5_sey1" name="iconTabBg" src="xs8g1f" fileName="Images/bg_tab.png" pkg="ugjpa7s2" xy="3,0" size="470,57"/>
+    <image id="n6_sey1" name="iconFrameBag" src="qjf9f" fileName="Images/iconFrameAttr.png" pkg="ugjpa7s2" xy="6,57" size="463,436"/>
+    <component id="n9_sey1" name="btnNormal" src="nd8l1x" fileName="Components/tab/tab_1.xml" pkg="uionr2r4" xy="10,3">
+      <Button checked="true" title="全部" controller="conType" page="0"/>
+    </component>
+    <image id="n15_more" name="iconFullBag" src="vxivilq2" fileName="Images/BottomMiddle/full.png" pkg="tdl95hta" xy="93,-11"/>
+    <text id="n13_n98v" name="txtCount" xy="301,574" size="137,26" fontSize="22" color="#dbb272" align="center" vAlign="middle" strokeColor="#000000" text="空间:200/200"/>
+    <component id="n16_vzf3" name="btnMaterial" src="nd8l1x" fileName="Components/tab/tab_1.xml" pkg="uionr2r4" xy="130,3">
+      <Button title="材料" controller="conType" page="1"/>
+    </component>
+    <component id="n17_vzf3" name="btnEquip" src="nd8l1x" fileName="Components/tab/tab_1.xml" pkg="uionr2r4" xy="250,3">
+      <Button title="装备" controller="conType" page="2"/>
+    </component>
+    <list id="n18_uxwu" name="comList" xy="18,59" size="423,488" layout="flow_hz" overflow="scroll" lineGap="4" colGap="4" lineItemCount="5" defaultItem="ui://uionr2r49n2ng" align="center" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

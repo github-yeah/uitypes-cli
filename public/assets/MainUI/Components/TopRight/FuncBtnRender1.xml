@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="70,70" pivot="0.5,0.5" opaque="false" extention="Button" designImageOffsetX="-910" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n15_egrv" name="n15" src="egrvvilqs" fileName="Images/btn_bgN.png" pkg="fnu4ep3v" xy="4,4"/>
+    <loader id="n5" name="icon" xy="-5,-5" pivot="0.5,0.5" size="80,80" url="image/icon/abtn_fabaotehui.png" align="center" vAlign="middle" autoSize="true"/>
+    <graph id="n16_lnrj" name="mod" xy="35,35" size="10,10" touchable="false" type="rect" fillColor="#00ffffff"/>
+    <image id="n12_owf6" name="redPoint" src="dfdo65yzsh" fileName="Images/common/icon_redIcon.png" pkg="uionr2r4" xy="48,2" visible="false"/>
+    <loader id="n14_upqs" name="iconTxt" xy="1,47" pivot="0.5,0.5" size="70,26" url="ui://fnu4ep3v104svilqc" align="center" vAlign="middle" autoSize="true"/>
+    <loader id="n17_kh98" name="flag" xy="-3,-8" pivot="0.5,0.5" size="42,41" url="image/icon/flag_3.png" align="center" vAlign="middle" autoSize="true"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.05"/>
+</component>

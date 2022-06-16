@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="180,90" opaque="false">
+  <displayList>
+    <component id="n0_t694" name="equipL" src="t69465yzrf" fileName="Components/guardView/GuardRender.xml" xy="0,0">
+      <relation target="" sidePair="left-left,top-top"/>
+    </component>
+    <component id="n1_t694" name="equipD" src="t69465yzrf" fileName="Components/guardView/GuardRender.xml" xy="90,0">
+      <relation target="" sidePair="top-top,right-right"/>
+    </component>
+  </displayList>
+</component>

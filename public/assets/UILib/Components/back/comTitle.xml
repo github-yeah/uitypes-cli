@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="325,24" extention="Button" designImage="ui://uionr2r4g37r5yzqc" designImageOffsetX="-823" designImageOffsetY="-200" designImageAlpha="60" designImageLayer="1">
+  <displayList>
+    <image id="n2_91sc" name="iconFL" src="rpqq2i" fileName="Images/common/titleFlower.png" xy="0,5">
+      <relation target="" sidePair="left-left,middle-middle"/>
+    </image>
+    <image id="n4_91sc" name="iconFR" src="rpqq2i" fileName="Images/common/titleFlower.png" xy="325,5" scale="-1,1">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </image>
+    <loader id="n5_v6nh" name="icon" xy="137,-3" size="50,30" autoSize="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+  </displayList>
+  <Button/>
+</component>

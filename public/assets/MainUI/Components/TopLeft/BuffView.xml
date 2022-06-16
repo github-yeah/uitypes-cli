@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="336,344" opaque="false" designImage="ui://bc7rynhejcqzi70" designImageOffsetX="-196" designImageOffsetY="-113" designImageAlpha="69">
+  <displayList>
+    <image id="n4_r1dp" name="n4" src="n98v5yznn" fileName="Images/bg_tips.png" pkg="ugjpa7s2" xy="0,0" size="336,344"/>
+    <list id="n1_t1tg" name="buffList" xy="9,45" size="320,289" overflow="scroll" lineGap="3" defaultItem="ui://tdl95htakdp28u" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n3_8jnw" name="n3" xy="122,8" size="93,26" fontSize="22" color="#ffe3a0" vAlign="middle" strokeColor="#1e1e1e" text="状态详情">
+      <relation target="" sidePair="top-top,center-center"/>
+    </text>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="Scale" target="n1_t1tg" tween="true" startValue="0,0" endValue="1,1" duration="6" ease="Circ.Out"/>
+    <item time="0" type="Scale" target="n3_8jnw" tween="true" startValue="0,0" endValue="1,1" duration="6"/>
+    <item time="0" type="Scale" target="n4_r1dp" tween="true" startValue="0,0" endValue="1,1" duration="6"/>
+  </transition>
+  <transition name="t1">
+    <item time="0" type="Scale" target="n1_t1tg" tween="true" startValue="1,1" endValue="0,0" duration="6"/>
+    <item time="0" type="Scale" target="n3_8jnw" tween="true" startValue="1,1" endValue="0,0" duration="6"/>
+    <item time="0" type="Scale" target="n4_r1dp" tween="true" startValue="1,1" endValue="0,0" duration="6"/>
+  </transition>
+</component>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="335,105">
+  <displayList>
+    <loader id="n0_91pf" name="icon" xy="0,0" size="335,115" url="image/uiLib/img_pop.png" fill="scaleFree"/>
+    <text id="n1_91pf" name="title" xy="22,45" size="245,49" fontSize="20" color="#dcd2be" vAlign="middle" leading="5" ubb="true" strokeColor="#000000" text="[color=#00cc33]点击法师[/color]按钮&#xA;可切换当前[color=#00cc33]出战[/color]职业为[color=#389dc1]法师[/color]"/>
+  </displayList>
+</component>

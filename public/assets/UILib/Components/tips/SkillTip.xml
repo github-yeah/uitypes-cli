@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="435,535">
+  <controller name="typeCtrl" pages="0,主动,1,被动" selected="0"/>
+  <controller name="stateCtrl" pages="0,未学习,1,学习,2,已满级" selected="0"/>
+  <controller name="isThump" pages="0,技能,1,重击技能" selected="0"/>
+  <displayList>
+    <image id="n0_srcx" name="skillBg" src="n98v5yznn" fileName="Images/bg_tips.png" pkg="ugjpa7s2" xy="0,0" size="435,535">
+      <gearDisplay controller="isThump" pages="0"/>
+      <relation target="n18_srcx" sidePair="bottomext-bottom"/>
+    </image>
+    <image id="n21_qelm" name="thump_skill" src="pn7n5yzpg" fileName="Images/icon_frame_bag1.png" pkg="ugjpa7s2" xy="0,0" size="435,535">
+      <gearDisplay controller="isThump" pages="1"/>
+      <relation target="n0_srcx" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_srcx" name="lineUp" src="94mi5yznm" fileName="Images/common/line.png" xy="5,146" size="424,2"/>
+    <image id="n2_srcx" name="lineDown" src="94mi5yznm" fileName="Images/common/line.png" xy="7,276" size="424,2">
+      <gearDisplay controller="stateCtrl" pages="0,1"/>
+      <gearXY controller="stateCtrl" pages="0,1,2" values="7,276|7,276|7,276"/>
+      <relation target="n10_srcx" sidePair="bottom-bottom,top-top"/>
+    </image>
+    <image id="n19_srcx" name="lineDown1" src="94mi5yznm" fileName="Images/common/line.png" xy="5,427" size="424,2">
+      <gearDisplay controller="stateCtrl" pages="1"/>
+      <gearXY controller="stateCtrl" pages="0,1,2" values="5,427|5,427|5,427"/>
+      <relation target="n18_srcx" sidePair="top-top"/>
+    </image>
+    <component id="n4_srcx" name="itemRender" src="n98v5yzst" fileName="Components/render/SkillRender.xml" xy="20,36"/>
+    <richtext id="n5_srcx" name="txtName" xy="171,10" pivot="0.5,0" size="93,26" fontSize="22" color="#66ccff" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="技能名称">
+      <relation target="" sidePair="center-center"/>
+    </richtext>
+    <text id="n6_srcx" name="txtType" xy="124,69" size="145,24" fontSize="20" color="#009900" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="类型：主动技能">
+      <gearText controller="typeCtrl" pages="1" values="类型：被动技能" default="类型：主动技能"/>
+    </text>
+    <text id="n7_srcx" name="txtLevel" xy="186,106" size="55,24" fontSize="20" color="#b49154" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="999级"/>
+    <text id="n8_srcx" name="txtCD" xy="138,160" size="65,24" fontSize="20" color="#b49154" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="0.85秒"/>
+    <text id="n9_srcx" name="txtTile" xy="40,191" size="105,24" fontSize="20" color="#cd7823" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="技能说明："/>
+    <richtext id="n10_srcx" name="txtDesc" xy="45,220" size="351,47" grayed="true" fontSize="20" color="#b49154" ubb="true" autoSize="height" strokeColor="#000000" text="尚未学习&#xA;等待配置数据&#xA;"/>
+    <text id="n11_srcx" name="txtNextLevel" xy="142,435" size="55,24" fontSize="20" color="#bfb5b1" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="999级">
+      <gearDisplay controller="stateCtrl" pages="1"/>
+      <relation target="n19_srcx" sidePair="width-width,top-bottom"/>
+    </text>
+    <text id="n12_srcx" name="txtProficiency" xy="142,465" size="35,24" fontSize="20" color="#bfb5b1" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="0/0">
+      <gearDisplay controller="stateCtrl" pages="1"/>
+      <relation target="n11_srcx" sidePair="width-width,top-bottom"/>
+    </text>
+    <text id="n13_srcx" name="n13" xy="80,495" size="275,22" fontSize="18" color="#009900" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#000000" text="熟练度获取：挂机或者使用技能书">
+      <gearDisplay controller="stateCtrl" pages="1"/>
+      <relation target="n12_srcx" sidePair="top-bottom"/>
+    </text>
+    <text id="n14_srcx" name="n14" xy="145,372" size="145,24" fontSize="20" color="#009900" strokeColor="#000000" text="当前技能已满级">
+      <gearDisplay controller="stateCtrl" pages="2"/>
+      <relation target="" sidePair="center-center"/>
+    </text>
+    <text id="n15_srcx" name="txtTile1" xy="40,284" size="105,24" fontSize="20" color="#ff0000" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="[技能效果]">
+      <gearDisplay controller="stateCtrl" pages="0,1"/>
+      <relation target="n2_srcx" sidePair="width-width,top-bottom"/>
+    </text>
+    <text id="n16_srcx" name="txtTile2" xy="40,368" size="105,24" fontSize="20" color="#ff0000" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="[特殊效果]">
+      <gearDisplay controller="stateCtrl" pages="0,1"/>
+      <relation target="n17_srcx" sidePair="width-width,top-bottom"/>
+    </text>
+    <richtext id="n17_srcx" name="skillHurt" xy="45,315" size="351,47" grayed="true" fontSize="20" color="#b49154" ubb="true" autoSize="height" strokeColor="#000000" text="尚未学习&#xA;1111">
+      <gearDisplay controller="stateCtrl" pages="0,1"/>
+      <gearLook controller="stateCtrl" pages="0" values="1,0,1,1" default="1,0,0,1"/>
+      <relation target="n15_srcx" sidePair="right-right,top-bottom"/>
+    </richtext>
+    <richtext id="n18_srcx" name="skillSpecial" xy="45,397" size="351,24" grayed="true" fontSize="20" color="#b49154" vAlign="middle" ubb="true" autoSize="height" strokeColor="#000000" text="无">
+      <gearDisplay controller="stateCtrl" pages="0,1"/>
+      <gearLook controller="stateCtrl" pages="0" values="1,0,1,1" default="1,0,0,1"/>
+      <relation target="n16_srcx" sidePair="width-width,top-bottom"/>
+    </richtext>
+    <text id="n22_u4f6" name="111" xy="124,106" size="65,24" fontSize="20" color="#b49154" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="等级："/>
+    <text id="n23_u4f6" name="22" xy="40,160" size="105,24" fontSize="20" color="#b49154" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="技能冷却："/>
+    <text id="n24_u4f6" name="33" xy="40,435" size="105,24" fontSize="20" color="#bfb5b1" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="下一等级：">
+      <gearDisplay controller="stateCtrl" pages="1"/>
+      <relation target="n19_srcx" sidePair="width-width,top-bottom"/>
+    </text>
+    <text id="n25_u4f6" name="44" xy="40,465" size="105,24" fontSize="20" color="#bfb5b1" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="熟 练 度： ">
+      <gearDisplay controller="stateCtrl" pages="1"/>
+      <relation target="n11_srcx" sidePair="width-width,top-bottom"/>
+    </text>
+  </displayList>
+  <relation target="n0_srcx" sidePair="width-width,height-height"/>
+</component>

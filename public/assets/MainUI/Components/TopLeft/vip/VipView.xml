@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="320,111" opaque="false" designImageLayer="1">
+  <displayList>
+    <image id="n15_cd48" name="iconFrame" src="wo21ilqx" fileName="Images/TopLeft/vip/iconFrame.png" xy="0,0" locked="true"/>
+    <image id="n18_cd48" name="iconTextVip" src="cd48ilu0" fileName="Images/TopLeft/vip/VIP.png" xy="7,88" locked="true"/>
+    <component id="n12_wo21" name="progress" src="cd48iltz" fileName="Components/TopLeft/vip/VipBar.xml" xy="92,43" size="195,17" locked="true">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <component id="n14_um3s" name="progressShare" src="pv88iluy" fileName="Components/TopLeft/vip/ProgressShare.xml" xy="13,15">
+      <ProgressBar value="55" max="100"/>
+    </component>
+    <component id="n9_wo21" name="btnVip" src="jodzljn" fileName="Components/emptyBtn.xml" xy="92,39" size="208,54" locked="true">
+      <Button icon="ui://tdl95htawo21ilqw"/>
+    </component>
+    <image id="n22_bs3c" name="iconRedVip" src="dakeilq9" fileName="Images/icon_Red.png" xy="280,12" visible="false"/>
+    <image id="n24_pv88" name="iconRedShare" src="dakeilq9" fileName="Images/icon_Red.png" xy="59,5" visible="false"/>
+    <text id="n21_gezk" name="txtDesc" xy="107,68" size="176,22" locked="true" fontSize="18" color="#bfaf80" vAlign="middle" strokeColor="#000000" text="击杀BOSS掉落VIP经验"/>
+    <text id="n20_cd48" name="txtLevel" xy="66,98" pivot="0.5,0.5" anchor="true" size="21,25" locked="true" font="ui://tdl95htacd48ilub" fontSize="18" color="#dcd2be" align="center" vAlign="middle" text="0"/>
+  </displayList>
+</component>

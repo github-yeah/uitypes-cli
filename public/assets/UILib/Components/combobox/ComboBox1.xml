@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="180,51" extention="ComboBox" designImageOffsetX="-180" designImageOffsetY="-34" designImageAlpha="100">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n2_vr4o" name="n2" src="sey15yzql" fileName="Images/common/check_Box.png" xy="0,0" size="184,51"/>
+    <image id="n0_vr4o" name="n0" src="vr4o2t" fileName="Images/arrow/arrow4.png" xy="131,1" pivot="0.5,0.5" size="49,48"/>
+    <richtext id="n1_vr4o" name="title" xy="5,13" size="118,26" fontSize="22" color="#e9e2b2" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#000000" singleLine="true" autoClearText="true" text=""/>
+  </displayList>
+  <ComboBox dropdown="ui://uionr2r4vr4o2w"/>
+</component>

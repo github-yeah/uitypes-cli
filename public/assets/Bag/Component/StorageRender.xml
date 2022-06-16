@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="82,84" designImage="ui://t55ptsa9rpqq1y" designImageOffsetX="-477" designImageOffsetY="-334" designImageAlpha="0" designImageLayer="1">
+  <displayList>
+    <component id="n9_rpqq" name="bagRender" src="9n2ng" fileName="Components/render/BagRender.xml" pkg="uionr2r4" xy="0,0"/>
+    <loader id="n10_rpqq" name="loaderCon" xy="0,54" size="82,28" align="center" vAlign="bottom"/>
+  </displayList>
+</component>

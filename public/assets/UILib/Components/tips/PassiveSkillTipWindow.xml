@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="380,310">
+  <displayList>
+    <image id="n21_qelm" name="thump_skill" src="n98v5yznn" fileName="Images/bg_tips.png" pkg="ugjpa7s2" xy="0,0" size="380,310">
+      <relation target="n26_r1dp" sidePair="bottomext-bottom"/>
+    </image>
+    <component id="n23_r1dp" name="itemRender" src="sxlo65yzrj" fileName="Components/render/SkillPRender.xml" xy="33,58"/>
+    <richtext id="n24_r1dp" name="txtName" xy="137,8" pivot="0.5,0" size="93,26" fontSize="22" color="#e6be78" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="技能名称">
+      <relation target="" sidePair="center-center"/>
+    </richtext>
+    <text id="n25_r1dp" name="txtLevel" xy="206,73" size="50,22" fontSize="18" color="#41dc00" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="999级"/>
+    <richtext id="n26_r1dp" name="txtDesc" xy="17,234" size="351,46" fontSize="18" color="#fff2d2" leading="6" ubb="true" autoSize="height" strokeColor="#000000" autoClearText="true" text="尚未学习&#xA;等待配置数据&#xA;"/>
+    <text id="n27_r1dp" name="n23" xy="154,73" size="59,22" fontSize="18" color="#ffe3a0" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="等级："/>
+    <text id="n28_r1dp" name="n28" xy="154,105" size="95,22" fontSize="18" color="#ffe3a0" vAlign="middle" strokeColor="#000000" text="能量消耗："/>
+    <text id="n29_r1dp" name="n29" xy="154,139" size="95,22" fontSize="18" color="#ffe3a0" text="冷却时间："/>
+    <text id="n30_r1dp" name="txtCost" xy="242,105" size="68,22" fontSize="18" color="#41dc00" strokeColor="#000000" text="2点能量"/>
+    <text id="n31_r1dp" name="txtCd" xy="242,139" size="32,22" fontSize="18" color="#41dc00" strokeColor="#000000" text="8秒"/>
+    <image id="n32_r1dp" name="n32" src="r1dp65yzu0" fileName="Images/common/img_tip_bg.png" xy="16,203" group="n34_r1dp"/>
+    <text id="n33_r1dp" name="txtTile" xy="16,204" size="113,22" group="n34_r1dp" fontSize="18" color="#ffe3a0" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="【技能说明】"/>
+    <group id="n34_r1dp" name="smGroup" xy="16,203" size="113,24" advanced="true" collapsed="true"/>
+    <image id="n35_r1dp" name="n35" src="j3ye65yzrt" fileName="Images/common/img_tips_line_2.png" xy="5,168"/>
+  </displayList>
+  <relation target="n21_qelm" sidePair="width-width,height-height"/>
+</component>

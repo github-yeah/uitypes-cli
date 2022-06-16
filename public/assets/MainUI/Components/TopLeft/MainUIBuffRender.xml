@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="320,80" extention="Button" designImage="ui://bc7rynhejcqzi70" designImageOffsetX="-211" designImageOffsetY="-124" designImageAlpha="57">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n4" name="icon" xy="12,20" size="36,36" url="ui://tdl95htakdp29h" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="middle-middle,left-left"/>
+    </loader>
+    <text id="n5_mrlh" name="text_name" xy="58,6" size="260,20" fontSize="16" color="#00c3e5" vAlign="middle" autoSize="none" strokeColor="#000000" text="免疫弱化"/>
+    <text id="n6_mrlh" name="text_time" xy="59,29" size="95,20" fontSize="16" color="#ff820f" vAlign="middle" autoSize="none" strokeColor="#000000" text="59:52:20"/>
+    <text id="n7_mrlh" name="text_attr" xy="58,51" size="260,20" fontSize="16" color="#dcdcd2" vAlign="middle" ubb="true" autoSize="height" strokeColor="#000000" autoClearText="true" text="一定时间内，免疫弱化效果"/>
+    <image id="n11_r1dp" name="n11" src="vr4o2u" fileName="Images/common/line_1.png" pkg="uionr2r4" xy="0,79" size="330,2">
+      <relation target="" sidePair="bottom-bottom"/>
+    </image>
+  </displayList>
+  <Button/>
+  <relation target="n7_mrlh" sidePair="height-height"/>
+</component>

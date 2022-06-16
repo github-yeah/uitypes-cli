@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="70,110" overflow="hidden">
+  <displayList>
+    <image id="n1_104sv" name="n1" src="104svilxi" fileName="Images/BottomMiddle/bg_mp.png" xy="0,0">
+      <relation target="" sidePair="bottom-bottom"/>
+    </image>
+  </displayList>
+</component>

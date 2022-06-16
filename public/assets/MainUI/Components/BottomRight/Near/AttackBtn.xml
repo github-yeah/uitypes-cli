@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="51,51" extention="Button">
+  <controller name="lockCtr" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n0_8s2y" name="n0" src="toljc1" fileName="Near/near_attack.png" pkg="ev17b9fd" xy="0,0">
+      <gearDisplay controller="lockCtr" pages="0"/>
+    </image>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.10"/>
+</component>

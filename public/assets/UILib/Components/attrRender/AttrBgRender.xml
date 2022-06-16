@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="330,30">
+  <displayList>
+    <image id="n5_urpz" name="n5" src="urpz65yzt1" fileName="Images/bg/img_attr_bg.png" xy="21,0"/>
+    <text id="n2_kb2b" name="txtName" xy="41,5" size="95,22" fontSize="18" color="#e6be78" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="最大生命：    "/>
+    <text id="n3_kb2b" name="txtValue" xy="159,3" size="125,24" fontSize="20" color="#41dc00" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="11199 - 1111"/>
+  </displayList>
+</component>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="160,65" opaque="false" designImageOffsetX="-308" designImageOffsetY="-255" designImageAlpha="34">
+  <displayList>
+    <list id="n3_u0k7" name="taskFunctionList" xy="0,2" size="160,65" lineGap="5" defaultItem="ui://tdl95htal0ar4g" autoItemSize="false">
+      <item title="首充大礼"/>
+    </list>
+  </displayList>
+</component>

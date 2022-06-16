@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="t55ptsa9" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="ngti0" name="BagRoleWindow.xml" path="/" exported="true"/>
+    <component id="ngti1f" name="ListView.xml" path="/Component/" exported="true"/>
+    <component id="s8vv1g" name="BagWindow.xml" path="/" exported="true"/>
+    <component id="rrzl0" name="BagStorageWindow.xml" path="/" exported="true"/>
+    <component id="ktn81p" name="StoragePageRender.xml" path="/Component/" exported="true"/>
+    <component id="jnkz1t" name="BagMallWindow.xml" path="/" exported="true"/>
+    <component id="jnkz1v" name="BagMallRender.xml" path="/Component/" exported="true"/>
+    <component id="rpqq21" name="StorageRender.xml" path="/Component/" exported="true"/>
+    <component id="sey123" name="BagView.xml" path="/" exported="true"/>
+    <component id="o6pb24" name="ItemRecycleWindow.xml" path="/" exported="true"/>
+    <component id="q81025" name="ItemRecycleRender.xml" path="/Component/" exported="true"/>
+    <component id="q81027" name="ItemRecycleItemRender.xml" path="/Component/" exported="true"/>
+    <component id="q81028" name="RecycleListView.xml" path="/Component/" exported="true"/>
+  </resources>
+  <publish name="Bag" npot="true"/>
+</packageDescription>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="58,58" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n3_dkke" name="n3" src="8vjkily3" fileName="Images/BottomMiddle/btn_smallBg.png" xy="0,0"/>
+    <image id="n8_dkke" name="n8" src="dkkevim12" fileName="Images/BottomMiddle/btn_msg.png" xy="11,10"/>
+    <image id="n6_dkke" name="n6" src="dkkevim11" fileName="Images/BottomMiddle/word_msg.png" xy="1,40"/>
+    <image id="n7_dkke" name="redPoint" src="dfdo65yzsh" fileName="Images/common/icon_redIcon.png" pkg="uionr2r4" xy="33,3"/>
+  </displayList>
+  <Button/>
+</component>

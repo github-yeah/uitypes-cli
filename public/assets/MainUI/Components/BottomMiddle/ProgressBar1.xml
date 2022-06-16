@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="118,16" extention="ProgressBar">
+  <displayList>
+    <image id="n0_if9t" name="n0" src="if9tvim0k" fileName="Images/BottomMiddle/firstCharge/img_charge_bg.png" xy="0,0" size="118,16">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_if9t" name="bar" src="if9tvim0l" fileName="Images/BottomMiddle/firstCharge/img_charge_pro_bg.png" xy="3,3"/>
+    <text id="n2_if9t" name="title" xy="0,-1" size="118,16" fontSize="14" color="#41dc00" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

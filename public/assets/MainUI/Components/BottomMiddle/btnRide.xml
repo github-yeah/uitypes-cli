@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="58,58" pivot="0.5,0.5" extention="Button" designImageOffsetX="-1255" designImageOffsetY="-92" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n11_8vjk" name="n11" src="8vjkily3" fileName="Images/BottomMiddle/btn_smallBg.png" xy="0,0"/>
+    <image id="n16_l1tz" name="n16" src="l1tzvilyp" fileName="Images/BottomMiddle/word_rideUp.png" xy="3,40">
+      <gearDisplay controller="button" pages="0,2"/>
+    </image>
+    <image id="n17_l1tz" name="n17" src="l1tzvilyn" fileName="Images/BottomMiddle/word_rideDown.png" xy="3,40">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <image id="n18_l1tz" name="n18" src="l1tzvilyo" fileName="Images/BottomMiddle/btn_rideUp.png" xy="12,10">
+      <gearDisplay controller="button" pages="0,2"/>
+    </image>
+    <image id="n19_l1tz" name="n19" src="l1tzvilym" fileName="Images/BottomMiddle/btn_rideDown.png" xy="12,10">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

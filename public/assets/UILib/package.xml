@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="uionr2r4" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="9n2ng" name="BagRender.xml" path="/Components/render/" exported="true"/>
+    <image id="9n2nh" name="icon_quality_4.png" path="/Images/item/" exported="true"/>
+    <image id="9n2ni" name="icon_quality_5.png" path="/Images/item/" exported="true"/>
+    <image id="9n2nj" name="icon_quality_6.png" path="/Images/item/" exported="true"/>
+    <image id="9n2nk" name="icon_quality_7.png" path="/Images/item/" exported="true"/>
+    <image id="9n2nl" name="icon_quality_3.png" path="/Images/item/" exported="true"/>
+    <image id="9n2nm" name="icon_quality_2.png" path="/Images/item/" exported="true"/>
+    <component id="9n2nn" name="EquipRender.xml" path="/Components/render/" exported="true"/>
+    <image id="9n2no" name="icon_equip.png" path="/Images/item/" exported="true" scale="9grid" scale9grid="20,20,40,40"/>
+    <image id="9n2nq" name="icon_selected.png" path="/Images/item/" exported="true"/>
+    <component id="9n2nr" name="RewardRender.xml" path="/Components/render/" exported="true"/>
+    <image id="9n2nx" name="102.png" path="/Images/attr/" exported="true"/>
+    <image id="9n2ny" name="attrBg.png" path="/Images/attr/" exported="true" scale="9grid" scale9grid="10,0,148,32"/>
+    <image id="9n2nz" name="icon_suo.png" path="/Images/item/" exported="true" scale=""/>
+    <image id="9n2n10" name="101.png" path="/Images/attr/" exported="true"/>
+    <image id="9n2n11" name="209.png" path="/Images/attr/" exported="true"/>
+    <component id="9n2n12" name="MoneyView.xml" path="/Components/money/" exported="true"/>
+    <component id="9n2n13" name="MoneyItem.xml" path="/Components/money/" exported="true"/>
+    <image id="uwdi14" name="icon_red.png" path="/Images/common/" exported="true" scale=""/>
+    <image id="nhb218" name="icon_quality_1.png" path="/Images/item/" exported="true"/>
+    <component id="io5v1b" name="FaceRender.xml" path="/Components/render/" exported="true"/>
+    <image id="dnqw1k" name="icon_item.png" path="/Images/item/" exported="true"/>
+    <image id="90sg1u" name="iconLock.png" path="/Images/item/" exported="true"/>
+    <image id="nd8l1v" name="tab1_s.png" path="/Images/tab/"/>
+    <image id="nd8l1w" name="tab1.png" path="/Images/tab/"/>
+    <component id="nd8l1x" name="tab_1.xml" path="/Components/tab/" exported="true"/>
+    <image id="nd8l22" name="arrow2.png" path="/Images/arrow/" exported="true"/>
+    <image id="nd8l23" name="arrow3.png" path="/Images/arrow/" exported="true"/>
+    <image id="nd8l24" name="check_1.png" path="/Images/common/" exported="true"/>
+    <image id="nd8l25" name="check_2.png" path="/Images/common/" exported="true" scale="" scale9grid="12,12,14,14"/>
+    <component id="nd8l26" name="CheckBox1.xml" path="/Components/button/" exported="true"/>
+    <image id="sk0m28" name="progressBarBG.png" path="/Images/progressBar/" scale="9grid" scale9grid="23,0,45,29"/>
+    <image id="sk0m29" name="progress_yellow.png" path="/Images/progressBar/" exported="true" scale="9grid" scale9grid="9,0,20,14"/>
+    <image id="sk0m2a" name="progress_green.png" path="/Images/progressBar/" scale="9grid" scale9grid="13,0,26,22"/>
+    <component id="sk0m2b" name="progressBar_yellow.xml" path="/Components/progressBar/" exported="true"/>
+    <component id="sk0m2c" name="progressBar_green.xml" path="/Components/progressBar/" exported="true"/>
+    <image id="u0ru2f" name="greenRdoBtn.png" path="/Images/common/" exported="true"/>
+    <image id="u0ru2g" name="greenRdoBtnBG.png" path="/Images/common/" exported="true"/>
+    <component id="cstz2h" name="comTitle.xml" path="/Components/back/" exported="true"/>
+    <image id="rpqq2i" name="titleFlower.png" path="/Images/common/" exported="true" scale="9grid" scale9grid="0,4,33,8"/>
+    <component id="rpqq2n" name="ButtonPage1.xml" path="/Components/button/" exported="true"/>
+    <image id="vr4o2t" name="arrow4.png" path="/Images/arrow/" exported="true"/>
+    <image id="vr4o2u" name="line_1.png" path="/Images/common/" exported="true" scale="" scale9grid="15,3,30,6"/>
+    <component id="vr4o2v" name="ComboBox1_item.xml" path="/Components/combobox/"/>
+    <component id="vr4o2w" name="ComboBox1_popup.xml" path="/Components/combobox/"/>
+    <component id="vr4o2x" name="ComboBox1.xml" path="/Components/combobox/" exported="true"/>
+    <component id="fn3430" name="ItemCFGRender.xml" path="/Components/render/" exported="true"/>
+    <component id="lp1u5yzp0" name="ItemCustomRender.xml" path="/Components/render/" exported="true"/>
+    <image id="cle55yzp2" name="star_1.png" path="/Images/star/" exported="true"/>
+    <component id="e8ir5yzp3" name="ButtonText.xml" path="/Components/button/" exported="true"/>
+    <image id="e8ir5yzp4" name="btn6.png" path="/Images/button/" exported="true"/>
+    <component id="e8ir5yzp5" name="Button6.xml" path="/Components/button/" exported="true"/>
+    <image id="kb2b5yzp6" name="arrow5.png" path="/Images/arrow/" exported="true"/>
+    <image id="kb2b5yzpa" name="arrow6.png" path="/Images/arrow/" exported="true"/>
+    <component id="kb2b5yzpb" name="AttrRender.xml" path="/Components/attrRender/" exported="true"/>
+    <image id="kb2b5yzpe" name="progress_white.png" path="/Images/progressBar/"/>
+    <component id="kb2b5yzpf" name="progressBar_white.xml" path="/Components/progressBar/" exported="true"/>
+    <image id="e9ek5yzpk" name="-.png" path="/Images/common/"/>
+    <image id="e9ek5yzpl" name="+.png" path="/Images/common/" scale=""/>
+    <image id="e9ek5yzpm" name="MAX.png" path="/Images/common/"/>
+    <component id="e9ek5yzpn" name="ButtonMinus.xml" path="/Components/button/" exported="true"/>
+    <component id="e9ek5yzop" name="ButtonAdd.xml" path="/Components/button/" exported="true"/>
+    <component id="e9ek5yzpo" name="ButtonMax.xml" path="/Components/button/" exported="true"/>
+    <component id="b6kf5yzpq" name="ButtonHelp.xml" path="/Components/button/" exported="true"/>
+    <image id="b6kf5yzpr" name="icon_equip_sel.png" path="/Images/item/" exported="true" scale="9grid" scale9grid="23,23,46,46"/>
+    <image id="b6kf5yzpt" name="btnHelp.png" path="/Images/button/" exported="true" scale=""/>
+    <component id="kg135yzpv" name="CheckBox2.xml" path="/Components/button/" exported="true"/>
+    <component id="iz2h5yzpw" name="bar_green.xml" path="/Components/progressBar/"/>
+    <component id="iz2h5yzpx" name="bar_white.xml" path="/Components/progressBar/"/>
+    <component id="iz2h5yzpy" name="bar_yellow.xml" path="/Components/progressBar/"/>
+    <component id="s3co5yzq0" name="tab_3.xml" path="/Components/tab/" exported="true"/>
+    <image id="s3co5yzq1" name="tab3.png" path="/Images/tab/" exported="true"/>
+    <image id="s3co5yzq2" name="tab3_s.png" path="/Images/tab/" exported="true"/>
+    <image id="w3sv5yzq6" name="btn8.png" path="/Images/button/" exported="true"/>
+    <component id="w3sv5yzq7" name="Button8.xml" path="/Components/button/" exported="true"/>
+    <image id="is0y5yzq8" name="getImg.png" path="/Images/common/" exported="true"/>
+    <component id="xqwt5yzqa" name="RoleInView.xml" path="/Components/roleInView/" exported="true"/>
+    <image id="dkwl5yzqb" name="tab0.png" path="/Images/tab/"/>
+    <image id="dkwl5yzqc" name="tab0_s.png" path="/Images/tab/"/>
+    <component id="dkwl5yzqd" name="tab_0.xml" path="/Components/tab/" exported="true"/>
+    <image id="sey15yzql" name="check_Box.png" path="/Images/common/" exported="true" scale="9grid" scale9grid="10,10,46,31"/>
+    <image id="p3lx5yzqm" name="titleNextAttr.png" path="/Images/common/" exported="true"/>
+    <image id="p3lx5yzqn" name="titleCurAttr.png" path="/Images/common/" exported="true"/>
+    <image id="p3lx5yzqo" name="btn2_green.png" path="/Images/button/" exported="true"/>
+    <image id="p3lx5yzqp" name="btn2_orange.png" path="/Images/button/" exported="true" scale="9grid" scale9grid="54,15,15,10"/>
+    <image id="p3lx5yzqq" name="btn2_blue.png" path="/Images/button/" exported="true"/>
+    <component id="p3lx5yzqu" name="Button2_Blue.xml" path="/Components/button/" exported="true"/>
+    <component id="p3lx5yzqw" name="Button2_Green.xml" path="/Components/button/" exported="true"/>
+    <component id="p3lx5yzqx" name="Button2_Orange.xml" path="/Components/button/" exported="true"/>
+    <image id="sey15yzqy" name="getImgGray.png" path="/Images/common/" exported="true"/>
+    <component id="ltvk5yzqz" name="StartRender.xml" path="/Components/render/" exported="true"/>
+    <image id="ltvk5yzr0" name="star2_1.png" path="/Images/star/" exported="true"/>
+    <image id="ltvk5yzr1" name="star2_0.png" path="/Images/star/" exported="true"/>
+    <image id="i1n05yzr2" name="btn9.jpg" path="/Images/button/" exported="true"/>
+    <component id="i1n05yzr3" name="Button9.xml" path="/Components/button/" exported="true"/>
+    <image id="mn9h5yzr4" name="progressBarBG2.png" path="/Images/progressBar/" exported="true" scale="9grid" scale9grid="35,0,28,44"/>
+    <image id="mn9h5yzr6" name="btnGetWay.png" path="/Images/button/" exported="true"/>
+    <component id="mn9h5yzr7" name="ButtonGetWay.xml" path="/Components/button/" exported="true"/>
+    <image id="jsfy5yzr8" name="btn2_red.png" path="/Images/button/" exported="true"/>
+    <component id="jsfy5yzr9" name="Button2_Red.xml" path="/Components/button/" exported="true"/>
+    <image id="l2ri5yzrf" name="lockSkill.png" path="/Images/common/" exported="true"/>
+    <component id="lh565yzrg" name="ButtonArrow.xml" path="/Components/button/" exported="true"/>
+    <image id="lh565yzrh" name="arrow7.png" path="/Images/arrow/" exported="true"/>
+    <image id="odqwu" name="btn9_small.jpg" path="/Images/button/" exported="true"/>
+    <image id="odqwt" name="btn8_small.jpg" path="/Images/button/" exported="true"/>
+    <component id="odqw5yzri" name="Button8_small.xml" path="/Components/button/" exported="true"/>
+    <component id="odqw5yzrj" name="Button9_small.xml" path="/Components/button/" exported="true"/>
+    <component id="iomt5yzob" name="TypeSelecte.xml" path="/Components/combobox/" exported="true"/>
+    <component id="iomt5yzo9" name="TypeSelecte_item.xml" path="/Components/combobox/"/>
+    <component id="l88k5yzoe" name="TypeSelecte_popup.xml" path="/Components/combobox/"/>
+    <image id="iomt5yzo5" name="open.png" path="/Images/common/"/>
+    <component id="tzkr5yzrk" name="CheckBox3.xml" path="/Components/button/" exported="true"/>
+    <component id="enhi5yzrm" name="DisLimitView.xml" path="/Components/DisLimit/" exported="true"/>
+    <component id="k3sv5yzrn" name="RewardImgRender.xml" path="/Components/render/" exported="true"/>
+    <image id="k3sv5yzro" name="icon_item_2.png" path="/Images/item/" exported="true"/>
+    <image id="wwob5yzrp" name="iconGiftView.png" path="/Images/disLimit/"/>
+    <image id="wwob5yzrq" name="iconGift.png" path="/Images/disLimit/"/>
+    <component id="wwob5yzrr" name="ButtonDisLimit.xml" path="/Components/DisLimit/"/>
+    <image id="wwob5yzrs" name="iconGiftText.png" path="/Images/disLimit/"/>
+    <component id="im2m21" name="tab_4.xml" path="/Components/tab/" exported="true"/>
+    <image id="im2m20" name="tab4.png" path="/Images/tab/" exported="true"/>
+    <image id="im2m1z" name="tab4_s.png" path="/Images/tab/" exported="true"/>
+    <component id="im2m26" name="ButtonClose.xml" path="/Components/button/" exported="true"/>
+    <image id="im2m25" name="close.png" path="/Images/button/" exported="true"/>
+    <image id="h9bh5yzru" name="icon_item1.png" path="/Images/item/" exported="true"/>
+    <component id="h9bh5yzrv" name="RewardRender1.xml" path="/Components/render/" exported="true"/>
+    <component id="y1vf5yzrw" name="Button10.xml" path="/Components/button/" exported="true"/>
+    <image id="y1vf5yzrx" name="icon_item2.png" path="/Images/item/" exported="true"/>
+    <image id="m6pk5yzrz" name="line_2.png" path="/Images/common/" exported="true"/>
+    <image id="b4135yzs0" name="tab5.png" path="/Images/tab/" exported="true"/>
+    <image id="b4135yzs1" name="tab5_s.png" path="/Images/tab/" exported="true"/>
+    <image id="mkpg5yzs2" name="icon_item3.png" path="/Images/item/" exported="true"/>
+    <component id="93z4m" name="ButtonClose1.xml" path="/Components/button/" exported="true"/>
+    <image id="93z4l" name="close1.png" path="/Images/button/" exported="true"/>
+    <image id="t0n75yzs4" name="maxBtn.png" path="/Images/button/"/>
+    <image id="t0n75yzs5" name="minBtn.png" path="/Images/button/"/>
+    <component id="t0n75yzs7" name="ButtonMax1.xml" path="/Components/button/" exported="true"/>
+    <component id="t0n75yzs8" name="ButtonMin.xml" path="/Components/button/" exported="true"/>
+    <image id="pv885yzsc" name="tab6.png" path="/Images/tab/" exported="true"/>
+    <image id="pv885yzsd" name="tab6_s.png" path="/Images/tab/" exported="true"/>
+    <image id="pv885yzse" name="line_3.png" path="/Images/common/" exported="true" scale="9grid" scale9grid="8,22,16,15"/>
+    <image id="pv885yzsf" name="close2.png" path="/Images/button/" exported="true"/>
+    <component id="pv885yzsg" name="ButtonClose2.xml" path="/Components/button/" exported="true"/>
+    <image id="nyu35yzsh" name="slider0_0.png" path="/Images/slider/"/>
+    <image id="nyu35yzsi" name="slider0_1.png" path="/Images/slider/"/>
+    <image id="nyu35yzsj" name="slider0_2.png" path="/Images/slider/" scale="9grid" scale9grid="14,4,28,4"/>
+    <component id="nyu35yzsk" name="Slider1_grip.xml" path="/Components/slider/"/>
+    <component id="nyu35yzsl" name="Slider1.xml" path="/Components/slider/" exported="true"/>
+    <component id="nyu35yzsm" name="ButtonAdd1.xml" path="/Components/button/" exported="true"/>
+    <component id="nyu35yzsn" name="ButtonMinus1.xml" path="/Components/button/" exported="true"/>
+    <image id="nyu35yzso" name="btnAdd.png" path="/Images/button/" exported="true"/>
+    <image id="nyu35yzsp" name="btnMins.png" path="/Images/button/" exported="true"/>
+    <component id="nyu35yzsq" name="comSlider1.xml" path="/Components/slider/"/>
+    <component id="n98v5yzst" name="SkillRender.xml" path="/Components/render/" exported="true"/>
+    <component id="73px65yzqd" name="ProgressBar3.xml" path="/Components/progressBar/" exported="true"/>
+    <image id="73px65yzqe" name="progress3_0.png" path="/Images/progressBar/"/>
+    <image id="73px65yzqf" name="progress3_1.png" path="/Images/progressBar/"/>
+    <component id="jfof65yzqi" name="ProgressBar4.xml" path="/Components/progressBar/" exported="true"/>
+    <image id="jfof65yzqj" name="progress4_0.png" path="/Images/progressBar/" scale="9grid" scale9grid="11,5,5,10"/>
+    <image id="jfof65yzqk" name="progress4_1.png" path="/Images/progressBar/" scale="9grid" scale9grid="5,4,10,8"/>
+    <image id="j8q15yzlp" name="button2.png" path="/Images/button/" exported="true"/>
+    <image id="j8q15yzlo" name="button3.png" path="/Images/button/" exported="true"/>
+    <image id="um0d5yzkg" name="button1.png" path="/Images/button/" exported="true"/>
+    <image id="94mi5yzni" name="com_add_green.png" path="/Images/common/" exported="true"/>
+    <image id="jcf05yzpn" name="com_angle_selected1.png" path="/Images/common/" exported="true" scale="9grid" scale9grid="28,28,56,56"/>
+    <image id="94mi5yznm" name="line.png" path="/Images/common/" exported="true"/>
+    <image id="8a0gdq" name="title_xian.png" path="/Images/common/" exported="true" scale="9grid" scale9grid="56,1,112,1"/>
+    <image id="utvs65yzqx" name="icon_deal.png" path="/Images/item/" exported="true"/>
+    <image id="94mi5yznn" name="icon_lock.png" path="/Images/common/" exported="true"/>
+    <image id="mpya5yzlt" name="icon_tip_quality_1.png" path="/Images/item/" exported="true"/>
+    <image id="mpya5yzlz" name="icon_tip_quality_2.png" path="/Images/item/" exported="true"/>
+    <image id="mpya5yzly" name="icon_tip_quality_3.png" path="/Images/item/" exported="true"/>
+    <image id="mpya5yzm0" name="icon_tip_quality_4.png" path="/Images/item/" exported="true"/>
+    <image id="mpya5yzlv" name="icon_tip_quality_5.png" path="/Images/item/" exported="true"/>
+    <image id="mpya5yzlw" name="icon_tip_quality_6.png" path="/Images/item/" exported="true"/>
+    <image id="mpya5yzlx" name="icon_tip_quality_7.png" path="/Images/item/" exported="true"/>
+    <image id="t0n7f" name="number.jpg" path="/Images/common/" exported="true" scale="9grid" scale9grid="17,13,34,26"/>
+    <image id="trfz65yzqy" name="arrow8.png" path="/Images/arrow/" exported="true"/>
+    <component id="utfj65yzr1" name="bar_green.xml" path="/Components/progressbar/"/>
+    <component id="utfj65yzr2" name="bar_white.xml" path="/Components/progressbar/"/>
+    <component id="utfj65yzr3" name="bar_yellow.xml" path="/Components/progressbar/"/>
+    <component id="utfj65yzr4" name="ProgressBar3.xml" path="/Components/progressbar/"/>
+    <component id="utfj65yzr5" name="ProgressBar4.xml" path="/Components/progressbar/"/>
+    <component id="utfj65yzr6" name="progressBar_green.xml" path="/Components/progressbar/"/>
+    <component id="utfj65yzr7" name="progressBar_white.xml" path="/Components/progressbar/"/>
+    <component id="utfj65yzr8" name="progressBar_yellow.xml" path="/Components/progressbar/"/>
+    <image id="utfj65yzr9" name="btnFrame.png" path="/Images/button/" exported="true"/>
+    <component id="w11i65yzrc" name="PassiveSkillTipWindow.xml" path="/Components/tips/" exported="true"/>
+    <component id="w11i65yzrd" name="SkillTip.xml" path="/Components/tips/" exported="true"/>
+    <component id="poq265yzre" name="SkillCFGTip.xml" path="/Components/tips/" exported="true"/>
+    <component id="t69465yzrf" name="GuardRender.xml" path="/Components/guardView/" exported="true"/>
+    <component id="t69465yzrg" name="GuardView.xml" path="/Components/guardView/" exported="true"/>
+    <image id="sxlo65yzri" name="iconSkillBg.png" path="/Images/common/" exported="true"/>
+    <component id="sxlo65yzrj" name="SkillPRender.xml" path="/Components/render/" exported="true"/>
+    <image id="rmzj65yzrk" name="cant.png" path="/Images/common/" exported="true"/>
+    <image id="b9q765yzrl" name="img_back_1.png" path="/Images/bg/" exported="true" scale="9grid" scale9grid="20,20,78,56"/>
+    <image id="b9q765yzrm" name="img_back_2.png" path="/Images/bg/" exported="true" scale="9grid" scale9grid="20,20,53,68"/>
+    <image id="b9q765yzrn" name="img_input_1.png" path="/Images/bg/" exported="true" scale="9grid" scale9grid="15,15,16,16"/>
+    <image id="b9q765yzrp" name="com_add_yellow.png" path="/Images/common/" exported="true"/>
+    <component id="j3ye65yzrr" name="ButtonAdd3.xml" path="/Components/button/" exported="true"/>
+    <image id="j3ye65yzrs" name="img_tips_line.png" path="/Images/common/" exported="true"/>
+    <image id="j3ye65yzrt" name="img_tips_line_2.png" path="/Images/common/" exported="true"/>
+    <image id="j3ye65yzru" name="img_add.png" path="/Images/common/"/>
+    <image id="j3ye65yzrv" name="img_minus.png" path="/Images/common/"/>
+    <image id="j3ye65yzrw" name="img_max.png" path="/Images/common/"/>
+    <image id="mejd65yzrx" name="arrow10.png" path="/Images/arrow/"/>
+    <image id="mejd65yzry" name="arrow9.png" path="/Images/arrow/"/>
+    <component id="mejd65yzrz" name="ButtonArrow1.xml" path="/Components/button/" exported="true"/>
+    <image id="wmu965yzs0" name="btnSeach.png" path="/Images/button/"/>
+    <component id="wmu965yzs1" name="ButtonSearch.xml" path="/Components/button/" exported="true"/>
+    <component id="wmu965yzs2" name="ButtonAdd2.xml" path="/Components/button/" exported="true"/>
+    <image id="wmu965yzs3" name="btnAdd1.png" path="/Images/button/" exported="true"/>
+    <component id="v8zu65yzs4" name="ComboBox2.xml" path="/Components/combobox/" exported="true"/>
+    <component id="v8zu65yzs5" name="ComboBox2_item.xml" path="/Components/combobox/"/>
+    <component id="v8zu65yzs6" name="ComboBox2_popup.xml" path="/Components/combobox/"/>
+    <image id="neao65yzs7" name="btn11.png" path="/Images/button/" exported="true" scale="9grid" scale9grid="90,17,19,6" gridTile="3"/>
+    <image id="neao65yzs8" name="img_render_bg.png" path="/Images/bg/" exported="true" scale="9grid" scale9grid="26,12,52,22"/>
+    <component id="neao65yzs9" name="Button11.xml" path="/Components/button/" exported="true"/>
+    <image id="p8p965yzsf" name="tab8.png" path="/Images/tab/" exported="true"/>
+    <image id="p8p965yzsg" name="tab8_s.png" path="/Images/tab/" exported="true"/>
+    <image id="dfdo65yzsh" name="icon_redIcon.png" path="/Images/common/" exported="true"/>
+    <image id="ovte65yzsi" name="tab7.png" path="/Images/tab/" exported="true"/>
+    <image id="ovte65yzsj" name="tab7_s.png" path="/Images/tab/" exported="true"/>
+    <image id="ovte65yzsk" name="icon_quality_8.png" path="/Images/item/" exported="true"/>
+    <image id="ovte65yzsl" name="icon_quality_9.png" path="/Images/item/" exported="true"/>
+    <image id="ovte65yzsm" name="icon_tip_quality_8.png" path="/Images/item/" exported="true"/>
+    <image id="ovte65yzsn" name="icon_tip_quality_9.png" path="/Images/item/" exported="true"/>
+    <image id="ovte65yzso" name="icon_redNew.png" path="/Images/common/"/>
+    <image id="kh2465yzsp" name="img_input_bg.png" path="/Images/attr/" exported="true" scale="9grid" scale9grid="12,12,22,22"/>
+    <image id="fpi365yzsq" name="img_star_0.png" path="/Images/star/" exported="true"/>
+    <image id="fpi365yzsr" name="img_star_1.png" path="/Images/star/" exported="true"/>
+    <component id="fpi365yzss" name="StarRender.xml" path="/Components/render/" exported="true"/>
+    <image id="jibf65yzst" name="img_title_bg1.png" path="/Images/bg/" exported="true" scale="9grid" scale9grid="50,9,14,14"/>
+    <component id="sor565yzsu" name="Button12.xml" path="/Components/button/" exported="true"/>
+    <component id="sor565yzsv" name="Button13.xml" path="/Components/button/" exported="true"/>
+    <image id="sor565yzsw" name="btn12.png" path="/Images/button/" exported="true"/>
+    <image id="sor565yzsx" name="btn13.png" path="/Images/button/" exported="true"/>
+    <image id="ozpc65yzsy" name="star_black.png" path="/Images/star/" exported="true"/>
+    <image id="ozpc65yzsz" name="star_light.png" path="/Images/star/" exported="true"/>
+    <component id="urpz65yzt0" name="AttrBgRender.xml" path="/Components/attrRender/" exported="true"/>
+    <image id="urpz65yzt1" name="img_attr_bg.png" path="/Images/bg/" exported="true" scale="9grid" scale9grid="71,8,142,16"/>
+    <image id="f3tl65yzt2" name="img_add1.png" path="/Images/common/"/>
+    <image id="f3tl65yzt3" name="img_minus1.png" path="/Images/common/"/>
+    <component id="f3tl65yzt4" name="ButtonAdd4.xml" path="/Components/button/" exported="true"/>
+    <component id="f3tl65yzt5" name="ButtonMinus2.xml" path="/Components/button/" exported="true"/>
+    <component id="qbkp65yzt6" name="tab_5.xml" path="/Components/tab/" exported="true"/>
+    <image id="qm2d65yzt7" name="img_fight_bg.png" path="/Images/fight/" exported="true"/>
+    <image id="qm2d65yzt8" name="img_fight_title.png" path="/Images/fight/" exported="true"/>
+    <image id="qm2d65yzt9" name="0.png" path="/Images/fight/font/"/>
+    <image id="qm2d65yzta" name="1.png" path="/Images/fight/font/"/>
+    <image id="qm2d65yztb" name="2.png" path="/Images/fight/font/"/>
+    <image id="qm2d65yztc" name="3.png" path="/Images/fight/font/"/>
+    <image id="qm2d65yztd" name="4.png" path="/Images/fight/font/"/>
+    <image id="qm2d65yzte" name="5.png" path="/Images/fight/font/"/>
+    <image id="qm2d65yztf" name="6.png" path="/Images/fight/font/"/>
+    <image id="qm2d65yztg" name="7.png" path="/Images/fight/font/"/>
+    <image id="qm2d65yzth" name="8.png" path="/Images/fight/font/"/>
+    <image id="qm2d65yzti" name="9.png" path="/Images/fight/font/"/>
+    <font id="qm2d65yztj" name="fightFont.fnt" path="/Images/fight/font/" exported="true"/>
+    <image id="941n65yztk" name="img_lj.png" path="/Images/common/" exported="true"/>
+    <image id="jckm65yztl" name="img_attr_bg1.png" path="/Images/bg/" exported="true" scale="9grid" scale9grid="50,8,81,10"/>
+    <image id="jmom65yztm" name="arrow11.png" path="/Images/arrow/" exported="true"/>
+    <component id="gb1o65yztn" name="RewardRender2.xml" path="/Components/render/" exported="true"/>
+    <image id="gb1o65yzto" name="icon_item4.png" path="/Images/item/" exported="true"/>
+    <image id="108dn65yztq" name="arrow12.png" path="/Images/arrow/" exported="true"/>
+    <image id="108dn65yztr" name="arrow13.png" path="/Images/arrow/" exported="true"/>
+    <component id="hwff65yztp" name="Button111.xml" path="/Components/button/" exported="true"/>
+    <image id="gtku65yztq" name="slider1_0.png" path="/Images/slider/"/>
+    <image id="gtku65yztr" name="slider1_1.png" path="/Images/slider/" scale="9grid" scale9grid="38,5,76,10"/>
+    <image id="gtku65yzts" name="slider1_2.png" path="/Images/slider/" scale="9grid" scale9grid="40,10,86,8"/>
+    <image id="gtku65yztt" name="maxBtn1.png" path="/Images/button/"/>
+    <image id="gtku65yztu" name="minBtn2.png" path="/Images/button/"/>
+    <component id="gtku65yztv" name="ButtonMax2.xml" path="/Components/button/" exported="true"/>
+    <component id="gtku65yztw" name="ButtonMin2.xml" path="/Components/button/" exported="true"/>
+    <component id="gtku65yztx" name="comSilder2.xml" path="/Components/slider/"/>
+    <component id="gtku65yzty" name="Slider2_grip.xml" path="/Components/slider/"/>
+    <component id="gtku65yztz" name="Slider2.xml" path="/Components/slider/" exported="true"/>
+    <image id="r1dp65yzu0" name="img_tip_bg.png" path="/Images/common/" exported="true"/>
+    <component id="eukm1a" name="HolyBeastRender.xml" path="/Components/render/" exported="true"/>
+    <component id="ms4m65yzu1" name="Button14.xml" path="/Components/button/" exported="true"/>
+    <image id="ms4m65yzu2" name="img_holy_bg.png" path="/Images/item/"/>
+    <image id="ms4m65yzu3" name="btn14.png" path="/Images/button/" exported="true"/>
+    <image id="f78z65yzu4" name="icon_holy_beast_quality_2.png" path="/Images/item/" exported="true"/>
+    <image id="f78z65yzu5" name="icon_holy_beast_quality_3.png" path="/Images/item/" exported="true"/>
+    <image id="f78z65yzu6" name="icon_holy_beast_quality_4.png" path="/Images/item/" exported="true"/>
+    <image id="f78z65yzu7" name="icon_holy_beast_quality_5.png" path="/Images/item/" exported="true"/>
+    <image id="f78z65yzu8" name="icon_holy_beast_quality_6.png" path="/Images/item/" exported="true"/>
+    <image id="f78z65yzu9" name="icon_holy_beast_quality_7.png" path="/Images/item/" exported="true"/>
+    <image id="f78z65yzua" name="icon_holy_beast_quality_8.png" path="/Images/item/" exported="true"/>
+    <image id="f78z65yzub" name="icon_holy_beast_quality_9.png" path="/Images/item/" exported="true"/>
+    <image id="g7qz65yzu4" name="btn15.png" path="/Images/button/" exported="true" scale="9grid" scale9grid="46,28,29,4"/>
+    <component id="g7qz65yzu5" name="Button15.xml" path="/Components/button/" exported="true"/>
+    <image id="jwff65yzuc" name="arrow14.png" path="/Images/arrow/"/>
+    <component id="jwff65yzud" name="ButtonArrow2.xml" path="/Components/button/" exported="true"/>
+    <image id="u9hy65yzue" name="tab9.png" path="/Images/tab/" exported="true"/>
+    <image id="u9hy65yzuf" name="tab9_s.png" path="/Images/tab/" exported="true"/>
+    <component id="btgd65yzug" name="tab_6.xml" path="/Components/tab/" exported="true"/>
+    <component id="aix465yzuh" name="comTaskTitle.xml" path="/Components/back/" exported="true"/>
+    <image id="wzkd65yzuk" name="img_title_bg.png" path="/Images/bg/" exported="true" scale="9grid" scale9grid="16,6,22,12"/>
+    <image id="wzkd65yzul" name="88888888.png" path="/Images/attr/" exported="true"/>
+    <image id="vny365yzum" name="img_rhombus.png" path="/Images/common/" exported="true"/>
+    <image id="vny365yzun" name="titleFlower2.png" path="/Images/common/"/>
+    <component id="vny365yzuo" name="comYellowTitle.xml" path="/Components/back/" exported="true"/>
+    <component id="ghou65yzup" name="RewardRenderSmall.xml" path="/Components/render/" exported="true"/>
+    <image id="ghou65yzuq" name="icon_itemmini.png" path="/Images/item/" exported="true"/>
+    <image id="ggyj65yzur" name="icon_item_3.png" path="/Images/item/" exported="true"/>
+    <image id="ik3w65yzus" name="icon_itemmini1.png" path="/Images/item/" exported="true"/>
+    <component id="lsmq65yzut" name="tab_10.xml" path="/Components/tab/" exported="true"/>
+    <image id="lsmq65yzuu" name="tab10.png" path="/Images/tab/" exported="true"/>
+    <image id="lsmq65yzuv" name="tab10_s.png" path="/Images/tab/" exported="true"/>
+    <image id="l1c265yzuw" name="img_arrow.png" path="/Images/button/" exported="true"/>
+    <image id="gj7q65yzux" name="icon_itemmini2.png" path="/Images/item/" exported="true"/>
+    <image id="bkkd65yzuy" name="img_money_bg.png" path="/Images/bg/" exported="true"/>
+    <image id="bkkd65yzuz" name="img_top_common.png" path="/Images/bg/" exported="true" scale="9grid" scale9grid="204,37,409,25"/>
+    <component id="6yzs65yzv0" name="SkillTalentTipWindow.xml" path="/Components/tips/" exported="true"/>
+    <image id="za5865yzv1" name="btn16.png" path="/Images/button/" exported="true"/>
+    <component id="za5865yzv2" name="Button16.xml" path="/Components/button/" exported="true"/>
+    <image id="qcrg65yzv3" name="img_complete.png" path="/Images/common/" exported="true"/>
+    <image id="nvsj65yzv4" name="129.png" path="/Images/attr/" exported="true"/>
+    <image id="qkrg65yzv5" name="132.png" path="/Images/attr/" exported="true"/>
+    <component id="l4yq65yzv6" name="ButtonLabel.xml" path="/Components/button/" exported="true"/>
+    <image id="nuap65yzv7" name="btn17.png" path="/Images/button/"/>
+    <component id="nuap65yzv8" name="Button17.xml" path="/Components/button/" exported="true"/>
+    <component id="cjq365yzv9" name="Button14_1.xml" path="/Components/button/" exported="true"/>
+    <image id="nuap65yzv9" name="line_4.png" path="/Images/common/" exported="true"/>
+    <image id="nuap65yzva" name="img_render_bg1.png" path="/Images/bg/" exported="true"/>
+    <component id="navs65yzvb" name="tab_11.xml" path="/Components/tab/" exported="true"/>
+    <component id="navs65yzvc" name="Button14_s.xml" path="/Components/button/"/>
+    <component id="hp0e65yzve" name="tab_12.xml" path="/Components/tab/" exported="true"/>
+    <image id="hp0e65yzvf" name="tab12.png" path="/Images/tab/"/>
+    <image id="hp0e65yzvg" name="tab12_s.png" path="/Images/tab/"/>
+    <component id="ilde26" name="PassiveSkillExtraTipWindow.xml" path="/Components/tips/" exported="true"/>
+    <image id="sqdi65yzvi" name="btn10.png" path="/Images/button/"/>
+    <image id="pw3q65yzvj" name="btnExit.png" path="/Images/button/" exported="true"/>
+    <component id="pw3q65yzvk" name="ButtonExit.xml" path="/Components/button/" exported="true"/>
+    <image id="la8a65yzvl" name="img_tips_line_3.png" path="/Images/common/" exported="true"/>
+    <image id="jjjh65yzvm" name="iconLockNew.png" path="/Images/item/" exported="true"/>
+    <image id="jjjh65yzvn" name="blueRdoBtn.png" path="/Images/common/" exported="true"/>
+    <image id="jjjh65yzvo" name="blueRdoBtnBg.png" path="/Images/common/" exported="true"/>
+    <component id="jjjh65yzvp" name="ButtonAdd5.xml" path="/Components/button/" exported="true"/>
+    <image id="jjjh65yzvq" name="img_add2.png" path="/Images/common/"/>
+    <image id="jjjh65yzvt" name="button3_blue.png" path="/Images/button/" exported="true"/>
+    <component id="jjjh65yzvw" name="Button3_blue.xml" path="/Components/button/" exported="true"/>
+    <image id="jjjh65yzvy" name="button3_yellow.png" path="/Images/button/" exported="true"/>
+    <image id="jjjh65yzvz" name="button3_green.png" path="/Images/button/" exported="true"/>
+    <component id="jjjh65yzw0" name="Button3_green.xml" path="/Components/button/" exported="true"/>
+    <component id="jjjh65yzw1" name="Button3_yellow.xml" path="/Components/button/" exported="true"/>
+    <image id="jjjh65yzw2" name="img_render_bg2.png" path="/Images/bg/" exported="true"/>
+    <image id="lr6l65yzw3" name="img_wen.png" path="/Images/common/" exported="true"/>
+  </resources>
+  <publish name="UILib" npot="true"/>
+</packageDescription>

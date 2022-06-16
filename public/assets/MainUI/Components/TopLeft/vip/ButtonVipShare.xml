@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="72,74" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <component id="n2_fy7n" name="progress" src="fy7nilsy" fileName="Components/TopLeft/vip/comProgress.xml" xy="37,70" pivot="0.5,1" anchor="true" restrictSize="0,0,0,77"/>
+    <image id="n3_fy7n" name="iconAlpha" src="fy7nilsu" fileName="Images/TopLeft/vip/vipShareAl.png" xy="0,0"/>
+    <image id="n1_w0rc" name="iconRed" src="dakeilq9" fileName="Images/icon_Red.png" xy="57,0" visible="false"/>
+  </displayList>
+  <Button/>
+</component>

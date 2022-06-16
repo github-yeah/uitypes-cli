@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="212,129">
+  <controller name="conState" pages="0,前往,1,挖宝" selected="0"/>
+  <controller name="conBar" pages="0,,1," selected="0"/>
+  <displayList>
+    <loader id="n5_wssc" name="n5" xy="0,0" size="212,129" url="image/treasureMap/img_treasure_map_notice_bg.png" autoSize="true"/>
+    <text id="n1_n6bj" name="txtItem" xy="22,82" size="165,20" fontSize="16" color="#ffea00" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#000000" text="宝藏坐标："/>
+    <text id="n2_n6bj" name="mapName" xy="22,102" size="165,20" fontSize="16" color="#41dc00" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#000000" text="中州帝都"/>
+    <component id="n4_wssc" name="btnGoTo" src="wsscvim1r" fileName="Components/MiddleRight/btnTreasureMap.xml" xy="72,13">
+      <gearIcon controller="conState" pages="0,1" values="image/treasureMap/img_treasure_map_notice_go.png|image/treasureMap/img_treasure_map_notice_to.png"/>
+      <Button icon="image/treasureMap/img_treasure_map_notice_go.png"/>
+    </component>
+    <component id="n6_wssc" name="bar" src="wsscvim1t" fileName="Components/MiddleRight/progressBar_yellow.xml" xy="-54,130" touchable="false">
+      <gearDisplay controller="conBar" pages="1"/>
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <component id="n7_wssc" name="btnClose" src="wsscvim1u" fileName="Components/MiddleRight/btnTreasureMapClose.xml" xy="146,2"/>
+  </displayList>
+</component>

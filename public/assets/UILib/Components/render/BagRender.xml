@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="68,68" extention="Button" designImage="ui://3pdyppnnt5y535" designImageOffsetX="-872" designImageOffsetY="-132" designImageAlpha="0" designImageLayer="1">
+  <controller name="conType" pages="0,,1," selected="0">
+    <remark page="0" value="正常状态"/>
+    <remark page="1" value="锁定状态"/>
+  </controller>
+  <displayList>
+    <loader id="n30_f839" name="back" xy="34,34" pivot="0.5,0.5" anchor="true" size="68,68" url="ui://uionr2r4dnqw1k" align="center" vAlign="middle" autoSize="true"/>
+    <loader id="n32_evgt" name="quality" xy="-2,-2" pivot="0.5,0.5" size="72,72" align="center" vAlign="middle" fill="scaleFree">
+      <gearDisplay controller="conType" pages="0"/>
+    </loader>
+    <loader id="n31_yr1p" name="imgIcon" xy="9,19" pivot="0.5,0.5" size="50,30" align="center" vAlign="middle" autoSize="true">
+      <gearDisplay controller="conType" pages="0"/>
+    </loader>
+    <loader id="n36_qsq6" name="imgLock" xy="15,15" pivot="0.5,0.5" size="38,38" touchable="false" url="ui://uionr2r4jjjh65yzvm" align="center" vAlign="middle" autoSize="true" playing="false">
+      <gearDisplay controller="conType" pages="1"/>
+    </loader>
+  </displayList>
+  <Button/>
+</component>

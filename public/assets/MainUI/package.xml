@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="tdl95hta" jpegQuality="80" compressPNG="true" hasFavorites="true">
+  <resources>
+    <component id="kd9d4" name="MainUIView.xml" path="/" exported="true"/>
+    <component id="kd9db" name="Joystick.xml" path="/Views/"/>
+    <component id="kd9dc" name="Joystick_Circle.xml" path="/Components/Joystick/"/>
+    <image id="kd9dd" name="joystick_bg.png" path="/Images/joystick/" exported="true"/>
+    <component id="kd9de" name="Joystick_bg.xml" path="/Components/Joystick/"/>
+    <component id="kd9di" name="BtnJoy.xml" path="/Components/Joystick/"/>
+    <image id="kd9dj" name="bg_joystick_circle.png" path="/Images/joystick/"/>
+    <component id="kd9dl" name="BottomRight.xml" path="/Views/"/>
+    <component id="kd9dm" name="shortCutCom.xml" path="/Components/BottomRight/"/>
+    <component id="kd9dn" name="ShortCutList.xml" path="/Components/BottomRight/"/>
+    <component id="kd9do" name="ShortCutRender.xml" path="/Components/BottomRight/" exported="true"/>
+    <component id="kd9dv" name="BtnAttack.xml" path="/Components/BottomRight/" exported="true"/>
+    <component id="kd9d1b" name="BottomMiddle.xml" path="/Views/"/>
+    <component id="kd9d1c" name="TaskTransferView.xml" path="/Components/BottomRight/"/>
+    <image id="kd9d1j" name="bg_exp.png" path="/Images/BottomMiddle/" scale="9grid" scale9grid="25,0,30,16"/>
+    <image id="kd9d1k" name="bar_exp.png" path="/Images/BottomMiddle/" scale="9grid" scale9grid="15,2,8,3"/>
+    <component id="kd9d1l" name="CircleNoticeItem.xml" path="/Components/BottomMiddle/" exported="true"/>
+    <component id="kd9d1m" name="Button_Bag.xml" path="/Components/MiddleRight/"/>
+    <component id="kd9d1q" name="ChatTextHead.xml" path="/Components/BottomMiddle/" exported="true"/>
+    <component id="uofs25" name="mask.xml" path="/Components/BottomRight/" exported="true"/>
+    <component id="qt2v27" name="MiddleLeft.xml" path="/Views/"/>
+    <component id="l0ar2l" name="BtnOpen.xml" path="/Components/MiddleLeft/" exported="true"/>
+    <image id="l0ar2n" name="com_team_shouqi_jiantou.png" path="/Images/MiddleLeft/" exported="true"/>
+    <image id="l0ar2q" name="com_team_search.png" path="/Images/MiddleLeft/" exported="true"/>
+    <image id="l0ar2t" name="com_team_wei_bg.png" path="/Images/MiddleLeft/" exported="true"/>
+    <image id="l0ar2u" name="com_team_xuan_bg.png" path="/Images/MiddleLeft/" exported="true"/>
+    <image id="l0ar2v" name="com_team_act_wei.png" path="/Images/MiddleLeft/" exported="true"/>
+    <image id="l0ar2w" name="com_team_act_xuan.png" path="/Images/MiddleLeft/" exported="true"/>
+    <component id="l0ar2x" name="BtnTaskMain.xml" path="/Components/MiddleLeft/" exported="true"/>
+    <image id="l0ar2y" name="act_wei_zi.png" path="/Images/MiddleLeft/" exported="true"/>
+    <image id="l0ar2z" name="act_xuan_zi.png" path="/Images/MiddleLeft/" exported="true"/>
+    <component id="l0ar30" name="BtnTeam.xml" path="/Components/MiddleLeft/" exported="true"/>
+    <image id="l0ar31" name="com_team_wei.png" path="/Images/MiddleLeft/" exported="true"/>
+    <image id="l0ar32" name="com_team_xuan.png" path="/Images/MiddleLeft/" exported="true"/>
+    <component id="l0ar34" name="BtnTeamCreate.xml" path="/Components/MiddleLeft/" exported="true"/>
+    <image id="l0ar35" name="com_team_add.png" path="/Images/MiddleLeft/" exported="true"/>
+    <component id="l0ar37" name="BtnTeamSearch.xml" path="/Components/MiddleLeft/" exported="true"/>
+    <component id="l0ar38" name="TeamCom.xml" path="/Components/MiddleLeft/" exported="true"/>
+    <component id="l0ar39" name="MainUITeamMemberRender.xml" path="/Components/MiddleLeft/" exported="true"/>
+    <image id="l0ar3c" name="xuekuangdi.png" path="/Images/MiddleLeft/" scale="9grid" scale9grid="31,9,15,3"/>
+    <image id="l0ar3h" name="teamLeader.png" path="/Images/MiddleLeft/"/>
+    <component id="l0ar3r" name="TaskRender.xml" path="/Components/MiddleLeft/" exported="true"/>
+    <image id="l0ar41" name="com_button5.jpg" path="/Images/MiddleLeft/" exported="true"/>
+    <component id="l0ar49" name="TaskCom.xml" path="/Components/MiddleLeft/"/>
+    <component id="l0ar4e" name="MainUITaskAssistsView.xml" path="/Components/MiddleLeft/" exported="true"/>
+    <component id="l0ar4g" name="MainUITaskAssistsRender.xml" path="/Components/MiddleLeft/" exported="true"/>
+    <component id="ierv5m" name="TopRight.xml" path="/Views/"/>
+    <component id="ierv5n" name="TopRightBtns.xml" path="/Components/TopRight/"/>
+    <component id="ierv5o" name="FuncBtnRender.xml" path="/Components/TopRight/" exported="true"/>
+    <component id="ierv64" name="Rdo1.xml" path="/Components/TopRight/"/>
+    <component id="ierv6a" name="btnMid.xml" path="/Components/MiddleRight/"/>
+    <component id="ierv6j" name="TopLeft.xml" path="/Views/"/>
+    <component id="ierv6w" name="BtnVip.xml" path="/Components/TopLeft/" exported="true"/>
+    <component id="ierv7c" name="BtnBuff.xml" path="/Components/TopLeft/"/>
+    <image id="ierv7d" name="pkMode_4.png" path="/Images/TopLeft/" exported="true"/>
+    <component id="ierv7f" name="BtnMode.xml" path="/Components/TopLeft/"/>
+    <image id="ierv7g" name="pkMode_1.png" path="/Images/TopLeft/" exported="true"/>
+    <component id="dr3y7s" name="TopMiddle.xml" path="/Views/"/>
+    <component id="olax7v" name="MiddleRight.xml" path="/Views/"/>
+    <component id="piay8h" name="subFuncCom.xml" path="/Components/TopRight/" exported="true"/>
+    <image id="kdp28n" name="pkMode_3.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="kdp28p" name="pkMode_2.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="kdp28r" name="pkMode_6.png" path="/Images/TopLeft/" exported="true"/>
+    <component id="kdp28u" name="MainUIBuffRender.xml" path="/Components/TopLeft/" exported="true"/>
+    <component id="kdp29g" name="BuffView.xml" path="/Components/TopLeft/" exported="true"/>
+    <component id="p2kw9n" name="NoticeButtonView.xml" path="/Components/BottomMiddle/NoticeButton/" exported="true"/>
+    <component id="p2kw9o" name="NoticeButtonItem.xml" path="/Components/BottomMiddle/NoticeButton/" exported="true"/>
+    <component id="csska8" name="RoleHeadInfo.xml" path="/Components/TopMiddle/" exported="true"/>
+    <component id="csskac" name="Button_Close3.xml" path="/Components/TopMiddle/"/>
+    <component id="pk9sam" name="BossHeadInfo.xml" path="/Components/TopMiddle/" exported="true"/>
+    <component id="pk9san" name="ButtonGangCall.xml" path="/Components/TopMiddle/"/>
+    <component id="jsjobm" name="MonsterHeadInfo.xml" path="/Components/TopMiddle/" exported="true"/>
+    <component id="toljbz" name="NearView.xml" path="/Components/BottomRight/Near/" exported="true"/>
+    <component id="toljc0" name="AttackBtn.xml" path="/Components/BottomRight/Near/" exported="true"/>
+    <component id="toljc2" name="NearBossRender.xml" path="/Components/BottomRight/Near/" exported="true"/>
+    <component id="toljc5" name="NearBloodBarMon.xml" path="/Components/BottomRight/Near/"/>
+    <component id="toljc8" name="NearPlayerRender.xml" path="/Components/BottomRight/Near/" exported="true"/>
+    <component id="9ihacm" name="ComHp.xml" path="/Components/TopMiddle/"/>
+    <component id="g3tbcp" name="BtnActivity.xml" path="/Components/MiddleLeft/" exported="true"/>
+    <component id="jcpccr" name="BtnRoleHead.xml" path="/Components/TopLeft/"/>
+    <image id="j32oir" name="btn_buff_bg.png" path="/Images/TopLeft/"/>
+    <component id="jodzljf" name="PopView.xml" path="/Views/"/>
+    <component id="jodzljg" name="PopBottomMiddle.xml" path="/Components/Pop/" exported="true"/>
+    <image id="jodzljh" name="pop_1.png" path="/Images/Pop/" scale="9grid" scale9grid="19,12,47,16"/>
+    <component id="jodzlji" name="PopClose.xml" path="/Components/Pop/"/>
+    <image id="jodzljj" name="btn_close.png" path="/Images/Pop/"/>
+    <component id="jodzljk" name="PopMiddleRight.xml" path="/Components/Pop/" exported="true"/>
+    <image id="jodzljl" name="pop_2.png" path="/Images/Pop/" scale="9grid" scale9grid="15,35,50,22"/>
+    <component id="jodzljm" name="PopMiddleRight1.xml" path="/Components/Pop/" exported="true"/>
+    <component id="jodzljn" name="emptyBtn.xml" path="/Components/"/>
+    <component id="hxiwljy" name="tab.xml" path="/Components/BottomRight/Near/" exported="true"/>
+    <component id="raxllk6" name="ShortCutItemRender.xml" path="/Components/BottomRight/" exported="true"/>
+    <component id="s12blk8" name="showDropView.xml" path="/Components/TopMiddle/"/>
+    <component id="viw3lkh" name="BtnChange.xml" path="/Components/BottomRight/"/>
+    <image id="viw3lkk" name="privilege_bg.png" path="/Images/TopLeft/"/>
+    <component id="viw3lkl" name="BtnPrivilege.xml" path="/Components/TopLeft/"/>
+    <component id="viw3lkm" name="PlaceHolder.xml" path="/Components/TopLeft/"/>
+    <image id="ellglkp" name="jobIcon_1.png" path="/Images/TopLeft/"/>
+    <image id="ehcvllh" name="jobIcon_2.png" path="/Images/TopLeft/"/>
+    <image id="ehcvlli" name="jobIcon_3.png" path="/Images/TopLeft/"/>
+    <component id="ag3tllx" name="AtkModeView.xml" path="/Components/TopLeft/" exported="true"/>
+    <component id="ag3tlly" name="BtnBaseMode.xml" path="/Components/TopLeft/"/>
+    <image id="ag3tllz" name="pkMode_02.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="ag3tlm0" name="pkMode_06.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="ag3tlm1" name="pkMode_05.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="ag3tlm2" name="pkMode_04.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="ag3tlm3" name="pkMode_03.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="ag3tlm4" name="pkMode_01.png" path="/Images/TopLeft/" exported="true"/>
+    <component id="a1e7ilm9" name="BtnEmpty.xml" path="/Components/TopMiddle/"/>
+    <component id="taiuilmc" name="BossBtn.xml" path="/Components/Boss/" exported="true"/>
+    <component id="vih2ilmd" name="screenEffect.xml" path="/Components/ScreenEffect/"/>
+    <component id="pu96ilmh" name="VipView.xml" path="/Components/TopLeft/vip/" exported="true"/>
+    <font id="iv7xilmx" name="Font_MainUI_Fight.fnt" path="/Images/_Font/MainUI_Fight/" exported="true"/>
+    <component id="h3pailnr" name="progressBar_monster.xml" path="/Components/TopMiddle/"/>
+    <component id="hsm4ilo0" name="BossBuffRender.xml" path="/Components/TopMiddle/"/>
+    <component id="cryyilo1" name="BtnPreview.xml" path="/Components/TopLeft/"/>
+    <component id="rsy8ilof" name="ComUpgrade.xml" path="/Components/TopMiddle/"/>
+    <component id="qaqcilog" name="ActView.xml" path="/Components/ActList/" exported="true"/>
+    <image id="qaqciloj" name="iconFrameAct1.png" path="/Images/ActList/" scale="" duplicatePadding="true"/>
+    <image id="qaqcilok" name="iconFrameAct.png" path="/Images/ActList/" scale="9grid" scale9grid="50,31,21,25"/>
+    <image id="qaqcilol" name="iconFrameAct2.png" path="/Images/ActList/"/>
+    <image id="v7hnilpb" name="bg_mp.png" path="/Images/TopLeft/" scale="9grid" scale9grid="10,0,171,18"/>
+    <image id="v7hnilpc" name="bg_hp.png" path="/Images/TopLeft/" scale="9grid" scale9grid="10,0,168,18"/>
+    <component id="v7hnilpd" name="progressBar_hp.xml" path="/Components/TopLeft/"/>
+    <component id="v7hnilpf" name="progressBar_mp.xml" path="/Components/TopLeft/"/>
+    <image id="v7hnilph" name="bar_xp.png" path="/Images/TopLeft/" scale="9grid" scale9grid="13,0,26,6"/>
+    <component id="v7hnilpi" name="progressBar_xp.xml" path="/Components/TopLeft/"/>
+    <component id="v7hnilpv" name="expBar.xml" path="/Components/BottomMiddle/"/>
+    <image id="v7hnilpw" name="bg_exp2.png" path="/Images/BottomMiddle/" scale="" scale9grid="5,6,10,3"/>
+    <component id="v7hnilpy" name="BtnJobChange.xml" path="/Components/BottomRight/" exported="true"/>
+    <image id="v2f0ilq0" name="pkMode_5.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="vxivilq2" name="full.png" path="/Images/BottomMiddle/" exported="true"/>
+    <component id="qyacilq4" name="ChatText.xml" path="/Components/BottomMiddle/" exported="true"/>
+    <component id="qyacilq5" name="ChatFaceHead.xml" path="/Components/BottomMiddle/" exported="true"/>
+    <image id="dakeilq9" name="icon_Red.png" path="/Images/" exported="true"/>
+    <component id="dakeilqb" name="btnOnHook.xml" path="/Components/BottomRight/"/>
+    <image id="dakeilqd" name="chatbg.png" path="/Images/BottomMiddle/" scale="9grid" scale9grid="25,25,30,30"/>
+    <image id="dakeilqg" name="chatD.png" path="/Images/BottomMiddle/" scale="" duplicatePadding="true"/>
+    <image id="dakeilqi" name="chatL.png" path="/Images/BottomMiddle/" scale="" duplicatePadding="true"/>
+    <image id="wo21ilqx" name="iconFrame.png" path="/Images/TopLeft/vip/"/>
+    <component id="wo21ilr8" name="BtnOpenVip.xml" path="/Components/TopLeft/vip/" exported="true"/>
+    <image id="pqr7ilrc" name="btn_bag.png" path="/Images/BottomMiddle/"/>
+    <component id="h62zilrf" name="BtnFlag.xml" path="/Components/TopMiddle/"/>
+    <image id="4hbxlje" name="itemTips_bg_1.png" path="/Images/TopLeft/" scale="9grid" scale9grid="10,10,28,26"/>
+    <image id="s12blkd" name="zhanshi.png" path="/Images/TopLeft/"/>
+    <component id="jma2ilrg" name="MiddleBtnRender.xml" path="/Components/BottomMiddle/"/>
+    <image id="j9j8iln5" name="btn_xssc.png" path="/Images/BottomMiddle/"/>
+    <image id="dzwcilnu" name="btn_cqzl.png" path="/Images/BottomMiddle/"/>
+    <image id="xt80ilnd" name="btn_kfjx.png" path="/Images/BottomMiddle/"/>
+    <component id="w0rcilrh" name="comVip.xml" path="/Components/TopLeft/vip/"/>
+    <image id="kph8ilrj" name="abtn_giveGold.png" path="/Images/BottomMiddle/"/>
+    <component id="iz2hilrk" name="bar_hp.xml" path="/Components/TopLeft/"/>
+    <component id="iz2hilrl" name="bar_mp.xml" path="/Components/TopLeft/"/>
+    <component id="iz2hilrm" name="bar_xp.xml" path="/Components/TopLeft/"/>
+    <image id="um3silrp" name="iconVipGift.png" path="/Images/TopLeft/vip/"/>
+    <component id="91pfilrq" name="faPop.xml" path="/Components/BottomRight/"/>
+    <component id="qaydilrr" name="BtnFight.xml" path="/Components/TopLeft/"/>
+    <image id="qaydilrs" name="FS.png" path="/Images/TopLeft/fight/"/>
+    <image id="qaydilrt" name="img_noActive.png" path="/Images/TopLeft/fight/"/>
+    <image id="qaydilru" name="ZS.png" path="/Images/TopLeft/fight/"/>
+    <image id="qaydilrv" name="DS.png" path="/Images/TopLeft/fight/"/>
+    <component id="qaydilrw" name="FightView.xml" path="/Components/TopLeft/" exported="true"/>
+    <image id="k9f6ilrx" name="0.png" path="/Images/_Font/MainUI_Fight_Z/"/>
+    <image id="k9f6ilry" name="1.png" path="/Images/_Font/MainUI_Fight_Z/"/>
+    <image id="k9f6ilrz" name="2.png" path="/Images/_Font/MainUI_Fight_Z/"/>
+    <image id="k9f6ils0" name="3.png" path="/Images/_Font/MainUI_Fight_Z/"/>
+    <image id="k9f6ils1" name="4.png" path="/Images/_Font/MainUI_Fight_Z/"/>
+    <image id="k9f6ils2" name="5.png" path="/Images/_Font/MainUI_Fight_Z/"/>
+    <image id="k9f6ils3" name="6.png" path="/Images/_Font/MainUI_Fight_Z/"/>
+    <image id="k9f6ils4" name="8.png" path="/Images/_Font/MainUI_Fight_Z/"/>
+    <image id="k9f6ils5" name="9.png" path="/Images/_Font/MainUI_Fight_Z/"/>
+    <image id="k9f6ils6" name="7.png" path="/Images/_Font/MainUI_Fight_Z/"/>
+    <font id="k9f6ils7" name="Fight_Z.fnt" path="/Images/_Font/MainUI_Fight_Z/" exported="true"/>
+    <image id="k9f6ils8" name="0.png" path="/Images/_Font/MainUI_Fight_F/"/>
+    <image id="k9f6ils9" name="1.png" path="/Images/_Font/MainUI_Fight_F/"/>
+    <image id="k9f6ilsa" name="2.png" path="/Images/_Font/MainUI_Fight_F/"/>
+    <image id="k9f6ilsb" name="3.png" path="/Images/_Font/MainUI_Fight_F/"/>
+    <image id="k9f6ilsc" name="4.png" path="/Images/_Font/MainUI_Fight_F/"/>
+    <image id="k9f6ilsd" name="5.png" path="/Images/_Font/MainUI_Fight_F/"/>
+    <image id="k9f6ilse" name="6.png" path="/Images/_Font/MainUI_Fight_F/"/>
+    <image id="k9f6ilsf" name="8.png" path="/Images/_Font/MainUI_Fight_F/"/>
+    <image id="k9f6ilsg" name="9.png" path="/Images/_Font/MainUI_Fight_F/"/>
+    <image id="k9f6ilsh" name="7.png" path="/Images/_Font/MainUI_Fight_F/"/>
+    <font id="k9f6ilsi" name="Fight_F.fnt" path="/Images/_Font/MainUI_Fight_F/" exported="true"/>
+    <image id="k9f6ilsj" name="0.png" path="/Images/_Font/MainUI_Fight_D/"/>
+    <image id="k9f6ilsk" name="1.png" path="/Images/_Font/MainUI_Fight_D/"/>
+    <image id="k9f6ilsl" name="2.png" path="/Images/_Font/MainUI_Fight_D/"/>
+    <image id="k9f6ilsm" name="3.png" path="/Images/_Font/MainUI_Fight_D/"/>
+    <image id="k9f6ilsn" name="4.png" path="/Images/_Font/MainUI_Fight_D/"/>
+    <image id="k9f6ilso" name="5.png" path="/Images/_Font/MainUI_Fight_D/"/>
+    <image id="k9f6ilsp" name="6.png" path="/Images/_Font/MainUI_Fight_D/"/>
+    <image id="k9f6ilsq" name="8.png" path="/Images/_Font/MainUI_Fight_D/"/>
+    <image id="k9f6ilsr" name="9.png" path="/Images/_Font/MainUI_Fight_D/"/>
+    <image id="k9f6ilss" name="7.png" path="/Images/_Font/MainUI_Fight_D/"/>
+    <font id="k9f6ilst" name="Fight_D.fnt" path="/Images/_Font/MainUI_Fight_D/" exported="true"/>
+    <image id="fy7nilsu" name="vipShareAl.png" path="/Images/TopLeft/vip/"/>
+    <image id="fy7nilsw" name="vipSharPro.png" path="/Images/TopLeft/vip/"/>
+    <component id="fy7nilsx" name="ButtonVipShare.xml" path="/Components/TopLeft/vip/"/>
+    <component id="fy7nilsy" name="comProgress.xml" path="/Components/TopLeft/vip/"/>
+    <image id="hk4ailt7" name="iconTextMa.png" path="/Images/Pop/dailyBoss/"/>
+    <image id="hk4ailt8" name="iconTextRe.png" path="/Images/Pop/dailyBoss/"/>
+    <image id="cd48iltm" name="recharge.png" path="/Images/TopLeft/"/>
+    <component id="cd48iltn" name="BtnRecharge.xml" path="/Components/TopLeft/"/>
+    <image id="cd48ilto" name="0.png" path="/Images/_Font/MainUI_Fight/"/>
+    <image id="cd48iltp" name="1.png" path="/Images/_Font/MainUI_Fight/"/>
+    <image id="cd48iltq" name="2.png" path="/Images/_Font/MainUI_Fight/"/>
+    <image id="cd48iltr" name="3.png" path="/Images/_Font/MainUI_Fight/"/>
+    <image id="cd48ilts" name="4.png" path="/Images/_Font/MainUI_Fight/"/>
+    <image id="cd48iltt" name="5.png" path="/Images/_Font/MainUI_Fight/"/>
+    <image id="cd48iltu" name="6.png" path="/Images/_Font/MainUI_Fight/"/>
+    <image id="cd48iltv" name="7.png" path="/Images/_Font/MainUI_Fight/"/>
+    <image id="cd48iltw" name="8.png" path="/Images/_Font/MainUI_Fight/"/>
+    <image id="cd48iltx" name="9.png" path="/Images/_Font/MainUI_Fight/"/>
+    <image id="cd48ilty" name="vipBar.png" path="/Images/TopLeft/vip/"/>
+    <component id="cd48iltz" name="VipBar.xml" path="/Components/TopLeft/vip/"/>
+    <image id="cd48ilu0" name="VIP.png" path="/Images/TopLeft/vip/"/>
+    <image id="cd48ilu1" name="0.png" path="/Images/_Font/MainUI_VIP/"/>
+    <image id="cd48ilu2" name="1.png" path="/Images/_Font/MainUI_VIP/"/>
+    <image id="cd48ilu3" name="2.png" path="/Images/_Font/MainUI_VIP/"/>
+    <image id="cd48ilu4" name="3.png" path="/Images/_Font/MainUI_VIP/"/>
+    <image id="cd48ilu5" name="4.png" path="/Images/_Font/MainUI_VIP/"/>
+    <image id="cd48ilu6" name="5.png" path="/Images/_Font/MainUI_VIP/"/>
+    <image id="cd48ilu7" name="6.png" path="/Images/_Font/MainUI_VIP/"/>
+    <image id="cd48ilu8" name="7.png" path="/Images/_Font/MainUI_VIP/"/>
+    <image id="cd48ilu9" name="8.png" path="/Images/_Font/MainUI_VIP/"/>
+    <image id="cd48ilua" name="9.png" path="/Images/_Font/MainUI_VIP/"/>
+    <font id="cd48ilub" name="Font_vip.fnt" path="/Images/_Font/MainUI_VIP/" exported="true"/>
+    <image id="dakeilno" name="btn_Equip.png" path="/Images/BottomMiddle/"/>
+    <component id="bs3ciluc" name="BtnPlayer.xml" path="/Components/BottomRight/"/>
+    <component id="bs3cilud" name="BtnMonster.xml" path="/Components/BottomRight/"/>
+    <component id="bs3cilue" name="BtnTarget.xml" path="/Components/MiddleRight/" exported="true"/>
+    <component id="pxbxiluf" name="UpgradeView.xml" path="/Components/BottomRight/" exported="true"/>
+    <component id="pxbxilug" name="Button2.xml" path="/Components/MiddleRight/"/>
+    <component id="r3lviluh" name="TeamInfoOpWindow.xml" path="/Components/MiddleLeft/" exported="true"/>
+    <component id="ecywilui" name="BarShiled.xml" path="/Components/TopMiddle/"/>
+    <image id="ecywiluj" name="flower.png" path="/Images/TopLeft/"/>
+    <component id="lh4jiluo" name="mainTaskScene.xml" path="/Components/MiddleLeft/"/>
+    <image id="v9mlilup" name="iconButton0.png" path="/Images/ActList/"/>
+    <component id="v9mliluq" name="ButtonClose.xml" path="/Components/ActList/"/>
+    <image id="v9mlilur" name="iconButton1.png" path="/Images/ActList/"/>
+    <component id="v9mlilus" name="ButtonEnter.xml" path="/Components/ActList/"/>
+    <component id="v9mlilut" name="ActClientView.xml" path="/Components/ActList/" exported="true"/>
+    <image id="o02riluu" name="btnVip.png" path="/Images/TopLeft/vip/"/>
+    <component id="pv88iluy" name="ProgressShare.xml" path="/Components/TopLeft/vip/"/>
+    <component id="f8bsilv0" name="BtnEquip.xml" path="/Components/BottomMiddle/"/>
+    <component id="f8bsilv1" name="FuncBtnRender1.xml" path="/Components/TopRight/" exported="true"/>
+    <component id="wxa4ilv2" name="ButtonCard.xml" path="/Components/TopRight/"/>
+    <component id="wxa4ilv3" name="ButtonSale.xml" path="/Components/TopRight/"/>
+    <component id="wxa4ilv4" name="ButtonSet.xml" path="/Components/TopRight/"/>
+    <image id="nw4vilv6" name="previewBg.png" path="/Images/TopLeft/"/>
+    <image id="nw4vilv7" name="previewBg2.png" path="/Images/TopLeft/"/>
+    <component id="w14tilv8" name="NameCom.xml" path="/Components/TopMiddle/"/>
+    <component id="moreilv9" name="comNameBossH.xml" path="/Components/TopMiddle/"/>
+    <image id="pkhwilva" name="joystick_run.png" path="/Images/joystick/" exported="true"/>
+    <image id="pkhwilvb" name="joystick_walk.png" path="/Images/joystick/" exported="true"/>
+    <image id="fvsbilvc" name="bossClose.png" path="/Images/Pop/dailyBoss/"/>
+    <image id="otphilvp" name="vipShareBack.png" path="/Images/TopLeft/vip/"/>
+    <image id="qdfxilvq" name="npcQuick.png" path="/Images/Npc/" scale="9grid" scale9grid="78,0,27,67"/>
+    <component id="qdfxilvr" name="NpcQuickRender.xml" path="/Components/Npc/" exported="true"/>
+    <component id="qdfxilvs" name="NpcQuickView.xml" path="/Components/Npc/"/>
+    <component id="qn49ilvu" name="BtnRide.xml" path="/Components/MiddleRight/"/>
+    <component id="e7qzilvx" name="OtherHeadInfo.xml" path="/Components/TopMiddle/" exported="true"/>
+    <image id="n34qilvy" name="npcQuick2.png" path="/Images/Npc/" scale="9grid" scale9grid="73,17,67,34"/>
+    <image id="hphlilvz" name="bg_topleft.png" path="/Images/TopLeft/"/>
+    <image id="hphlilw0" name="yuanbao.png" path="/Images/TopLeft/"/>
+    <image id="hphlilw1" name="zuanshi.png" path="/Images/TopLeft/"/>
+    <image id="hphlilw2" name="btnVipBg.png" path="/Images/TopLeft/vip/"/>
+    <image id="hphlilw3" name="vipTxt.png" path="/Images/TopLeft/vip/"/>
+    <image id="hphlilw4" name="attkicon.png" path="/Images/TopLeft/"/>
+    <image id="hphlilwh" name="0.png" path="/Images/_Font/MainUI_VIPNew/"/>
+    <image id="hphlilwi" name="1.png" path="/Images/_Font/MainUI_VIPNew/"/>
+    <image id="hphlilwj" name="2.png" path="/Images/_Font/MainUI_VIPNew/"/>
+    <image id="hphlilwk" name="3.png" path="/Images/_Font/MainUI_VIPNew/"/>
+    <image id="hphlilwl" name="4.png" path="/Images/_Font/MainUI_VIPNew/"/>
+    <image id="hphlilwm" name="5.png" path="/Images/_Font/MainUI_VIPNew/"/>
+    <image id="hphlilwn" name="6.png" path="/Images/_Font/MainUI_VIPNew/"/>
+    <image id="hphlilwo" name="7.png" path="/Images/_Font/MainUI_VIPNew/"/>
+    <image id="hphlilwp" name="8.png" path="/Images/_Font/MainUI_VIPNew/"/>
+    <image id="hphlilwq" name="9.png" path="/Images/_Font/MainUI_VIPNew/"/>
+    <font id="hphlilwr" name="FightVIP.fnt" path="/Images/_Font/MainUI_VIPNew/" exported="true"/>
+    <image id="hphlilws" name="pkMode_new1.png" path="/Images/TopLeft/"/>
+    <image id="hphlilwt" name="pkMode_new2.png" path="/Images/TopLeft/"/>
+    <image id="qhfkilwv" name="task_unselect.png" path="/Images/MiddleLeft/"/>
+    <image id="qhfkilx0" name="1标注.png" path="/"/>
+    <image id="qhfkilx2" name="joystick_bgNew.png" path="/Images/joystick/"/>
+    <image id="qhfkilx3" name="joystick_move.png" path="/Images/joystick/"/>
+    <image id="104svilx4" name="chatbgNew.png" path="/Images/BottomMiddle/"/>
+    <component id="104svilx5" name="Button_Pet.xml" path="/Components/BottomMiddle/"/>
+    <image id="104svilx6" name="btn_petBg.png" path="/Images/BottomMiddle/"/>
+    <image id="104svilx7" name="btn_pet.png" path="/Images/BottomMiddle/"/>
+    <image id="104svilx8" name="title_pet.png" path="/Images/BottomMiddle/"/>
+    <image id="104svilxg" name="bg_hp.png" path="/Images/BottomMiddle/"/>
+    <image id="104svilxh" name="bg_mphp.png" path="/Images/BottomMiddle/"/>
+    <image id="104svilxi" name="bg_mp.png" path="/Images/BottomMiddle/"/>
+    <component id="104svilxl" name="comProgressHp.xml" path="/Components/BottomMiddle/"/>
+    <component id="104svilxn" name="comProgressMp.xml" path="/Components/BottomMiddle/"/>
+    <component id="104svilxo" name="btnSui.xml" path="/Components/BottomRight/"/>
+    <component id="8vjkilxp" name="BtnOpen3.xml" path="/Components/BottomRight/" exported="true"/>
+    <image id="8vjkilxq" name="btn_deployClose3.png" path="/Images/BottomMiddle/"/>
+    <image id="8vjkilxr" name="btn_deployOpen3.png" path="/Images/BottomMiddle/"/>
+    <component id="8vjkilxs" name="btnRank.xml" path="/Components/BottomMiddle/"/>
+    <image id="8vjkily0" name="btn_mail.png" path="/Images/BottomMiddle/"/>
+    <image id="8vjkily1" name="btn_rank.png" path="/Images/BottomMiddle/"/>
+    <image id="8vjkily2" name="btn_setting.png" path="/Images/BottomMiddle/"/>
+    <image id="8vjkily3" name="btn_smallBg.png" path="/Images/BottomMiddle/"/>
+    <image id="8vjkily4" name="word_mail.png" path="/Images/BottomMiddle/"/>
+    <image id="8vjkily5" name="word_rank.png" path="/Images/BottomMiddle/"/>
+    <image id="8vjkily6" name="word_setting.png" path="/Images/BottomMiddle/"/>
+    <component id="8vjkily7" name="btnMail.xml" path="/Components/BottomMiddle/"/>
+    <component id="8vjkily8" name="btnSetting.xml" path="/Components/BottomMiddle/"/>
+    <image id="igsyvilxp" name="bg_expNew.png" path="/Images/BottomMiddle/" scale="9grid" scale9grid="22,0,104,12"/>
+    <image id="lnjzvilxq" name="bg_lv.png" path="/Images/TopLeft/"/>
+    <image id="lnjzvilxr" name="pkmode4.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="lnjzvilxs" name="pkmode3.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="lnjzvilxt" name="pkmode1.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="lnjzvilxv" name="pkmode6.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="lnjzvilxw" name="pkmode5.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="lnjzvilxx" name="teamtaskopen.png" path="/Images/MiddleLeft/"/>
+    <image id="lnjzvilxy" name="teamtaskclose.png" path="/Images/MiddleLeft/"/>
+    <image id="lnjzvilxz" name="task_select.png" path="/Images/MiddleLeft/"/>
+    <image id="lnjzvily0" name="team_select.png" path="/Images/MiddleLeft/"/>
+    <image id="lnjzvily3" name="team_unselect.png" path="/Images/MiddleLeft/"/>
+    <image id="lnjzvily5" name="pkmode2.png" path="/Images/TopLeft/" exported="true"/>
+    <image id="lnjzvily6" name="atkmodeBg.png" path="/Images/TopLeft/"/>
+    <component id="q983vily9" name="ProgressHp.xml" path="/Components/BottomMiddle/"/>
+    <component id="q983vilya" name="ProgressMp.xml" path="/Components/BottomMiddle/"/>
+    <image id="q983vilyb" name="task_glow.png" path="/Images/MiddleLeft/" exported="true" scale="9grid" scale9grid="8,8,34,34"/>
+    <image id="fz6jvilyc" name="com_team_bg_task.png" path="/Images/MiddleLeft/"/>
+    <image id="fz6jvilyd" name="teamtask_close.png" path="/Images/MiddleLeft/"/>
+    <image id="fz6jvilye" name="teamtask_open.png" path="/Images/MiddleLeft/"/>
+    <component id="fz6jvilyf" name="btnOnHook.xml" path="/Components/BottomMiddle/"/>
+    <component id="fz6jvilyg" name="Button_Bag.xml" path="/Components/BottomMiddle/"/>
+    <component id="fz6jvilyh" name="TaskTransferView.xml" path="/Components/BottomMiddle/"/>
+    <component id="ao8pvilyi" name="ShortCutGestrue.xml" path="/Components/BottomRight/"/>
+    <image id="ewzmvilyj" name="follow.png" path="/Images/gestrue/"/>
+    <image id="ewzmvilyk" name="wheel.png" path="/Images/gestrue/"/>
+    <component id="l1tzvilyl" name="btnRide.xml" path="/Components/BottomMiddle/"/>
+    <image id="l1tzvilym" name="btn_rideDown.png" path="/Images/BottomMiddle/"/>
+    <image id="l1tzvilyn" name="word_rideDown.png" path="/Images/BottomMiddle/"/>
+    <image id="l1tzvilyo" name="btn_rideUp.png" path="/Images/BottomMiddle/"/>
+    <image id="l1tzvilyp" name="word_rideUp.png" path="/Images/BottomMiddle/"/>
+    <image id="tv2lvilyq" name="npcQuickNew.png" path="/Images/Npc/"/>
+    <image id="vbkovilyr" name="privilege0.png" path="/Images/TopLeft/privilege/" exported="true"/>
+    <image id="izgnvilys" name="privilege1.png" path="/Images/TopLeft/privilege/" exported="true"/>
+    <image id="izgnvilyt" name="privilege10.png" path="/Images/TopLeft/privilege/" exported="true"/>
+    <image id="izgnvilyu" name="privilege11.png" path="/Images/TopLeft/privilege/" exported="true"/>
+    <image id="izgnvilyv" name="privilege12.png" path="/Images/TopLeft/privilege/" exported="true"/>
+    <image id="izgnvilyw" name="privilege2.png" path="/Images/TopLeft/privilege/" exported="true"/>
+    <image id="izgnvilyx" name="privilege3.png" path="/Images/TopLeft/privilege/" exported="true"/>
+    <image id="izgnvilyy" name="privilege4.png" path="/Images/TopLeft/privilege/" exported="true"/>
+    <image id="izgnvilyz" name="privilege5.png" path="/Images/TopLeft/privilege/" exported="true"/>
+    <image id="izgnvilz0" name="privilege6.png" path="/Images/TopLeft/privilege/" exported="true"/>
+    <image id="izgnvilz1" name="privilege7.png" path="/Images/TopLeft/privilege/" exported="true"/>
+    <image id="izgnvilz2" name="privilege8.png" path="/Images/TopLeft/privilege/" exported="true"/>
+    <image id="izgnvilz3" name="privilege9.png" path="/Images/TopLeft/privilege/" exported="true"/>
+    <image id="hd20vilz5" name="img_job_switch_1_0.png" path="/Images/BottomMiddle/JobSwitch/" exported="true"/>
+    <image id="hd20vilz6" name="img_job_switch_1_1.png" path="/Images/BottomMiddle/JobSwitch/" exported="true"/>
+    <image id="hd20vilz7" name="img_job_switch_1_2.png" path="/Images/BottomMiddle/JobSwitch/" exported="true"/>
+    <image id="hd20vilz8" name="img_job_switch_2_0.png" path="/Images/BottomMiddle/JobSwitch/" exported="true"/>
+    <image id="hd20vilz9" name="img_job_switch_2_1.png" path="/Images/BottomMiddle/JobSwitch/" exported="true"/>
+    <image id="hd20vilza" name="img_job_switch_2_2.png" path="/Images/BottomMiddle/JobSwitch/" exported="true"/>
+    <image id="hd20vilzb" name="img_job_switch_3_0.png" path="/Images/BottomMiddle/JobSwitch/" exported="true"/>
+    <image id="hd20vilzc" name="img_job_switch_3_1.png" path="/Images/BottomMiddle/JobSwitch/" exported="true"/>
+    <image id="hd20vilzd" name="img_job_switch_3_2.png" path="/Images/BottomMiddle/JobSwitch/" exported="true"/>
+    <component id="hd20vilze" name="BtnJobSwitch1.xml" path="/Components/BottomMiddle/JobSwitch/"/>
+    <component id="hd20vilzf" name="BtnJobSwitch2.xml" path="/Components/BottomMiddle/JobSwitch/"/>
+    <component id="hd20vilzg" name="BtnJobSwitch3.xml" path="/Components/BottomMiddle/JobSwitch/"/>
+    <component id="hd20vilzh" name="JobSwitch.xml" path="/Components/BottomMiddle/JobSwitch/"/>
+    <image id="cztnvilzi" name="0.png" path="/Images/_Font/MainUI_Preview/"/>
+    <image id="cztnvilzj" name="1.png" path="/Images/_Font/MainUI_Preview/"/>
+    <image id="cztnvilzk" name="2.png" path="/Images/_Font/MainUI_Preview/"/>
+    <image id="cztnvilzl" name="3.png" path="/Images/_Font/MainUI_Preview/"/>
+    <image id="cztnvilzm" name="4.png" path="/Images/_Font/MainUI_Preview/"/>
+    <image id="cztnvilzn" name="5.png" path="/Images/_Font/MainUI_Preview/"/>
+    <image id="cztnvilzo" name="6.png" path="/Images/_Font/MainUI_Preview/"/>
+    <image id="cztnvilzp" name="7.png" path="/Images/_Font/MainUI_Preview/"/>
+    <image id="cztnvilzq" name="8.png" path="/Images/_Font/MainUI_Preview/"/>
+    <image id="cztnvilzr" name="9.png" path="/Images/_Font/MainUI_Preview/"/>
+    <font id="cztnvilzs" name="Font1.fnt" path="/Images/_Font/MainUI_Preview/" exported="true"/>
+    <image id="wt94vilzt" name="bg_mphp1.png" path="/Images/BottomMiddle/"/>
+    <component id="d43jvilzu" name="comModHp.xml" path="/Components/BottomMiddle/"/>
+    <component id="dt43vilzv" name="comModMp.xml" path="/Components/BottomMiddle/"/>
+    <image id="nqnwvilzw" name="taskbg.png" path="/Images/MiddleLeft/"/>
+    <image id="nqnwvilzx" name="taskbgL.png" path="/Images/MiddleLeft/"/>
+    <component id="ecs4vilzy" name="comModFogHp.xml" path="/Components/BottomMiddle/"/>
+    <component id="ecs4vilzz" name="comModFogMp.xml" path="/Components/BottomMiddle/"/>
+    <image id="nwwevim00" name="newZhanli.png" path="/Images/TopLeft/"/>
+    <image id="nwwevim01" name="0.png" path="/Images/_Font/MainUI_FightNew/"/>
+    <image id="nwwevim02" name="1.png" path="/Images/_Font/MainUI_FightNew/"/>
+    <image id="nwwevim03" name="2.png" path="/Images/_Font/MainUI_FightNew/"/>
+    <image id="nwwevim04" name="3.png" path="/Images/_Font/MainUI_FightNew/"/>
+    <image id="nwwevim05" name="4.png" path="/Images/_Font/MainUI_FightNew/"/>
+    <image id="nwwevim06" name="5.png" path="/Images/_Font/MainUI_FightNew/"/>
+    <image id="nwwevim07" name="6.png" path="/Images/_Font/MainUI_FightNew/"/>
+    <image id="nwwevim08" name="7.png" path="/Images/_Font/MainUI_FightNew/"/>
+    <image id="nwwevim09" name="8.png" path="/Images/_Font/MainUI_FightNew/"/>
+    <image id="nwwevim0a" name="9.png" path="/Images/_Font/MainUI_FightNew/"/>
+    <font id="nwwevim0b" name="fightnewfont.fnt" path="/Images/_Font/MainUI_FightNew/" exported="true"/>
+    <image id="vbhzvim0c" name="img_taskSel.png" path="/Images/MiddleLeft/"/>
+    <image id="vbhzvim0d" name="taskBgNew.png" path="/Images/MiddleLeft/"/>
+    <component id="vbhzvim0e" name="ButtonEye.xml" path="/Components/TopMiddle/"/>
+    <component id="vbhzvim0f" name="BossDropCom.xml" path="/Components/TopMiddle/"/>
+    <image id="k8xzvim0h" name="img_bag_full.png" path="/Images/Pop/"/>
+    <component id="k8xzvim0i" name="PopBagFullView.xml" path="/Components/Pop/" favorite="true"/>
+    <component id="if9tvim0j" name="ButtonReCharge.xml" path="/Components/BottomMiddle/"/>
+    <image id="if9tvim0k" name="img_charge_bg.png" path="/Images/BottomMiddle/firstCharge/"/>
+    <image id="if9tvim0l" name="img_charge_pro_bg.png" path="/Images/BottomMiddle/firstCharge/"/>
+    <image id="if9tvim0m" name="img_mflsc.png" path="/Images/BottomMiddle/firstCharge/"/>
+    <image id="if9tvim0n" name="img_plat.png" path="/Images/BottomMiddle/firstCharge/"/>
+    <component id="if9tvim0o" name="PopFuncWindow.xml" path="/Components/Pop/" exported="true"/>
+    <image id="if9tvim0p" name="40104010.png" path="/Images/BottomMiddle/firstCharge/"/>
+    <component id="if9tvim0q" name="ProgressBar1.xml" path="/Components/BottomMiddle/"/>
+    <image id="if9tvim0r" name="arrow.png" path="/Images/BottomMiddle/firstCharge/" scale=""/>
+    <image id="if9tvim0s" name="textbox.png" path="/Images/BottomMiddle/firstCharge/" scale=""/>
+    <component id="wfqivim0t" name="btnActivity.xml" path="/Components/BottomRight/"/>
+    <image id="jrt3vim0u" name="img_lv18.png" path="/Images/BottomMiddle/firstCharge/"/>
+    <image id="jrt3vim0v" name="img_lv55.png" path="/Images/BottomMiddle/firstCharge/"/>
+    <component id="jrt3vim0w" name="ButtonRankDiamond.xml" path="/Components/TopLeft/"/>
+    <image id="jrt3vim0x" name="img_rankDiamond.png" path="/Images/TopLeft/"/>
+    <component id="itaavim0y" name="ButtonWayDiamond.xml" path="/Components/TopLeft/"/>
+    <image id="itaavim0z" name="img_diamondWay.png" path="/Images/TopLeft/"/>
+    <component id="dkkevim10" name="btnMsg.xml" path="/Components/BottomMiddle/"/>
+    <image id="dkkevim11" name="word_msg.png" path="/Images/BottomMiddle/"/>
+    <image id="dkkevim12" name="btn_msg.png" path="/Images/BottomMiddle/"/>
+    <component id="qbz9vim13" name="ButtonLegendaryRoad.xml" path="/Components/TopRight/"/>
+    <image id="qucvvim14" name="pkmode7.png" path="/Images/TopLeft/" exported="true"/>
+    <component id="p1uxvim15" name="ButtonSurprise.xml" path="/Components/TopLeft/"/>
+    <image id="7kcivim16" name="img_drillingArtifact.png" path="/Images/TopLeft/"/>
+    <component id="7kcivim17" name="ButtonDrillingArtifact.xml" path="/Components/TopLeft/"/>
+    <image id="txlgvim18" name="btn_bwzs.png" path="/Images/BottomMiddle/"/>
+    <image id="txlgvim19" name="img_bwzs.png" path="/Images/BottomMiddle/"/>
+    <component id="txlgvim1a" name="btnMillionMoney.xml" path="/Components/BottomMiddle/"/>
+    <component id="j85zvim1b" name="ButtonQmdj.xml" path="/Components/TopLeft/"/>
+    <image id="x9povim1c" name="img_mall_pop.png" path="/Images/Pop/"/>
+    <component id="gt95vim1d" name="ButtonCrossServer.xml" path="/Components/TopRight/"/>
+    <image id="gt95vim1e" name="img_cross_server_day.png" path="/Images/TopRight/"/>
+    <image id="gt95vim1f" name="0.png" path="/Images/_Font/MainUI_CrossServer/"/>
+    <image id="gt95vim1g" name="1.png" path="/Images/_Font/MainUI_CrossServer/"/>
+    <image id="gt95vim1h" name="2.png" path="/Images/_Font/MainUI_CrossServer/"/>
+    <image id="gt95vim1i" name="3.png" path="/Images/_Font/MainUI_CrossServer/"/>
+    <image id="gt95vim1j" name="4.png" path="/Images/_Font/MainUI_CrossServer/"/>
+    <image id="gt95vim1k" name="5.png" path="/Images/_Font/MainUI_CrossServer/"/>
+    <image id="gt95vim1l" name="6.png" path="/Images/_Font/MainUI_CrossServer/"/>
+    <image id="gt95vim1m" name="7.png" path="/Images/_Font/MainUI_CrossServer/"/>
+    <image id="gt95vim1n" name="8.png" path="/Images/_Font/MainUI_CrossServer/"/>
+    <image id="gt95vim1o" name="9.png" path="/Images/_Font/MainUI_CrossServer/"/>
+    <font id="gt95vim1p" name="Font_MainUI_CrossServer.fnt" path="/Images/_Font/MainUI_CrossServer/" exported="true"/>
+    <component id="n6bjvim1q" name="TreasureMapNotice.xml" path="/Components/MiddleRight/" exported="true"/>
+    <component id="wsscvim1r" name="btnTreasureMap.xml" path="/Components/MiddleRight/"/>
+    <component id="wsscvim1s" name="bar_yellow.xml" path="/Components/MiddleRight/"/>
+    <component id="wsscvim1t" name="progressBar_yellow.xml" path="/Components/MiddleRight/" exported="true"/>
+    <component id="wsscvim1u" name="btnTreasureMapClose.xml" path="/Components/MiddleRight/"/>
+  </resources>
+  <publish name="MainUI" npot="true"/>
+</packageDescription>

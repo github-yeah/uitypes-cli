@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" opaque="false">
+  <displayList>
+    <loader id="n1_okx4" name="img_candle" xy="0,0" size="1334,750" visible="false" alpha="0.8" touchable="false" url="image/uiLib/image_mask.png" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n0_vih2" name="img_red" xy="0,0" size="1334,750" hideByEditor="true" visible="false" touchable="false" url="image/uiLib/image_dead.png" fill="scaleFree">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <loader id="n2_okx4" name="img_monster" xy="337,152" size="659,446" hideByEditor="true" visible="false" alpha="0" touchable="false" url="image/uiLib/image_monster.png" autoSize="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+    <loader id="n3_okx4" name="img_player" xy="337,152" size="659,446" hideByEditor="true" visible="false" alpha="0" touchable="false" url="image/uiLib/image_player.png" autoSize="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </loader>
+  </displayList>
+  <transition name="redEffect">
+    <item time="0" type="Alpha" target="n0_vih2" tween="true" startValue="0" endValue="1" duration="18" repeat="-1"/>
+    <item time="18" type="Alpha" target="n0_vih2" tween="true" startValue="1" endValue="0" duration="18"/>
+  </transition>
+  <transition name="monsterEffect">
+    <item time="0" type="Alpha" target="n2_okx4" tween="true" startValue="0" endValue="1" duration="12"/>
+    <item time="12" type="Alpha" target="n2_okx4" tween="true" startValue="1" endValue="0" duration="12"/>
+    <item time="24" type="Alpha" target="n2_okx4" tween="true" startValue="0"/>
+  </transition>
+  <transition name="playerEffect">
+    <item time="0" type="Alpha" target="n3_okx4" tween="true" startValue="0" endValue="1" duration="12"/>
+    <item time="12" type="Alpha" target="n3_okx4" tween="true" startValue="1" endValue="0" duration="12"/>
+  </transition>
+</component>

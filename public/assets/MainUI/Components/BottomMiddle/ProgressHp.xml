@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="70,110" extention="ProgressBar">
+  <displayList>
+    <component id="n10_qu5x" name="bar_v" src="104svilxl" fileName="Components/BottomMiddle/comProgressHp.xml" xy="0,0"/>
+  </displayList>
+  <ProgressBar reverse="true"/>
+</component>

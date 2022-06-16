@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="386,75" designImage="ui://uionr2r4cd735yzri" designImageOffsetX="-760" designImageOffsetY="-597" designImageAlpha="54" designImageLayer="1">
+  <displayList>
+    <component id="n43_ktn8" name="com100" src="9n2n13" fileName="Components/money/MoneyItem.xml" xy="0,0">
+      <relation target="" sidePair="left-left,top-top"/>
+    </component>
+    <component id="n44_ktn8" name="com102" src="9n2n13" fileName="Components/money/MoneyItem.xml" xy="212,0">
+      <relation target="" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n45_ktn8" name="com101" src="9n2n13" fileName="Components/money/MoneyItem.xml" xy="-1,44">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+    </component>
+    <component id="n46_ktn8" name="com209" src="9n2n13" fileName="Components/money/MoneyItem.xml" xy="211,43">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </component>
+  </displayList>
+</component>

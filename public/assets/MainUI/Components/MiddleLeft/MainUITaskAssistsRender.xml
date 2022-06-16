@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="160,65" extention="Button" designImage="ui://bc7rynhehcq3fjr1" designImageOffsetX="-324" designImageOffsetY="-268">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <component id="n4_hwff" name="n4" src="hwff65yztp" fileName="Components/button/Button111.xml" pkg="uionr2r4" xy="15,6"/>
+    <text id="n2" name="titleTxt" xy="17,5" size="125,50" fontSize="18" color="#ffffff" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#000000" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.00"/>
+</component>

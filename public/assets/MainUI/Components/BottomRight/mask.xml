@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="89,89">
+  <displayList>
+    <image id="n0_uofs" name="bar" src="kd9dq" fileName="Images/bg_mask.png" pkg="ev17b9fd" xy="0,0" size="89,89" fillMethod="radial360" fillClockwise="false">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+  </displayList>
+</component>

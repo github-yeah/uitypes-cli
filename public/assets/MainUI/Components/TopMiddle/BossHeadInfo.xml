@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,150" opaque="false" designImage="ui://tdl95htah62zilre" designImageOffsetX="-42" designImageOffsetY="34" designImageAlpha="100">
+  <controller name="typeCtrl" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n15_ncr3" name="bg" src="j57yilnv" fileName="Images/bossBg.png" pkg="rsvwcnw5" xy="73,30"/>
+    <component id="n45_xwss" name="comDown" src="9ihacm" fileName="Components/TopMiddle/ComHp.xml" xy="100,59" size="229,20"/>
+    <component id="n46_usqb" name="comMid" src="9ihacm" fileName="Components/TopMiddle/ComHp.xml" xy="100,59"/>
+    <component id="n47_usqb" name="comUp" src="9ihacm" fileName="Components/TopMiddle/ComHp.xml" xy="100,59"/>
+    <component id="n56_scsm" name="shieldBar" src="ecywilui" fileName="Components/TopMiddle/BarShiled.xml" xy="130,64">
+      <gearDisplay controller="typeCtrl" pages="1"/>
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <image id="n59_ecyw" name="bgCount" src="ecywilnx" fileName="Images/bgCount.png" pkg="rsvwcnw5" xy="267,58" group="n60_ecyw"/>
+    <text id="n52_h9rd" name="txtHpCount" xy="284,58" size="50,23" group="n60_ecyw" font="ui://rsvwcnw5fmjzilol" fontSize="18" color="#dcd2be" vAlign="middle" letterSpacing="-2" autoSize="none" text="123"/>
+    <group id="n60_ecyw" name="countGroup" xy="267,58" size="67,23" advanced="true" collapsed="true"/>
+    <list id="n14_hvwy" name="bufflist" xy="75,108" size="272,51" scale="0.9,0.9" layout="row" overflow="hidden" colGap="1" defaultItem="ui://tdl95htahsm4ilo0" autoItemSize="false" vAlign="middle" autoClearItems="true">
+      <item icon="image/buff/10.png"/>
+      <item icon="image/buff/11.png"/>
+      <item icon="image/buff/12.png"/>
+      <item icon="image/buff/12.png"/>
+      <item icon="image/buff/12.png"/>
+      <item icon="image/buff/12.png"/>
+      <item icon="image/buff/12.png"/>
+    </list>
+    <component id="n48_prz2" name="touchCloseLayer" src="viw3lkm" fileName="Components/TopLeft/PlaceHolder.xml" xy="210,0" pivot="0.5,0" size="0,0"/>
+    <component id="n62_more" name="comName" src="moreilv9" fileName="Components/TopMiddle/comNameBossH.xml" xy="100,32"/>
+    <text id="n16_lb7z" name="textHp" xy="188,69" pivot="0.5,0.5" anchor="true" size="166,20" fontSize="16" color="#ffffff" align="center" vAlign="middle" leading="5" autoSize="none" strokeColor="#000000" text="9999.99万/9999.00万">
+      <relation target="n52_h9rd" sidePair=""/>
+    </text>
+    <loader id="n7_ptz8" name="roleHead" xy="59,68" pivot="0.5,0.5" anchor="true" size="72,72" url="image/bossHeadIcon/99999427.png" align="center" vAlign="middle" autoSize="true"/>
+    <image id="n63_hwfi" name="n63" src="hwfiilon" fileName="Images/bossHead.png" pkg="rsvwcnw5" xy="0,0"/>
+    <text id="n11_ptz8" name="txtBelong" xy="104,86" size="240,20" fontSize="16" color="#ff7a00" vAlign="middle" leading="0" ubb="true" vars="true" autoSize="none" strokeColor="#000000" singleLine="true" autoClearText="true" text="不知火舞"/>
+    <component id="n64_vbhz" name="btnEye" src="vbhzvim0e" fileName="Components/TopMiddle/ButtonEye.xml" xy="347,50"/>
+    <component id="n65_vbhz" name="dropCom" src="vbhzvim0f" fileName="Components/TopMiddle/BossDropCom.xml" xy="282,92" visible="false"/>
+  </displayList>
+</component>

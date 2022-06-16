@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="50,50" extention="Button" designImage="ui://3pdyppnnt5y535" designImageOffsetX="-872" designImageOffsetY="-132" designImageAlpha="0" designImageLayer="1">
+  <displayList>
+    <loader id="n30_f839" name="back" xy="25,25" pivot="0.5,0.5" anchor="true" size="54,54" url="ui://uionr2r4ghou65yzuq" align="center" vAlign="middle" autoSize="true"/>
+    <loader id="n32_evgt" name="quality" xy="5,5" pivot="0.5,0.5" size="40,40" visible="false" align="center" vAlign="middle" fill="scaleFree"/>
+    <loader id="n31_yr1p" name="imgIcon" xy="5,5" pivot="0.5,0.5" size="40,40" align="center" vAlign="middle" fill="scale"/>
+  </displayList>
+  <Button/>
+</component>

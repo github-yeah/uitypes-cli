@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="124,112">
+  <displayList>
+    <component id="n1_enhi" name="btnWindow" src="wwob5yzrr" fileName="Components/DisLimit/ButtonDisLimit.xml" xy="0,0">
+      <Button title="限时折扣"/>
+    </component>
+    <text id="n0_enhi" name="txtTime" xy="9,91" pivot="0.5,0" size="105,24" fontSize="20" color="#54af45" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="00：00：00"/>
+  </displayList>
+</component>

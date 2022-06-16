@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="267,228" designImage="ui://tdl95htal0ar36" designImageOffsetX="2" designImageOffsetY="-254" designImageAlpha="0">
+  <controller name="hasTeam" pages="1,none,0,has" selected="1"/>
+  <displayList>
+    <list id="n1_hzga" name="list" xy="0,0" size="267,228" overflow="scroll" scrollBarFlags="128" defaultItem="ui://tdl95htal0ar39" autoClearItems="true">
+      <gearDisplay controller="hasTeam" pages="0"/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n3_mmdd" name="btnCreate" src="l0ar34" fileName="Components/MiddleLeft/BtnTeamCreate.xml" xy="0,0">
+      <gearDisplay controller="hasTeam" pages="1"/>
+      <Button titleColor="#000000"/>
+    </component>
+    <component id="n4_mmdd" name="btnSearch" src="l0ar37" fileName="Components/MiddleLeft/BtnTeamSearch.xml" xy="0,76">
+      <gearDisplay controller="hasTeam" pages="1"/>
+    </component>
+  </displayList>
+</component>

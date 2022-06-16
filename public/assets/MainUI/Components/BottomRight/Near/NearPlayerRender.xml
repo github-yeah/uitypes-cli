@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="290,40" extention="Button" designImage="ui://tdl95htag3qbilmy" designImageOffsetX="-781" designImageOffsetY="-334">
+  <controller name="selectCtrl" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n0_tolj" name="n0" src="g3qbills" fileName="Images/Near/near_select.png" pkg="ev17b9fd" xy="0,0" size="290,40">
+      <gearDisplay controller="selectCtrl" pages="1"/>
+    </image>
+    <text id="n4_tolj" name="title" xy="10,10" size="164,22" fontSize="18" color="#f5f7e1" vAlign="middle" leading="5" ubb="true" autoSize="none" strokeColor="#000000" text="人物名称八个字"/>
+    <text id="n6_s8e1" name="txtLv" xy="174,10" size="115,22" fontSize="18" color="#41dc00" vAlign="middle" leading="5" ubb="true" autoSize="none" strokeColor="#000000" text="人物名称八个字"/>
+  </displayList>
+  <Button/>
+</component>

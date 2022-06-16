@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="160,160" designImage="ui://3pdyppnntigok1x" designImageOffsetX="-665" designImageOffsetY="-744" designImageAlpha="0">
+  <controller name="stateCtrl" pages="0,,1,,2," selected="2"/>
+  <displayList>
+    <image id="n11_qhfk" name="n11" src="qhfkilx2" fileName="Images/joystick/joystick_bgNew.png" xy="0,0"/>
+    <component id="n9_8apj" name="button" src="kd9di" fileName="Components/Joystick/BtnJoy.xml" xy="37,37">
+      <gearIcon controller="stateCtrl" pages="0,1,2" values="ui://tdl95htaqhfkilx3|ui://tdl95htaqhfkilx3|ui://tdl95htaqhfkilx3"/>
+      <Button icon="ui://tdl95htaqhfkilx3"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="36,38" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="1"/>
+  <controller name="c1" pages="0,,1," selected="1"/>
+  <displayList>
+    <image id="n3_vbhz" name="n3" src="vbhzilor" fileName="Images/img_eye_dark.png" pkg="rsvwcnw5" xy="0,0">
+      <gearDisplay controller="c1" pages="0"/>
+    </image>
+    <image id="n4_vbhz" name="n4" src="vbhzilos" fileName="Images/img_eye_light.png" pkg="rsvwcnw5" xy="0,0">
+      <gearDisplay controller="c1" pages="1"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

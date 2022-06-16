@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="305,305" pivot="1,1" opaque="false" designImage="ui://tdl95htaviw31e" designImageOffsetX="-1029" designImageOffsetY="-430" designImageAlpha="0">
+  <controller name="showCtrl" pages="0,,1," selected="0"/>
+  <controller name="deploy3" pages="0,ManyBtn,1,OneBtn" selected="0"/>
+  <controller name="conActivity" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <component id="n81_khun" name="btnSpecial" src="kd9do" fileName="Components/BottomRight/ShortCutRender.xml" xy="-101,124" group="n47_ak84"/>
+    <component id="n26_dnvo" name="shortCutCom" src="kd9dm" fileName="Components/BottomRight/shortCutCom.xml" xy="0,0" size="305,305" group="n47_ak84"/>
+    <component id="n64_bs3c" name="btnPlayer" src="bs3ciluc" fileName="Components/BottomRight/BtnPlayer.xml" xy="233,105" group="n47_ak84"/>
+    <component id="n65_bs3c" name="btnMonster" src="bs3cilud" fileName="Components/BottomRight/BtnMonster.xml" xy="97,232" group="n47_ak84"/>
+    <component id="n9_8apj" name="btnAttack" src="kd9dv" fileName="Components/BottomRight/BtnAttack.xml" xy="142,145" group="n47_ak84"/>
+    <component id="n67_wxa4" name="btnNear" src="bs3cilue" fileName="Components/MiddleRight/BtnTarget.xml" xy="6,0" group="n47_ak84">
+      <Button icon="ui://ev17b9fds7iwvilnr"/>
+    </component>
+    <component id="n55_v7hn" name="btnChange" src="viw3lkh" fileName="Components/BottomRight/BtnChange.xml" xy="241,240" size="62,62" group="n47_ak84" scale="0.8,0.8"/>
+    <component id="n68_wxa4" name="nearView" src="toljbz" fileName="Components/BottomRight/Near/NearView.xml" xy="5,62" pivot="1,1" anchor="true" group="n47_ak84" visible="false"/>
+    <component id="n63_91pf" name="faPop" src="91pfilrq" fileName="Components/BottomRight/faPop.xml" xy="-370,-99" size="335,115" group="n47_ak84" visible="false"/>
+    <component id="n78_ao8p" name="shortCutGestrue" src="ao8pvilyi" fileName="Components/BottomRight/ShortCutGestrue.xml" xy="66,142" group="n47_ak84"/>
+    <image id="n82_vp2x" name="imgSpecial" src="vp2xvilnx" fileName="Images/img_zjjn.png" pkg="ev17b9fd" xy="-74,150" group="n47_ak84"/>
+    <group id="n47_ak84" name="skillAll" xy="-370,-99" size="675,481" advanced="true">
+      <gearDisplay controller="showCtrl" pages="0"/>
+      <gearXY controller="showCtrl" pages="0,1" values="-370,-99|524,-131" tween="true"/>
+    </group>
+    <component id="n53_v7hn" name="itemShortCut2" src="raxllk6" fileName="Components/BottomRight/ShortCutItemRender.xml" xy="78,-161" group="n77_yg7v"/>
+    <component id="n76_yg7v" name="itemShortCut1" src="raxllk6" fileName="Components/BottomRight/ShortCutItemRender.xml" xy="6,-161" group="n77_yg7v"/>
+    <group id="n77_yg7v" name="n77" xy="6,-161" size="152,80" advanced="true" collapsed="true">
+      <gearDisplay controller="deploy3" pages="0"/>
+      <gearXY controller="deploy3" pages="0,1" values="6,-161|140,-161" tween="true"/>
+    </group>
+    <component id="n69_104sv" name="btnAutoF" src="dakeilqb" fileName="Components/BottomRight/btnOnHook.xml" xy="222,-163"/>
+    <component id="n71_8vjk" name="btnDeploy" src="8vjkilxp" fileName="Components/BottomRight/BtnOpen3.xml" xy="-38,-149">
+      <gearXY controller="deploy3" pages="0,1" values="-38,-149|103,-149" tween="true"/>
+      <Button controller="deploy3" page="1"/>
+    </component>
+    <component id="n79_krkx" name="itemShortCut3" src="raxllk6" fileName="Components/BottomRight/ShortCutItemRender.xml" xy="150,-161"/>
+    <loader id="n82_r2mo" name="imgActBg" xy="20,-274" size="260,110" group="n89_hwjd" url="image/mainUIbubble/img_activity_bg.png" autoSize="true"/>
+    <text id="n85_hwjd" name="txtActTime" xy="65,-239" size="93,20" group="n89_hwjd" fontSize="16" color="#41dc00" align="center" vAlign="middle" autoSize="none" text="00:00:00"/>
+    <text id="n86_hwjd" name="txtActName" xy="65,-212" size="93,20" group="n89_hwjd" fontSize="16" color="#00c3e5" align="center" vAlign="middle" autoSize="none" text="天降红包"/>
+    <loader id="n87_hwjd" name="imgActIcon" xy="186,-262" size="64,64" group="n89_hwjd" touchable="false" url="image/Active/img_activity_icon_4.png" autoSize="true"/>
+    <loader id="n88_hwjd" name="n88" xy="182,-198" size="70,20" group="n89_hwjd" touchable="false" url="image/mainUIbubble/img_activity_name.png" autoSize="true"/>
+    <group id="n89_hwjd" name="n89" xy="20,-274" size="260,110" group="n84_wfqi" advanced="true" collapsed="true">
+      <gearDisplay controller="conActivity" pages="0"/>
+    </group>
+    <component id="n83_wfqi" name="btnActivity" src="wfqivim0t" fileName="Components/BottomRight/btnActivity.xml" xy="270,-240" group="n84_wfqi">
+      <Button controller="conActivity" page="1"/>
+    </component>
+    <group id="n84_wfqi" name="n84" xy="20,-274" size="282,110" advanced="true">
+      <gearDisplay controller="conActivity" pages="0,1"/>
+    </group>
+  </displayList>
+</component>

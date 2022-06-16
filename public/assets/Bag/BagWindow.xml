@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1138,701" designImageAlpha="0" designImageLayer="1">
+  <displayList>
+    <component id="n86_s8vv" name="contentArea" src="qjf9g" fileName="Components/comFrame.xml" pkg="uf42mume" xy="0,0" size="1108,701"/>
+    <loader id="n92_tole" name="loaderTitle" xy="66,87" pivot="0.5,0" anchor="true" size="29,59" url="image/bag/iconTitle.png" align="center" vAlign="middle" autoSize="true"/>
+    <component id="n111_q421" name="relation" src="e9ekz" fileName="Components/WindowRelationList.xml" pkg="uf42mume" xy="21,152"/>
+  </displayList>
+</component>

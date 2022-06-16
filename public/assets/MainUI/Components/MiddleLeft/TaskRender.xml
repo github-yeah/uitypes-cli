@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="268,84" extention="Button" designImageOffsetY="-252" designImageAlpha="0">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <image id="n21_nqnw" name="n21" src="nqnwvilzw" fileName="Images/MiddleLeft/taskbg.png" xy="1,5"/>
+    <text id="n12_vxeo" name="taskName" xy="6,11" size="255,22" fontSize="18" color="#ff820f" vAlign="middle" leading="5" ubb="true" autoSize="none" strokeColor="#000000" text="任务名称"/>
+    <text id="n6_r4i3" name="taskIntro" xy="6,32" size="255,22" fontSize="18" color="#ffffff" vAlign="middle" leading="5" ubb="true" autoSize="none" strokeColor="#000000" text="任务描述"/>
+    <text id="n16_i31a" name="taskAssist" xy="6,53" size="255,22" fontSize="18" color="#ffffff" vAlign="middle" leading="5" ubb="true" autoSize="height" strokeColor="#000000" text=""/>
+    <image id="n22_nqnw" name="n22" src="nqnwvilzx" fileName="Images/MiddleLeft/taskbgL.png" xy="2,5">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <graph id="n20_gm6z" name="taskMod" xy="138,44" size="30,30" touchable="false" type="rect" fillColor="#00ffffff"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

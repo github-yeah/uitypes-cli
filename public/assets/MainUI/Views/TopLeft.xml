@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="345,150" opaque="false" designImageOffsetX="286" designImageOffsetY="8" designImageAlpha="60">
+  <controller name="jobCtrl" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <image id="n159_hphl" name="barbg" src="hphlilvz" fileName="Images/TopLeft/bg_topleft.png" xy="4,14"/>
+    <graph id="n168_dzls" name="mod" xy="205,66" size="50,50" touchable="false" type="rect" fillColor="#00ffffff"/>
+    <component id="n74_ez7m" name="btnMode" src="ierv7f" fileName="Components/TopLeft/BtnMode.xml" xy="101,98"/>
+    <component id="n128_viw3" name="btnBuff" src="viw3lkl" fileName="Components/TopLeft/BtnPrivilege.xml" xy="191,98">
+      <Button titleColor="#ffffff" titleFontSize="15" icon="ui://tdl95htahphlilwt"/>
+    </component>
+    <text id="n152_rwmd" name="txtFight" xy="172,61" size="160,26" font="ui://tdl95htanwwevim0b" fontSize="0" vAlign="middle" leading="0" letterSpacing="-2" autoSize="none" text="257472734"/>
+    <component id="n56_h3fp" name="btnFight" src="jodzljn" fileName="Components/emptyBtn.xml" xy="166,61" size="149,33"/>
+    <component id="n31_fq2t" name="btnRoleHead" src="jcpccr" fileName="Components/TopLeft/BtnRoleHead.xml" xy="33,21" aspect="true">
+      <Button icon="image/headIcon/11.png"/>
+    </component>
+    <component id="n133_a1g6" name="btnPreview" src="cryyilo1" fileName="Components/TopLeft/BtnPreview.xml" xy="334,7">
+      <Button titleColor="#31a03b"/>
+    </component>
+    <image id="n164_lnjz" name="n164" src="lnjzvilxq" fileName="Images/TopLeft/bg_lv.png" xy="-3,8"/>
+    <component id="n148_jikb" name="touchCloseLayer" src="viw3lkm" fileName="Components/TopLeft/PlaceHolder.xml" xy="0,16"/>
+    <text id="n125_viw3" name="txt_lv" xy="3,16" pivot="0.5,0.5" size="32,22" fontSize="18" color="#d7d1c8" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="999"/>
+    <text id="n149_7648" name="txt_screen" xy="345,0" size="126,78" hideByEditor="true" visible="false" fontSize="22" color="#00ff00" autoSize="none" strokeColor="#000000" text="玩家数:"/>
+    <component id="n153_hyl5" name="btnPrivilege" src="wo21ilr8" fileName="Components/TopLeft/vip/BtnOpenVip.xml" xy="5,90" aspect="true">
+      <Button title="10"/>
+    </component>
+    <image id="n169_nwwe" name="txtAtk" src="nwwevim00" fileName="Images/TopLeft/newZhanli.png" xy="112,56"/>
+    <text id="n163_hphl" name="txt_diamond" xy="150,25" pivot="0.5,0.5" size="130,22" fontSize="18" color="#d7d1c8" vAlign="middle" ubb="true" autoSize="none" strokeColor="#000000" text="11000000000000"/>
+    <text id="n165_lnjz" name="txt_transmigration" xy="6,46" pivot="0.5,0.5" size="26,18" fontSize="14" color="#ffcc00" align="center" vAlign="middle" ubb="true" strokeColor="#000000" text="0转"/>
+    <image id="n167_fn4v" name="n166" src="9n2n10" fileName="Images/attr/101.png" pkg="uionr2r4" xy="118,22" scale="0.8,0.8"/>
+    <component id="n172_jrt3" name="btnRankDiamond" src="jrt3vim0w" fileName="Components/TopLeft/ButtonRankDiamond.xml" xy="110,142" group="n174_d2sj"/>
+    <component id="n173_itaa" name="btnWayDiamond" src="itaavim0y" fileName="Components/TopLeft/ButtonWayDiamond.xml" xy="10,142" group="n174_d2sj"/>
+    <component id="n178_7kci" name="btnDrillingArtifact" src="7kcivim17" fileName="Components/TopLeft/ButtonDrillingArtifact.xml" xy="212,142" group="n174_d2sj" visible="false"/>
+    <component id="n176_p1ux" name="btnSurprise" src="p1uxvim15" fileName="Components/TopLeft/ButtonSurprise.xml" xy="320,142" group="n174_d2sj"/>
+    <component id="n179_j85z" name="btnQmdj" src="j85zvim1b" fileName="Components/TopLeft/ButtonQmdj.xml" xy="320,142" group="n174_d2sj"/>
+    <group id="n174_d2sj" name="funGroup" xy="10,142" size="398,72" advanced="true" collapsed="true">
+      <relation target="" sidePair=""/>
+    </group>
+  </displayList>
+</component>

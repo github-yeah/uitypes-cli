@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="267,75" extention="Button" designImage="ui://tdl95htal0ar36" designImageOffsetX="1" designImageOffsetY="-398">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n6_nqnw" name="n6" src="nqnwvilzw" fileName="Images/MiddleLeft/taskbg.png" xy="0,0"/>
+    <image id="n1" name="n1" src="l0ar2q" fileName="Images/MiddleLeft/com_team_search.png" xy="40,12"/>
+    <text id="n3_hzga" name="n3" xy="98,26" size="134,24" fontSize="20" color="#e6e6e3" align="center" vAlign="middle" leading="5" autoSize="none" strokeColor="#000000" text="查看附近队伍"/>
+  </displayList>
+  <Button/>
+</component>

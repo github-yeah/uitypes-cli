@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="86,41" extention="Button">
+  <displayList/>
+  <Button downEffect="dark" downEffectValue="0.80"/>
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="25,100" pivot="0.5,0.5" anchor="true">
+  <displayList>
+    <image id="n0_piay" name="n0" src="u40mlkb" fileName="Images/TopRight/itemTips_bg_1.png" pkg="fnu4ep3v" xy="0,0" size="25,100">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <list id="n1_piay" name="subFuncList" xy="12,7" size="0,82" layout="row" overflow="hidden" defaultItem="ui://tdl95htaierv5o" autoItemSize="false" align="center" vAlign="middle" autoClearItems="true"/>
+  </displayList>
+  <relation target="n1_piay" sidePair="width-width"/>
+</component>

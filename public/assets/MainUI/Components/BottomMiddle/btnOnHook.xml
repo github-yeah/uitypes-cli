@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="70,70" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n1_dake" name="icon1" src="dakeilnq" fileName="Images/btn_on_Hook1.png" pkg="fnu4ep3v" xy="0,0">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n0_dake" name="icon0" src="dakeilnn" fileName="Images/btn_on_Hook0.png" pkg="fnu4ep3v" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

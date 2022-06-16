@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="341,78" pivot="1,1" anchor="true" opaque="false" designImageOffsetX="-458" designImageOffsetY="-371">
+  <displayList>
+    <image id="n5_u3gf" name="n5" src="jodzljh" fileName="Images/Pop/pop_1.png" xy="0,0" size="341,78" alpha="0.9">
+      <relation target="n2_r29u" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n7_jt7v" name="btnClose" src="jodzlji" fileName="Components/Pop/PopClose.xml" xy="338,1" hideByEditor="true" visible="false"/>
+    <richtext id="n2_r29u" name="tip" xy="5,5" size="325,24" fontSize="20" color="#e8dbca" ubb="true" autoSize="none" text="正在匹配，点击沙漏可返回组队平台"/>
+    <component id="n6_o6t0" name="btnCon" src="jodzljn" fileName="Components/Pop/emptyBtn.xml" xy="2,3" size="329,61">
+      <relation target="n2_r29u" sidePair="width-width,height-height"/>
+    </component>
+  </displayList>
+  <relation target="n5_u3gf" sidePair="width-width,height-height"/>
+</component>

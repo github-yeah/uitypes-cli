@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="263,78" extention="ProgressBar">
+  <displayList>
+    <image id="n2_btgd" name="bg" src="j57yilnv" fileName="Images/bossBg.png" pkg="rsvwcnw5" xy="0,0"/>
+    <component id="n1_h3pa" name="bar" src="9ihacm" fileName="Components/TopMiddle/ComHp.xml" xy="26,29"/>
+  </displayList>
+  <ProgressBar/>
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1,1" opaque="false">
+  <controller name="autoStateCtr" pages="2,autoStand,0,autoMove,1,autoFight" selected="0"/>
+  <displayList>
+    <graph id="n13_j82l" name="autoHolder" xy="0,0" pivot="0.5,0.5" size="1,1">
+      <gearDisplay controller="autoStateCtr" pages="0,1"/>
+      <gearXY controller="autoStateCtr" pages="2,0" values="0,0|125,45" default="130,35"/>
+    </graph>
+  </displayList>
+</component>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,100" pivot="0.5,0.5" opaque="false" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n13_bs3c" name="n13" src="bs3ciln7" fileName="Images/bg_skill.png" pkg="ev17b9fd" xy="-7,-7"/>
+    <image id="n15_bs3c" name="n15" src="dakeilmr" fileName="Images/bg_skill_normal.png" pkg="ev17b9fd" xy="15,15"/>
+    <loader id="n1" name="icon" xy="-10,-9" pivot="0.5,0.5" size="120,120" fill="scaleFree"/>
+    <image id="n16_104sv" name="n16" src="104svilnk" fileName="Images/btn_skillBg3.png" pkg="ev17b9fd" xy="-20,-20"/>
+    <component id="n17_941n" name="cdMask" src="uofs25" fileName="Components/BottomRight/mask.xml" xy="-10,-11" pivot="0.5,0.5" size="120,120" visible="false" alpha="0.5"/>
+    <graph id="n18_941n" name="cdGraph" xy="-10,-11" size="120,120" type="rect" lineColor="#00000000" fillColor="#00000000"/>
+    <text id="n20_941n" name="title" xy="45,34" pivot="0.5,0.5" size="10,32" visible="false" font="SimHei" fontSize="28" color="#d7d1c8" align="center" strokeColor="#000000" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.10"/>
+</component>

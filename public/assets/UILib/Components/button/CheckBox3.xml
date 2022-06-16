@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="38,29" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n2_qkrg" name="n2" src="nd8l25" fileName="Images/common/check_2.png" xy="0,0" size="26,26">
+      <gearDisplay controller="button" pages="0,1,2,3"/>
+    </image>
+    <image id="n3_qkrg" name="n3" src="nd8l24" fileName="Images/common/check_1.png" xy="4,0">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <text id="n4_qkrg" name="title" xy="28,3" size="10,20" fontSize="16" color="#dcd2be" vAlign="middle" ubb="true" strokeColor="#000000" text=""/>
+  </displayList>
+  <Button mode="Check"/>
+  <relation target="n4_qkrg" sidePair="rightext-right"/>
+</component>

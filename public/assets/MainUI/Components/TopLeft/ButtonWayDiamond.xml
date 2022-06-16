@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="88,72" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n4_itaa" name="n4" src="itaavim0z" fileName="Images/TopLeft/img_diamondWay.png" xy="0,0"/>
+    <image id="n5_iozn" name="red" src="dfdo65yzsh" fileName="Images/common/icon_redIcon.png" pkg="uionr2r4" xy="63,3" visible="false"/>
+  </displayList>
+  <Button downEffect="dark" downEffectValue="0.90"/>
+</component>

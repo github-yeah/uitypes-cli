@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="169,150" opaque="false" designImage="ui://tdl95htaviw31e" designImageOffsetX="-1165">
+  <controller name="listPosState" pages="0,没有boss图标,1,有boss图标" selected="0"/>
+  <displayList>
+    <image id="n64_8vjk" name="n64" src="8vjkilql" fileName="Images/TopRight/map_small_bgNew.png" pkg="fnu4ep3v" xy="-59,-2"/>
+    <component id="n57_taiu" name="bossBtn" src="taiuilmc" fileName="Components/Boss/BossBtn.xml" xy="-212,2">
+      <gearDisplay controller="listPosState" pages="1"/>
+    </component>
+    <component id="n49_dr3y" name="btnSmallMap" src="jodzljn" fileName="Components/emptyBtn.xml" xy="-26,0" size="194,76">
+      <Button icon="ui://fnu4ep3vdakeilni"/>
+    </component>
+    <component id="n27_h3fp" name="btnOpen" src="ierv64" fileName="Components/TopRight/Rdo1.xml" xy="-103,3">
+      <Button checked="true"/>
+    </component>
+    <component id="n56_wkti" name="btnCom" src="ierv5n" fileName="Components/TopRight/TopRightBtns.xml" xy="-994,0" size="890,246">
+      <gearXY controller="listPosState" pages="0,1" values="-994,0|-1104,0"/>
+      <gearSize controller="listPosState" pages="0,1" values="890,246,1,1|1000,246,1,1"/>
+    </component>
+    <loader id="n48_dr3y" name="loaderArea" xy="9,51" size="38,19" scale="0.9,0.9" touchable="false" url="ui://fnu4ep3v12b3lis" vAlign="middle" autoSize="true" color="#c3beaf"/>
+    <text id="n53_vrzt" name="textPos" xy="49,50" size="87,19" font="ui://fnu4ep3vvv9bll3" fontSize="8" color="#c3beaf" align="center" vAlign="middle" letterSpacing="-1" text="(999.999)"/>
+    <loader id="n65_lewa" name="limitBubble" xy="-239,154" size="222,76" scale="0.9,0.9" touchable="false" url="image/mainUIbubble/bubbleLimitGift.png" vAlign="middle" autoSize="true" color="#c3beaf">
+      <gearXY controller="listPosState" pages="1" values="-348,154" default="-239,154"/>
+    </loader>
+    <loader id="n66_ht1m" name="lvUp50Bubble" xy="-239,221" size="222,76" scale="0.9,0.9" visible="false" touchable="false" url="image/mainUIbubble/bubble50.png" vAlign="middle" autoSize="true" color="#c3beaf">
+      <gearXY controller="listPosState" pages="0,1" values="-239,221|-348,221"/>
+    </loader>
+    <loader id="n68_ht1m" name="lvUp100Bubble" xy="-239,221" size="222,76" scale="0.9,0.9" visible="false" touchable="false" url="image/mainUIbubble/bubble100.png" vAlign="middle" autoSize="true" color="#c3beaf">
+      <gearXY controller="listPosState" pages="0,1" values="-239,221|-348,221"/>
+    </loader>
+    <loader id="n71_h547" name="mcBubble" xy="-588,154" size="222,76" scale="0.9,0.9" visible="false" touchable="false" url="image/mainUIbubble/bubbleMc.png" vAlign="middle" autoSize="true" color="#c3beaf"/>
+    <component id="n77_qbz9" name="legendaryEntry" src="qbz9vim13" fileName="Components/TopRight/ButtonLegendaryRoad.xml" xy="-19,90"/>
+    <loader id="n79_fyfd" name="nc06Bubble" xy="-466,140" size="186,283" scale="0.9,0.9" visible="false" touchable="false" url="image/mainUIbubble/img_06.png" vAlign="middle" autoSize="true" color="#c3beaf"/>
+    <loader id="n80_fyfd" name="nc30Bubble" xy="-656,140" size="186,283" scale="0.9,0.9" visible="false" touchable="false" url="image/mainUIbubble/img_30.png" vAlign="middle" autoSize="true" color="#c3beaf"/>
+    <loader id="n81_fyfd" name="nc68Bubble" xy="-276,140" size="186,283" scale="0.9,0.9" visible="false" touchable="false" url="image/mainUIbubble/img_68.png" vAlign="middle" autoSize="true" color="#c3beaf"/>
+    <component id="n82_ppcn" name="btnCrossServer" src="gt95vim1d" fileName="Components/TopRight/ButtonCrossServer.xml" xy="75,90"/>
+    <loader id="n83_9psl" name="questionnaireBubble" xy="-659,213" size="208,70" scale="0.9,0.9" visible="false" touchable="false" url="image/mainUIbubble/bubble_questionnaire.png" vAlign="middle" autoSize="true" color="#c3beaf"/>
+    <text id="n84_bloo" name="txtTime" xy="1,1" size="140,22" fontSize="18" color="#dcd2be" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="10:00"/>
+  </displayList>
+  <transition name="t0" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="XY" target="n66_ht1m" tween="true" startValue="-239,221" endValue="-239,232" duration="12" ease="Quad.In" repeat="-1"/>
+    <item time="0" type="XY" target="n68_ht1m" tween="true" startValue="-239,221" endValue="-239,232" duration="12" ease="Quad.In" repeat="-1"/>
+    <item time="12" type="XY" target="n66_ht1m" tween="true" startValue="-239,232" endValue="-239,221" duration="12" ease="Quad.In" repeat="-1" yoyo="true"/>
+    <item time="12" type="XY" target="n68_ht1m" tween="true" startValue="-239,232" endValue="-239,221" duration="12" ease="Quad.In" repeat="-1" yoyo="true"/>
+    <item time="24" type="XY" target="n66_ht1m" tween="true" startValue="-239,221" ease="Quad.In" repeat="-1" yoyo="true"/>
+    <item time="24" type="XY" target="n68_ht1m" tween="true" startValue="-239,221" ease="Quad.In" repeat="-1" yoyo="true"/>
+  </transition>
+</component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="70,70" pivot="0.5,0.5" opaque="false" extention="Button" designImageOffsetX="-910" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n16_egrv" name="n16" src="egrvvilqs" fileName="Images/btn_bgN.png" pkg="fnu4ep3v" xy="4,4"/>
+    <loader id="n5" name="icon" xy="-5,-5" pivot="0.5,0.5" size="80,80" url="image/icon/abtn_fabaotehui.png" align="center" vAlign="middle" autoSize="true"/>
+    <graph id="n17_lnrj" name="mod" xy="35,35" size="10,10" touchable="false" type="rect" fillColor="#00ffffff"/>
+    <loader id="n14_104sv" name="iconTxt" xy="1,47" pivot="0.5,0.5" size="70,26" url="ui://fnu4ep3v104svilqc" align="center" vAlign="middle" autoSize="true"/>
+    <image id="n12_104sv" name="redPoint" src="104svilq0" fileName="Images/icon_RedNew.png" pkg="fnu4ep3v" xy="41,-5" visible="false">
+      <relation target="" sidePair="top-top,right-right"/>
+    </image>
+    <loader id="n18_kh98" name="flag" xy="-3,-8" pivot="0.5,0.5" size="42,41" url="image/icon/flag_3.png" align="center" vAlign="middle" autoSize="true"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.05"/>
+</component>

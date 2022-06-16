@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="282,14" extention="ProgressBar">
+  <displayList>
+    <component id="n1_sk0m" name="bar" src="iz2h5yzpx" fileName="Components/progressBar/bar_white.xml" xy="0,0" size="282,14"/>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

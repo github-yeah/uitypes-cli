@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="468,500" mask="n54_gbef" designImage="ui://t55ptsa9ndhm1x" designImageOffsetX="-714" designImageOffsetY="-139" designImageAlpha="0" designImageLayer="1">
+  <displayList>
+    <graph id="n54_gbef" name="mask" xy="0,0" size="468,500" type="rect">
+      <relation target="" sidePair="height-height,width-width"/>
+    </graph>
+    <list id="n56_py2s" name="listBag" xy="0,0" size="468,500" layout="flow_hz" overflow="scroll" lineGap="12" colGap="12" lineItemCount="6" defaultItem="ui://t55ptsa9q81027" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

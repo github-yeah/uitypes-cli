@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="92,88" overflow="hidden">
+  <controller name="job" pages="0,,1,,2," selected="0"/>
+  <displayList>
+    <component id="n0_hd20" name="n0" src="hd20vilze" fileName="Components/BottomMiddle/JobSwitch/BtnJobSwitch1.xml" xy="0,0">
+      <gearDisplay controller="job" pages="0"/>
+    </component>
+    <component id="n1_hd20" name="n1" src="hd20vilzf" fileName="Components/BottomMiddle/JobSwitch/BtnJobSwitch2.xml" xy="0,0">
+      <gearDisplay controller="job" pages="1"/>
+    </component>
+    <component id="n2_hd20" name="n2" src="hd20vilzg" fileName="Components/BottomMiddle/JobSwitch/BtnJobSwitch3.xml" xy="0,0">
+      <gearDisplay controller="job" pages="2"/>
+    </component>
+    <image id="n3_jis9" name="redPoint" src="dfdo65yzsh" fileName="Images/common/icon_redIcon.png" pkg="uionr2r4" xy="70,4"/>
+  </displayList>
+</component>

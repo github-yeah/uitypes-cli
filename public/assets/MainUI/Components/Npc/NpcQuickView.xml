@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="185,67" opaque="false">
+  <displayList>
+    <list id="n0_qdfx" name="npcList" xy="0,0" size="185,67" defaultItem="ui://tdl95htaqdfxilvr" align="center" vAlign="middle" autoClearItems="true">
+      <item/>
+    </list>
+  </displayList>
+  <relation target="n0_qdfx" sidePair="bottomext-bottom"/>
+</component>

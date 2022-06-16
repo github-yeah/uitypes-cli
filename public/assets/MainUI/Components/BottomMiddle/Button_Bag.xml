@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="70,70" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1" name="n1" src="pqr7ilrc" fileName="Images/BottomMiddle/btn_bag.png" xy="0,0"/>
+    <image id="n4_ddk6" name="red" src="dakeilq9" fileName="Images/icon_Red.png" xy="48,-12" pivot="0.5,0.5" visible="false"/>
+    <image id="n3_pw9o" name="full" src="vxivilq2" fileName="Images/BottomMiddle/full.png" xy="50,-9" aspect="true" visible="false"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.05"/>
+</component>

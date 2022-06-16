@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="110,150" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n8_mqij" name="n8" src="r6vcvilqt" fileName="Images/FuncIcons/abtn_boss.png" pkg="fnu4ep3v" xy="5,-1"/>
+    <image id="n9_mqij" name="n9" src="r6vcvilrh" fileName="Images/FuncIcons/word_boss.png" pkg="fnu4ep3v" xy="22,106"/>
+    <image id="n10_mqij" name="red" src="104svilq0" fileName="Images/icon_RedNew.png" pkg="fnu4ep3v" xy="80,-3" visible="false"/>
+  </displayList>
+  <Button downEffect="dark" downEffectValue="0.80"/>
+</component>

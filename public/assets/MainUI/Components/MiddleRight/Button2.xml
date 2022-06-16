@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="74,70" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n1_y6w4" name="n1" src="104svilpt" fileName="Images/MiddleRight/btn_bg.png" pkg="fnu4ep3v" xy="-3,-6"/>
+    <image id="n2_y6w4" name="n2" src="y6w4vils7" fileName="Images/MiddleRight/btn_raise.png" pkg="fnu4ep3v" xy="12,6"/>
+    <image id="n3_y6w4" name="n3" src="y6w4vils8" fileName="Images/MiddleRight/raise_txt.png" pkg="fnu4ep3v" xy="2,48"/>
+  </displayList>
+  <Button/>
+</component>

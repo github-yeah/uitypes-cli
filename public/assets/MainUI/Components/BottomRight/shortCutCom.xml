@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="305,305" overflow="hidden" opaque="false" designImage="ui://tdl95htaviw31e" designImageOffsetX="-1029" designImageOffsetY="-430" designImageAlpha="85">
+  <controller name="pageCtrl" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n0_dnvo" name="shortCutList" src="kd9dn" fileName="Components/BottomRight/ShortCutList.xml" xy="0,0" pivot="0.5,0.5">
+      <gearLook controller="pageCtrl" pages="0,1" values="1,0,0,1|1,90,0,1" tween="true"/>
+    </component>
+  </displayList>
+</component>

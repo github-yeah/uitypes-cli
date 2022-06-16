@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1000,246" overflow="hidden" opaque="false" designImage="ui://tdl95htaviw31e" designImageOffsetX="-360" designImageOffsetY="-14" designImageAlpha="0">
+  <controller name="showCtrl" pages="0,,1," selected="0"/>
+  <displayList>
+    <list id="n25_p2y1" name="btnList1" xy="1780,3" pivot="1,0" anchor="true" size="890,70" layout="row" clipSoftness="10,0" defaultItem="ui://tdl95htaierv5o" autoItemSize="false" align="right" autoClearItems="true">
+      <gearDisplay controller="showCtrl" pages="1"/>
+      <gearXY controller="showCtrl" pages="0,1" values="1780,3|890,3" tween="true"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n26_p2y1" name="btnList2" xy="1780,76" pivot="1,0" anchor="true" size="890,70" layout="row" clipSoftness="10,0" defaultItem="ui://tdl95htaierv5o" autoItemSize="false" align="right" autoClearItems="true">
+      <gearDisplay controller="showCtrl" pages="1"/>
+      <gearXY controller="showCtrl" pages="0,1" values="1780,76|890,76" tween="true"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n27_usnr" name="btnList3" xy="1780,149" pivot="1,0" anchor="true" size="890,70" layout="row" clipSoftness="10,0" defaultItem="ui://tdl95htaierv5o" autoItemSize="false" align="right" autoClearItems="true">
+      <gearDisplay controller="showCtrl" pages="1"/>
+      <gearXY controller="showCtrl" pages="0,1" values="1780,149|890,149" tween="true"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n28_we53" name="btnListBack1" xy="890,3" pivot="1,0" anchor="true" size="890,70" layout="row" clipSoftness="10,0" defaultItem="ui://tdl95htaierv5o" autoItemSize="false" align="right" autoClearItems="true">
+      <gearDisplay controller="showCtrl" pages="0"/>
+      <gearXY controller="showCtrl" pages="0,1" values="890,3|1780,3" tween="true"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n29_we53" name="btnListBack2" xy="890,76" pivot="1,0" anchor="true" size="890,70" layout="row" clipSoftness="10,0" defaultItem="ui://tdl95htaierv5o" autoItemSize="false" align="right" autoClearItems="true">
+      <gearDisplay controller="showCtrl" pages="0"/>
+      <gearXY controller="showCtrl" pages="0,1" values="890,76|1780,76" tween="true"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n30_uhmp" name="btnListBack3" xy="890,149" pivot="1,0" anchor="true" size="890,70" layout="row" clipSoftness="10,0" defaultItem="ui://tdl95htaierv5o" autoItemSize="false" align="right" autoClearItems="true">
+      <gearDisplay controller="showCtrl" pages="0"/>
+      <gearXY controller="showCtrl" pages="0,1" values="890,149|1780,149" tween="true"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="96,96" pivot="0.5,0.5" extention="Button" designImage="ui://tdl95htadakeilq8" designImageOffsetX="-1232" designImageOffsetY="-460" designImageAlpha="0">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n30_s7iw" name="skillbg" src="igsyvilnq" fileName="Images/btn_skillBg4.png" pkg="ev17b9fd" xy="-7,-8" size="110,110"/>
+    <image id="n29_104sv" name="skillPlus" src="104svilnl" fileName="Images/+.png" pkg="ev17b9fd" xy="23,24"/>
+    <loader id="n2" name="icon" xy="7,7" pivot="0.5,0.5" size="82,82" url="ui://ev17b9fdklrrillb" align="center" vAlign="middle" fill="scale">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n28_viw3" name="n28" src="dakeilmv" fileName="Images/btn_skillBg2.png" pkg="ev17b9fd" xy="3,3"/>
+    <component id="n9_iw6u" name="cdMask" src="uofs25" fileName="Components/BottomRight/mask.xml" xy="7,7" pivot="0.5,0.5" size="82,82" visible="false" alpha="0.5"/>
+    <graph id="n24_uofs" name="cdGraph" xy="7,7" size="82,82" type="rect" lineColor="#00000000" fillColor="#00000000"/>
+    <image id="n13_g7ws" name="autoMask" src="kd9dq" fileName="Images/bg_mask.png" pkg="ev17b9fd" xy="7,7" pivot="0.5,0.5" size="82,82" visible="false" alpha="0.5" fillMethod="radial360" fillClockwise="false"/>
+    <text id="n3_tv59" name="title" xy="43,32" pivot="0.5,0.5" size="10,32" visible="false" font="SimHei" fontSize="28" color="#d7d1c8" align="center" strokeColor="#000000" text="">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <text id="n8_gpww" name="count" xy="31,64" pivot="1,0" size="58,25" visible="false" fontSize="18" color="#d7d1c8" align="right" vAlign="middle" autoSize="none" strokeColor="#000000" text=""/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="0.95"/>
+  <transition name="t0">
+    <item time="0" type="Scale" target="n13_g7ws" tween="true" startValue="1,1" endValue="0.95,0.95" duration="2"/>
+    <item time="0" type="Scale" target="n2" tween="true" startValue="1,1" endValue="0.95,0.95" duration="2"/>
+    <item time="0" type="Scale" target="n3_tv59" tween="true" startValue="1,1" endValue="0.95,0.95" duration="2"/>
+    <item time="0" type="Scale" target="n8_gpww" tween="true" startValue="1,1" endValue="0.95,0.95" duration="2"/>
+    <item time="0" type="Scale" target="n9_iw6u" tween="true" startValue="1,1" endValue="0.95,0.95" duration="2"/>
+    <item time="2" type="Scale" target="n13_g7ws" tween="true" startValue="0.95,0.95" endValue="1,1" duration="3" ease="Back.Out"/>
+    <item time="2" type="Scale" target="n2" tween="true" startValue="0.95,0.95" endValue="1,1" duration="3" ease="Back.Out"/>
+    <item time="2" type="Scale" target="n3_tv59" tween="true" startValue="0.95,0.95" endValue="1,1" duration="3" ease="Back.Out"/>
+    <item time="2" type="Scale" target="n8_gpww" tween="true" startValue="0.95,0.95" endValue="1,1" duration="3" ease="Back.Out"/>
+    <item time="2" type="Scale" target="n9_iw6u" tween="true" startValue="0.95,0.95" endValue="1,1" duration="3" ease="Back.Out"/>
+  </transition>
+</component>

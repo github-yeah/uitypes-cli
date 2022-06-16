@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="610,610" designImage="ui://3pdyppnnnp0c8l" designImageOffsetX="-1023" designImageOffsetY="-442" designImageAlpha="100">
+  <displayList>
+    <component id="n17_hpez" name="shortCut_1" src="kd9do" fileName="Components/BottomRight/ShortCutRender.xml" xy="200,1"/>
+    <component id="n18_hpez" name="shortCut_2" src="kd9do" fileName="Components/BottomRight/ShortCutRender.xml" xy="89,13"/>
+    <component id="n19_hpez" name="shortCut_3" src="kd9do" fileName="Components/BottomRight/ShortCutRender.xml" xy="18,95"/>
+    <component id="n20_hpez" name="shortCut_4" src="kd9do" fileName="Components/BottomRight/ShortCutRender.xml" xy="1,204"/>
+    <component id="n21_hpez" name="shortCut_5" src="kd9do" fileName="Components/BottomRight/ShortCutRender.xml" xy="1,313"/>
+    <component id="n22_hpez" name="shortCut_6" src="kd9do" fileName="Components/BottomRight/ShortCutRender.xml" xy="12,424"/>
+    <component id="n23_hpez" name="shortCut_7" src="kd9do" fileName="Components/BottomRight/ShortCutRender.xml" xy="94,497"/>
+    <component id="n24_hpez" name="shortCut_8" src="kd9do" fileName="Components/BottomRight/ShortCutRender.xml" xy="203,513"/>
+  </displayList>
+</component>

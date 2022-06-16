@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="90,90">
+  <displayList>
+    <loader id="n0_t694" name="back" xy="0,0" size="90,90" url="ui://uionr2r4h9bh5yzru" align="center" vAlign="middle"/>
+    <loader id="n2_t694" name="imgIcon" xy="9,9" size="72,72" align="center" vAlign="middle" fill="scaleFree"/>
+  </displayList>
+</component>

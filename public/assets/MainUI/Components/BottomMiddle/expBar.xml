@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,16" extention="ProgressBar">
+  <displayList>
+    <image id="n9_igsy" name="n9" src="igsyvilxp" fileName="Images/BottomMiddle/bg_expNew.png" xy="0,0" size="80,16">
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <image id="n7_104sv" name="bar" src="kd9d1k" fileName="Images/BottomMiddle/bar_exp.png" xy="22,4" size="35,7" aspect="true">
+      <relation target="" sidePair="width-width"/>
+    </image>
+  </displayList>
+  <ProgressBar/>
+</component>

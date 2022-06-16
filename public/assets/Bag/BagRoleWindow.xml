@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1024,624" designImage="ui://t55ptsa9ndhm1x" designImageOffsetX="-90" designImageOffsetY="-83" designImageAlpha="0" designImageLayer="1">
+  <controller name="conType" pages="0,,1,,2," selected="0">
+    <remark page="0" value="全部"/>
+    <remark page="1" value="材料"/>
+    <remark page="2" value="装备"/>
+  </controller>
+  <displayList>
+    <image id="n126_j3ye" name="n126" src="b9q765yzrm" fileName="Images/bg/img_back_2.png" pkg="uionr2r4" xy="25,47" size="974,522"/>
+    <component id="n119_p76e" name="btnNormal" src="nd8l1x" fileName="Components/tab/tab_1.xml" pkg="uionr2r4" xy="30,12">
+      <Button checked="true" title="全部" controller="conType" page="0"/>
+    </component>
+    <image id="n120_p76e" name="iconFullBag" src="vxivilq2" fileName="Images/BottomMiddle/full.png" pkg="tdl95hta" xy="21,3"/>
+    <text id="n121_p76e" name="txtCount" xy="873,17" size="75,24" fontSize="20" color="#4bff00" align="center" vAlign="middle" strokeColor="#000000" text="200/200"/>
+    <component id="n122_p76e" name="btnMaterial" src="nd8l1x" fileName="Components/tab/tab_1.xml" pkg="uionr2r4" xy="130,12">
+      <Button title="材料" controller="conType" page="1"/>
+    </component>
+    <component id="n123_p76e" name="btnEquip" src="nd8l1x" fileName="Components/tab/tab_1.xml" pkg="uionr2r4" xy="230,12">
+      <Button title="装备" controller="conType" page="2"/>
+    </component>
+    <list id="n125_uxwu" name="listBag" xy="37,60" size="951,500" layout="flow_hz" overflow="scroll" lineGap="12" colGap="12" lineItemCount="12" defaultItem="ui://uionr2r49n2ng" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <component id="n127_j3ye" name="com101" src="9n2n13" fileName="Components/money/MoneyItem.xml" pkg="uionr2r4" xy="93,576"/>
+    <component id="n133_jjjh" name="btnRecharge" src="jjjh65yzvp" fileName="Components/button/ButtonAdd5.xml" pkg="uionr2r4" xy="250,578"/>
+    <component id="n137_jjjh" name="btnMall" src="jjjh65yzw1" fileName="Components/button/Button3_yellow.xml" pkg="uionr2r4" xy="570,576">
+      <Button title="商 店"/>
+    </component>
+    <component id="n138_jjjh" name="btnTidy" src="jjjh65yzw0" fileName="Components/button/Button3_green.xml" pkg="uionr2r4" xy="858,576">
+      <Button title="整理背包"/>
+    </component>
+    <component id="n139_jjjh" name="btnAllUse" src="jjjh65yzvw" fileName="Components/button/Button3_blue.xml" pkg="uionr2r4" xy="715,576">
+      <Button title="一键使用"/>
+    </component>
+  </displayList>
+</component>

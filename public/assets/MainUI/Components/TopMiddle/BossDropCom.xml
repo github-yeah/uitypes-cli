@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="164,150">
+  <displayList>
+    <image id="n0_vbhz" name="n0" src="pyrn2o" fileName="Image/img_txt_bg.png" pkg="uf42mume" xy="0,0" size="164,150"/>
+    <image id="n1_vbhz" name="n1" src="j3ye65yzrs" fileName="Images/common/img_tips_line.png" pkg="uionr2r4" xy="24,32"/>
+    <text id="n2_vbhz" name="n2" xy="40,7" size="85,24" fontSize="20" color="#f5f7e1" strokeColor="#000000" text="极品掉落"/>
+    <list id="n3_vbhz" name="dropList" xy="5,35" size="154,106" layout="flow_hz" overflow="scroll" defaultItem="ui://uionr2r4ghou65yzup">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

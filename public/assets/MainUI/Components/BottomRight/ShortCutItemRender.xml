@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,80" pivot="0.5,0.5" opaque="false" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n9_u1fo" name="n9" src="ihpxvilns" fileName="Images/bg_bgMid2.png" pkg="ev17b9fd" xy="1,-2"/>
+    <loader id="n2_raxl" name="icon" xy="16,12" pivot="0.5,0.5" size="44,44" hideByEditor="true" url="ui://ev17b9fd10neilk5" align="center" vAlign="middle" fill="scaleFree"/>
+    <component id="n5_nc1l" name="cdMask" src="uofs25" fileName="Components/BottomRight/mask.xml" xy="11,6" pivot="0.5,0.5" size="56,56" aspect="true" visible="false" alpha="0.5"/>
+    <graph id="n6_nc1l" name="cdGraph" xy="8,6" size="56,56" visible="false" type="rect" lineColor="#00000000" fillColor="#00000000"/>
+    <text id="n7_nc1l" name="title" xy="30,24" pivot="0.5,0.5" size="10,22" visible="false" fontSize="18" color="#d7d1c8" align="center" vAlign="middle" strokeColor="#000000" text=""/>
+    <text id="n4_nc1l" name="count" xy="57,48" pivot="1,0" size="10,22" visible="false" fontSize="18" color="#d7d1c8" align="right" strokeColor="#000000" text=""/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.10"/>
+</component>

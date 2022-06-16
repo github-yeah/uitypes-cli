@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="240,22" overflow="hidden">
+  <displayList>
+    <text id="n0_more" name="textNameL" xy="0,0" size="240,22" fontSize="18" color="#d7d1c8" vAlign="middle" leading="5" ubb="true" autoSize="none" strokeColor="#000000" autoClearText="true" text="boss名称八个字 +()"/>
+  </displayList>
+</component>

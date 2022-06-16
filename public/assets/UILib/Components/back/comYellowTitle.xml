@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="220,24" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n3_vny3" name="n3" src="vny365yzun" fileName="Images/common/titleFlower2.png" xy="158,7"/>
+    <image id="n4_vny3" name="n4" src="vny365yzun" fileName="Images/common/titleFlower2.png" xy="64,7" scale="-1,1"/>
+    <text id="n5_vny3" name="title" xy="66,1" size="90,22" fontSize="16" color="#ffe3a0" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="特殊属性"/>
+  </displayList>
+  <Button/>
+</component>

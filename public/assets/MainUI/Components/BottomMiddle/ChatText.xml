@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="347,32" designImage="ui://x3cshcj1w2ck1s" designImageOffsetX="-522" designImageOffsetY="-617" designImageAlpha="0">
+  <displayList>
+    <loader id="n2_jxla" name="channelIcon" xy="8,2" size="46,27" url="image/chat/iconChannel1.png" fill="scaleFree" shrinkOnly="true"/>
+    <richtext id="n1_m2os" name="textchat" xy="58,3" size="289,24" fontSize="20" color="#cccccc" vAlign="middle" leading="1" ubb="true" autoSize="height" strokeColor="#000000" text="&lt;font color=&quot;#ff0000&quot;>抵制不良游戏 拒绝盗版游戏"/>
+  </displayList>
+  <relation target="n1_m2os" sidePair="bottomext-bottom"/>
+</component>

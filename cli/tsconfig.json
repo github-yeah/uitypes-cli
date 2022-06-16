@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.composite.json",
+  "compilerOptions": {
+    "outDir": "../dist/cli",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "incremental": true
+  },
+   "references": [
+    {"path": "../uitypes"}
+  ]
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="50,106" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_aujb" name="n0" src="l0ar2t" fileName="Images/MiddleLeft/com_team_wei_bg.png" xy="0,0">
+      <gearDisplay controller="button" pages="0,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_aujb" name="n1" src="l0ar2u" fileName="Images/MiddleLeft/com_team_xuan_bg.png" xy="0,0">
+      <gearDisplay controller="button" pages="1,3"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n2_aujb" name="n2" src="l0ar2v" fileName="Images/MiddleLeft/com_team_act_wei.png" xy="5,25">
+      <gearDisplay controller="button" pages="0,2"/>
+    </image>
+    <image id="n3_aujb" name="n3" src="l0ar2w" fileName="Images/MiddleLeft/com_team_act_xuan.png" xy="5,25">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

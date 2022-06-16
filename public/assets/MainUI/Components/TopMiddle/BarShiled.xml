@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="162,7" extention="ProgressBar">
+  <displayList>
+    <image id="n0_ecyw" name="bar" src="ecywilny" fileName="Images/shieldHp.png" pkg="rsvwcnw5" xy="0,0"/>
+  </displayList>
+  <ProgressBar/>
+</component>

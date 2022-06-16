@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="42,76" extention="Button" designImageOffsetX="-1115" designImageOffsetY="-18" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n5_u1fo" name="n5" src="u1fovilqm" fileName="Images/TopRight/arrowRight.png" pkg="fnu4ep3v" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n6_u1fo" name="n6" src="u1fovilqn" fileName="Images/TopRight/arrowLeft.png" pkg="fnu4ep3v" xy="0,0">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n7_9hnn" name="red" src="104svilq0" fileName="Images/icon_RedNew.png" pkg="fnu4ep3v" xy="24,-5" visible="false"/>
+  </displayList>
+  <Button mode="Check"/>
+  <transition name="t0"/>
+</component>

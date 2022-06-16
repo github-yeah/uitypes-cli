@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="146,33" extention="ComboBox">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_iomt" name="n0" src="9n2ny" fileName="Images/attr/attrBg.png" xy="0,0" size="146,33">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n1_iomt" name="title" xy="13,4" size="100,24" fontSize="20" color="#ffffff" vAlign="middle" autoSize="none" singleLine="true" text="全部">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <image id="n3_qo48" name="n3" src="mejd65yzrx" fileName="Images/arrow/arrow10.png" xy="111,7"/>
+  </displayList>
+  <ComboBox dropdown="ui://uionr2r4l88k5yzoe"/>
+</component>

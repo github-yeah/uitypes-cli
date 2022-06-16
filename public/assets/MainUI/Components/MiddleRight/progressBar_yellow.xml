@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="313,44" extention="ProgressBar">
+  <displayList>
+    <image id="n0_sk0m" name="n0" src="mn9h5yzr4" fileName="Images/progressBar/progressBarBG2.png" pkg="uionr2r4" xy="0,0" size="313,44">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n1_sk0m" name="bar" src="wsscvim1s" fileName="Components/bar_yellow.xml" xy="15,12" size="282,14">
+      <relation target="" sidePair="width-width,height-height"/>
+    </component>
+    <text id="n3_jmdj" name="barTitle" xy="20,7" size="270,24" fontSize="18" color="#dad5bf" align="center" vAlign="middle" ubb="true" autoSize="none" strokeColor="#000000" autoClearText="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <ProgressBar titleType="valueAndmax"/>
+</component>

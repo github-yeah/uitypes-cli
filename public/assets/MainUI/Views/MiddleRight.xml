@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="85,83" opaque="false" designImage="ui://tdl95htapqr7ilr9" designImageOffsetX="-1247" designImageOffsetY="-236" designImageAlpha="53">
+  <controller name="posCtrl" pages="0,,1," selected="0"/>
+  <displayList>
+    <component id="n0_olax" name="btnOpen" src="ierv6a" fileName="Components/MiddleRight/btnMid.xml" xy="3,2">
+      <Button checked="true"/>
+    </component>
+    <list id="n2_8jnw" name="btnList1" xy="200,83" size="70,220" lineGap="6" defaultItem="ui://tdl95htaf8bsilv1" align="center" autoClearItems="true">
+      <gearDisplay controller="posCtrl" pages="1"/>
+      <gearXY controller="posCtrl" pages="0,1" values="200,83|8,83" tween="true"/>
+      <item icon="ui://fnu4ep3vmp5keo"/>
+      <item icon="ui://fnu4ep3vkuo5lky"/>
+      <item icon="ui://fnu4ep3vmp5keq"/>
+    </list>
+    <list id="n11_7qh1" name="btnList2" xy="200,83" size="70,220" lineGap="6" defaultItem="ui://tdl95htaf8bsilv1" align="center" autoClearItems="true">
+      <gearDisplay controller="posCtrl" pages="1"/>
+      <gearXY controller="posCtrl" pages="0,1" values="200,83|-66,83" tween="true"/>
+      <item icon="ui://fnu4ep3vmp5keo"/>
+      <item icon="ui://fnu4ep3vkuo5lky"/>
+      <item icon="ui://fnu4ep3vmp5keq"/>
+    </list>
+    <list id="n12_7qh1" name="btnList3" xy="200,83" size="70,220" lineGap="6" defaultItem="ui://tdl95htaf8bsilv1" align="center" autoClearItems="true">
+      <gearDisplay controller="posCtrl" pages="1"/>
+      <gearXY controller="posCtrl" pages="0,1" values="200,83|-138,83" tween="true"/>
+      <item icon="ui://fnu4ep3vmp5keo"/>
+      <item icon="ui://fnu4ep3vkuo5lky"/>
+      <item icon="ui://fnu4ep3vmp5keq"/>
+    </list>
+    <list id="n13_7qh1" name="btnList4" xy="200,83" size="70,220" lineGap="6" defaultItem="ui://tdl95htaf8bsilv1" align="center" autoClearItems="true">
+      <gearDisplay controller="posCtrl" pages="1"/>
+      <gearXY controller="posCtrl" pages="0,1" values="200,83|-212,83" tween="true"/>
+      <item icon="ui://fnu4ep3vmp5keo"/>
+      <item icon="ui://fnu4ep3vkuo5lky"/>
+      <item icon="ui://fnu4ep3vmp5keq"/>
+    </list>
+    <list id="n18_rycd" name="btnList5" xy="200,304" size="950,71" layout="flow_hz" scroll="horizontal" lineGap="3" colGap="3" defaultItem="ui://tdl95htaf8bsilv1" align="right" renderOrder="descent" autoClearItems="true">
+      <gearDisplay controller="posCtrl" pages="1"/>
+      <gearXY controller="posCtrl" pages="0,1" values="200,304|-872,313" tween="true"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n19_ckpf" name="btnList6" xy="200,83" size="70,220" lineGap="6" defaultItem="ui://tdl95htaf8bsilv1" align="center" autoClearItems="true">
+      <gearDisplay controller="posCtrl" pages="1"/>
+      <gearXY controller="posCtrl" pages="0,1" values="200,83|-284,83" tween="true"/>
+      <item icon="ui://fnu4ep3vmp5keo"/>
+      <item icon="ui://fnu4ep3vkuo5lky"/>
+      <item icon="ui://fnu4ep3vmp5keq"/>
+    </list>
+    <component id="n9_pxbx" name="btnUpgrade" src="pxbxilug" fileName="Components/MiddleRight/Button2.xml" xy="-140,6">
+      <Button icon="ui://ev17b9fddakeilmw"/>
+    </component>
+    <component id="n10_pxbx" name="upgradeView" src="pxbxiluf" fileName="Components/BottomRight/UpgradeView.xml" xy="-295,6" visible="false">
+      <relation target="n9_pxbx" sidePair="right-right,top-top"/>
+    </component>
+    <component id="n17_104sv" name="btnBag" src="kd9d1m" fileName="Components/MiddleRight/Button_Bag.xml" xy="-68,6" size="74,70"/>
+    <component id="n20_i4hh" name="popBag" src="k8xzvim0i" fileName="Components/Pop/PopBagFullView.xml" xy="-258,-51" touchable="false"/>
+    <image id="n22_x9po" name="popMall" src="x9povim1c" fileName="Images/Pop/img_mall_pop.png" xy="-686,249"/>
+    <component id="n23_n6bj" name="treasureMapNotice" src="n6bjvim1q" fileName="Components/MiddleRight/TreasureMapNotice.xml" xy="-525,34"/>
+  </displayList>
+</component>

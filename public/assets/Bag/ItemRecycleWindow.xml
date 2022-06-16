@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1024,624">
+  <controller name="conType" pages="0,,1," selected="0"/>
+  <controller name="conRecycle" pages="0,手动,1,自动" selected="1"/>
+  <displayList>
+    <image id="n2_q810" name="n2" src="b9q765yzrm" fileName="Images/bg/img_back_2.png" pkg="uionr2r4" xy="537,150" size="450,412"/>
+    <text id="n13_q810" name="n13" xy="237,12" size="55,24" fontSize="20" color="#f5f7e1" align="center" vAlign="middle" text="装 备"/>
+    <component id="n17_q810" name="listView" src="q81028" fileName="Component/RecycleListView.xml" xy="32,51"/>
+    <list id="n18_q810" name="recycleList" xy="552,163" size="427,256" layout="flow_hz" overflow="scroll" lineGap="20" colGap="10" lineItemCount="2" defaultItem="ui://t55ptsa9q81025">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n19_q810" name="listReward" xy="649,461" size="229,68" layout="flow_vt" overflow="scroll" lineGap="4" colGap="12" lineItemCount="1" defaultItem="ui://uionr2r49n2nr" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <loader id="n20_q810" name="n20" xy="558,432" size="87,19" url="image/bag/img_recycle_show.png" autoSize="true"/>
+    <loader id="n21_q810" name="n21" xy="147,580" size="239,19" url="image/bag/img_recycle_desc_2.png" autoSize="true"/>
+    <loader id="n23_q810" name="n23" xy="536,26" size="450,30" touchable="false" url="image/bag/img_recycle_desc.png" autoSize="true"/>
+    <text id="n24_q810" name="n24" xy="584,75" size="95,22" fontSize="18" color="#ffea00" vAlign="middle" text="回收方式："/>
+    <component id="n28_jmom" name="btnNormal" src="nd8l1x" fileName="Components/tab/tab_1.xml" pkg="uionr2r4" xy="544,116">
+      <Button checked="true" title="普通装备" controller="conType" page="0"/>
+    </component>
+    <component id="n29_jmom" name="btnSpecial" src="nd8l1x" fileName="Components/tab/tab_1.xml" pkg="uionr2r4" xy="648,116">
+      <Button title="特殊装备" controller="conType" page="1"/>
+    </component>
+    <text id="n30_be0e" name="txtTimeDesc" xy="788,124" size="109,20" fontSize="16" color="#00ff00" text="随身回收体验:"/>
+    <text id="n31_be0e" name="txtTime" xy="900,114" size="69,20" fontSize="16" color="#ffea00" text="02:59:59"/>
+    <text id="n35_h547" name="n35" xy="721,74" size="77,22" fontSize="18" color="#ffffff" vAlign="middle" text="手动回收"/>
+    <text id="n36_h547" name="txtAuto" xy="858,74" size="77,22" fontSize="18" color="#ffffff" vAlign="middle" text="自动回收"/>
+    <loader id="n37_h547" name="btnAuto" xy="828,72" size="26,26" url="ui://uionr2r4nd8l25" autoSize="true"/>
+    <loader id="n38_h547" name="btnUnAuto" xy="691,72" size="26,26" url="ui://uionr2r4nd8l25" autoSize="true"/>
+    <loader id="n39_h547" name="bubble" xy="874,95" size="202,52" url="image/bag/bubble.png" autoSize="true"/>
+    <text id="n40_n5h3" name="txtRate" xy="652,430" size="40,20" fontSize="16" color="#dcd2be" ubb="true" text=""/>
+    <component id="n41_jjjh" name="btnOk" src="jjjh65yzw1" fileName="Components/button/Button3_yellow.xml" pkg="uionr2r4" xy="708,574">
+      <Button title="确认回收"/>
+    </component>
+    <loader id="n43_rp5g" name="n43" xy="511,10" size="6,600" url="image/bag/img_storage_line.png" autoSize="true"/>
+    <image id="n44_rp5g" name="n44" src="nd8l24" fileName="Images/common/check_1.png" pkg="uionr2r4" xy="828,70">
+      <gearXY controller="conRecycle" pages="0,1" values="691,70|828,70"/>
+    </image>
+  </displayList>
+</component>

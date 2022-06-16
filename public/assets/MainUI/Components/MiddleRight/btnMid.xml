@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="80,80" pivot="0.5,0.5" extention="Button" designImageOffsetX="-1255" designImageOffsetY="-92" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n6_104sv" name="n6" src="104svilpt" fileName="Images/MiddleRight/btn_bg.png" pkg="fnu4ep3v" xy="0,0"/>
+    <image id="n7_104sv" name="n7" src="104svilpu" fileName="Images/MiddleRight/btn_deploy.png" pkg="fnu4ep3v" xy="15,15" pivot="0.5,0.5">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <image id="n8_ihpx" name="n8" src="ihpxvilql" fileName="Images/MiddleRight/btn_deploy2.png" pkg="fnu4ep3v" xy="15,15">
+      <gearDisplay controller="button" pages="0,2"/>
+    </image>
+    <image id="n9_elal" name="redPoint" src="104svilq0" fileName="Images/icon_RedNew.png" pkg="fnu4ep3v" xy="52,3" visible="false"/>
+  </displayList>
+  <Button mode="Check"/>
+</component>

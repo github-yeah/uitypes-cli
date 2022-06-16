@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="77,22" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <text id="n3_l4yq" name="title" xy="0,0" size="77,22" fontSize="18" color="#00ff00" align="center" vAlign="middle" underline="true" strokeColor="#000000" text="玩法说明"/>
+  </displayList>
+  <Button/>
+  <relation target="n3_l4yq" sidePair="width-width,height-height"/>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="68,68" extention="Button" designImage="ui://girdpe0yftpp4l" designImageOffsetX="-100" designImageOffsetY="-140" designImageAlpha="0" designImageLayer="1">
+  <displayList>
+    <loader id="n42_kxjo" name="back" xy="34,34" pivot="0.5,0.5" anchor="true" size="68,68" url="ui://uionr2r4dnqw1k" align="center" vAlign="middle" autoSize="true"/>
+    <loader id="n38_ftpp" name="icon" xy="34,34" pivot="0.5,0.5" anchor="true" size="62,62" align="center" vAlign="middle"/>
+    <loader id="n37_evgt" name="quality" xy="-2,-2" pivot="0.5,0.5" size="72,72" align="center" vAlign="middle" fill="scaleFree"/>
+    <loader id="n22_hifn" name="itemIcon" xy="34,34" pivot="0.5,0.5" anchor="true" size="50,30" align="center" vAlign="middle" autoSize="true"/>
+    <image id="n39_gti8" name="selecte" src="9n2nq" fileName="Images/item/icon_selected.png" xy="34,34" pivot="0.5,0.5" anchor="true" visible="false"/>
+    <text id="n41_fpi3" name="txtStr" xy="23,1" size="45,20" fontSize="16" color="#41dc00" align="right" vAlign="middle" autoSize="none" text="+30"/>
+    <image id="n43_108dn" name="redImg" src="dfdo65yzsh" fileName="Images/common/icon_redIcon.png" xy="0,1" visible="false"/>
+  </displayList>
+  <Button/>
+</component>

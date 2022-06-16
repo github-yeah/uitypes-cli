@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="359,15" overflow="hidden">
+  <displayList>
+    <image id="n0_nyu3" name="iconBack" src="nyu35yzsi" fileName="Images/slider/slider0_1.png" xy="0,0" size="359,15">
+      <relation target="" sidePair="left-left"/>
+    </image>
+  </displayList>
+</component>

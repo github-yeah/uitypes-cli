@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="322,250" opaque="false" designImage="ui://tdl95htaviw31e" designImageOffsetY="-261" designImageAlpha="0">
+  <controller name="c1" pages="0,主线任务,1,组队,2,主线副本UI" selected="0"/>
+  <controller name="aniC1" pages="0,open,1,close" selected="1"/>
+  <displayList>
+    <component id="n11_l0ar" name="taskCom" src="l0ar49" fileName="Components/MiddleLeft/TaskCom.xml" xy="-305,0" size="276,248" group="n16_l0ar">
+      <gearDisplay controller="c1" pages="0"/>
+    </component>
+    <component id="n13_l0ar" name="teamCom" src="l0ar38" fileName="Components/MiddleLeft/TeamCom.xml" xy="-301,6" group="n16_l0ar">
+      <gearDisplay controller="c1" pages="1"/>
+    </component>
+    <component id="n20_g3tb" name="container" src="ngti8" fileName="Components/Empty_Com.xml" pkg="uf42mume" xy="-304,0" size="267,228" group="n16_l0ar">
+      <gearDisplay controller="c1" pages="2"/>
+    </component>
+    <component id="n14_l0ar" name="btnTask" src="l0ar2x" fileName="Components/MiddleLeft/BtnTaskMain.xml" xy="-351,8" group="n16_l0ar">
+      <gearDisplay controller="c1" pages="0,1,2"/>
+      <Button checked="true" controller="c1" page="0"/>
+    </component>
+    <component id="n15_l0ar" name="btnTeam" src="l0ar30" fileName="Components/MiddleLeft/BtnTeam.xml" xy="-351,135" group="n16_l0ar">
+      <gearDisplay controller="c1" pages="0,1,2"/>
+      <Button controller="c1" page="1"/>
+    </component>
+    <group id="n16_l0ar" name="group_normal" xy="-351,0" size="322,248" advanced="true" collapsed="true">
+      <gearDisplay controller="aniC1" pages="0"/>
+      <gearXY controller="aniC1" pages="0,1" values="0,0|-351,0" tween="true"/>
+    </group>
+    <component id="n17_l0ar" name="btnOpen" src="l0ar2l" fileName="Components/MiddleLeft/BtnOpen.xml" xy="0,95"/>
+  </displayList>
+</component>

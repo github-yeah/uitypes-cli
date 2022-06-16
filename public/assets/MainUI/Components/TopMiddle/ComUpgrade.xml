@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="350,78">
+  <displayList>
+    <text id="n1_rsy8" name="upgradeLv" xy="200,0" pivot="0.5,0.5" size="91,78" font="ui://hfdmowzlrsy8iloe" fontSize="18" color="#dcd2be" align="center" vAlign="middle" leading="0" letterSpacing="-15" text="25"/>
+    <graph id="n0_rsy8" name="upgradeHolder" xy="170,35" pivot="0.5,0.5" size="10,10"/>
+  </displayList>
+</component>

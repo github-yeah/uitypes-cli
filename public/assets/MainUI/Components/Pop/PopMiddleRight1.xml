@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="324,107" pivot="1,0" anchor="true" opaque="false" designImageOffsetX="-941" designImageOffsetY="-172" designImageAlpha="0">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n5_f34q" name="n5" src="jodzljh" fileName="Images/Pop/pop_1.png" xy="0,0" size="324,107" alpha="0.9">
+      <relation target="n7_r29u" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n8_r29u" name="btnClose" src="jodzlji" fileName="Components/Pop/PopClose.xml" xy="276,2" size="46,37">
+      <relation target="n5_f34q" sidePair="right-right,top-top"/>
+    </component>
+    <text id="n7_r29u" name="tip" xy="9,5" size="227,47" fontSize="20" color="#bfb5b1" ubb="true" autoSize="height" autoClearText="true" text="你有新的成就，奖励可以领取！"/>
+    <component id="n9_jjgg" name="btnCon" src="jodzljn" fileName="Components/emptyBtn.xml" xy="9,7" size="226,57">
+      <relation target="n7_r29u" sidePair="width-width,height-height"/>
+    </component>
+  </displayList>
+  <relation target="n5_f34q" sidePair="width-width,height-height"/>
+</component>

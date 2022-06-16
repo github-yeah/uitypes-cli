@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="276,244" mask="n10_a3ce" designImageOffsetX="-1" designImageOffsetY="-253" designImageAlpha="55">
+  <displayList>
+    <graph id="n10_a3ce" name="n10" xy="0,0" size="416,250" type="rect"/>
+    <list id="n7_ellg" name="list" xy="4,4" size="275,244" overflow="scroll" lineGap="-6" defaultItem="ui://tdl95htal0ar3r">
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <graph id="n9_bbq3" name="effectObj" xy="318,41" size="1,1" visible="false"/>
+  </displayList>
+</component>

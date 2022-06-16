@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="190,24">
+  <displayList>
+    <text id="n0_w14t" name="textName" xy="0,0" size="292,24" fontSize="20" color="#d7d1c8" vAlign="middle" leading="5" ubb="true" strokeColor="#000000" text="[太古]太古虹魔君主1111111111"/>
+    <text id="n1_w14t" name="textName" xy="187,71" size="190,24" fontSize="20" color="#d7d1c8" vAlign="middle" leading="5" ubb="true" autoSize="none" strokeColor="#000000" text="[太古]太古虹魔君主"/>
+  </displayList>
+</component>

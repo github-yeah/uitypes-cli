@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1024,624" designImage="ui://t55ptsa9rpqq1y" designImageOffsetX="-90" designImageOffsetY="-83" designImageLayer="1">
+  <controller name="conSel" pages="0,,1,,2,,3,,4,,5,,6,,7,,8,,9,,10,,11,,12," selected="9"/>
+  <displayList>
+    <component id="n85_ktn8" name="btnOepn" src="nd8l26" fileName="Components/button/CheckBox1.xml" pkg="uionr2r4" xy="411,569">
+      <Button checked="true"/>
+    </component>
+    <list id="n66_g8no" name="listStorage" xy="32,46" size="480,470" pageController="conSel" layout="pagination" overflow="scroll" scroll="horizontal" scrollBarFlags="136" defaultItem="ui://t55ptsa9ktn81p">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n67_g8no" name="listPageStorage" xy="76,527" size="388,18" layout="row" colGap="10" defaultItem="ui://uionr2r4rpqq2n" align="center" vAlign="middle" selectionController="conSel">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <text id="n75_py2s" name="txtNumStorage" xy="278,12" size="65,24" fontSize="20" color="#4bff00" align="center" vAlign="middle" text="20/200"/>
+    <text id="n76_py2s" name="txtDesc" xy="441,572" size="77,22" fontSize="18" color="#dcdcd2" align="center" vAlign="middle" strokeColor="#1d6b8c" text="快捷存放"/>
+    <component id="n121_uxwu" name="comList" src="ngti1f" fileName="Component/ListView.xml" xy="590,46" size="400,500"/>
+    <text id="n122_uxwu" name="txtCount" xy="796,12" size="75,24" fontSize="20" color="#4bff00" align="center" vAlign="middle" text="200/200"/>
+    <text id="n132_j3ye" name="n132" xy="208,12" size="55,24" fontSize="20" color="#f5f7e1" vAlign="middle" text="仓 库"/>
+    <text id="n133_j3ye" name="n133" xy="728,12" size="55,24" fontSize="20" color="#f5f7e1" vAlign="middle" text="背 包"/>
+    <component id="n134_jjjh" name="btnTidyStorage" src="jjjh65yzvw" fileName="Components/button/Button3_blue.xml" pkg="uionr2r4" xy="213,563">
+      <Button title="整理仓库"/>
+    </component>
+    <component id="n135_jjjh" name="btnTidyBag" src="jjjh65yzvw" fileName="Components/button/Button3_blue.xml" pkg="uionr2r4" xy="735,569">
+      <Button title="整理背包"/>
+    </component>
+    <loader id="n136_rp5g" name="n136" xy="549,15" size="6,600" url="image/bag/img_storage_line.png" autoSize="true"/>
+  </displayList>
+</component>

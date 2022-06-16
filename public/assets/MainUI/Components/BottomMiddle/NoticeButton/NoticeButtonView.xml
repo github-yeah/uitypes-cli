@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="410,70" opaque="false">
+  <displayList>
+    <list id="n0_p2kw" name="listButtons" xy="0,0" pivot="0.5,0.5" size="410,70" layout="row" colGap="10" defaultItem="ui://tdl95htap2kw9o" autoItemSize="false" align="center" vAlign="middle" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

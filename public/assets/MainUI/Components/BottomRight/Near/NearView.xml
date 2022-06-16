@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="296,320" designImage="ui://tdl95htalxcliluf" designImageOffsetX="-482" designImageOffsetY="-274" designImageAlpha="100">
+  <controller name="typeCtrl" pages="0,player,1,boss" selected="1"/>
+  <displayList>
+    <image id="n7_g3qb" name="n7" src="lxcliln8" fileName="Images/Near/near_bg.png" pkg="ev17b9fd" xy="0,0" size="296,320"/>
+    <image id="n8_lxcl" name="n8" src="lxcliln9" fileName="Images/Near/near_bg2.png" pkg="ev17b9fd" xy="3,45" size="290,274"/>
+    <component id="n6_tolj" name="btnAttack" src="toljc0" fileName="Components/BottomRight/Near/AttackBtn.xml" xy="244,0" visible="false">
+      <gearDisplay controller="typeCtrl" pages="1"/>
+    </component>
+    <component id="n1_tolj" name="btnPlayer" src="nd8l1x" fileName="Components/tab/tab_1.xml" pkg="uionr2r4" xy="16,10" aspect="true">
+      <Button title="玩 家" selectedTitle="玩 家" controller="typeCtrl" page="0"/>
+    </component>
+    <component id="n2_tolj" name="btnBoss" src="nd8l1x" fileName="Components/tab/tab_1.xml" pkg="uionr2r4" xy="135,10">
+      <Button checked="true" title="怪 物" selectedTitle="怪 物" controller="typeCtrl" page="1"/>
+    </component>
+    <list id="n4_tolj" name="playerList" xy="4,51" size="290,262" overflow="scroll" lineGap="2" defaultItem="ui://tdl95htatoljc8" autoItemSize="false">
+      <gearDisplay controller="typeCtrl" pages="0"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <list id="n5_tolj" name="bossList" xy="4,51" size="290,262" overflow="scroll" lineGap="2" defaultItem="ui://tdl95htatoljc2" autoClearItems="true">
+      <gearDisplay controller="typeCtrl" pages="1"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+</component>

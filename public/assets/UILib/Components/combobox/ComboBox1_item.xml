@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="114,38" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_vr4o" name="n0" src="vr4o2u" fileName="Images/common/line_1.png" xy="0,36" size="114,10"/>
+    <text id="n1_vr4o" name="title" xy="0,2" size="114,34" fontSize="22" color="#f5e9a8" align="center" vAlign="middle" ubb="true" vars="true" autoSize="none" singleLine="true" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

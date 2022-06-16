@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="40,40" extention="Button">
+  <displayList>
+    <image id="n0_r29u" name="n0" src="jodzljj" fileName="Images/Pop/btn_close.png" xy="-9,-9">
+      <relation target="" sidePair="right-right,top-top"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

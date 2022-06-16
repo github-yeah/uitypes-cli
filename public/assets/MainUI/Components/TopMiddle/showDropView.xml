@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="355,135" designImage="ui://tdl95htah62zilre" designImageOffsetX="-41" designImageOffsetY="-133" designImageAlpha="0">
+  <displayList>
+    <image id="n51_8y8h" name="n51" src="4hbxlje" fileName="Images/TopLeft/itemTips_bg_1.png" xy="0,0" size="355,135"/>
+    <list id="n52_8y8h" name="showDropList" xy="11,41" size="336,82" layout="row" overflow="scroll" scroll="horizontal" colGap="2" defaultItem="ui://uionr2r49n2nr" align="center" vAlign="middle" autoClearItems="true">
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+    <image id="n53_8y8h" name="n53" src="s12blkd" fileName="Images/TopLeft/zhanshi.png" xy="133,12"/>
+    <image id="n54_ecyw" name="n54" src="ecywiluj" fileName="Images/TopLeft/flower.png" xy="37,16"/>
+    <image id="n56_ecyw" name="n56" src="ecywiluj" fileName="Images/TopLeft/flower.png" xy="234,16" flip="hz"/>
+  </displayList>
+</component>

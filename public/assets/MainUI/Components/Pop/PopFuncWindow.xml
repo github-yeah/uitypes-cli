@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="485,485">
+  <displayList>
+    <loader id="n0_quh2" name="n0" xy="70,272" size="330,150" url="image/popup/img_bg.png" autoSize="true"/>
+    <graph id="n7_quh2" name="modBox" xy="234,339" size="10,10" touchable="false" type="rect" fillColor="#00dcd2be"/>
+    <loader id="n1_quh2" name="imgTitle" xy="0,0" size="102,232" url="image/popup/img_title_1.png" autoSize="true"/>
+    <loader id="n2_quh2" name="imgDesc" xy="-15,384" size="500,33" url="image/popup/img_desc_1.png" autoSize="true"/>
+    <loader id="n3_quh2" name="imgName" xy="59,73" size="29,133" url="image/popup/img_name_1.png" autoSize="true"/>
+    <component id="n5_quh2" name="btnOk" src="neao65yzs9" fileName="Components/button/Button11.xml" pkg="uionr2r4" xy="165,435">
+      <Button title="确 定"/>
+    </component>
+  </displayList>
+</component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="163,200">
+  <displayList>
+    <list id="n1_iomt" name="list" xy="0,0" size="163,200" overflow="scroll" defaultItem="ui://uionr2r4iomt5yzo9">
+      <relation target="" sidePair="width-width"/>
+    </list>
+  </displayList>
+  <relation target="n1_iomt" sidePair="height-height"/>
+</component>

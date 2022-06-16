@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="70,80" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <loader id="n2_viw3" name="icon" xy="-15,-31" pivot="0.5,1" size="92,118" url="image/headIcon/11.png" align="center" vAlign="middle" fill="scaleFree" autoSize="true">
+      <relation target="" sidePair="width-width,height-height"/>
+    </loader>
+    <image id="n0_jcpc" name="red" src="dakeilq9" fileName="Images/icon_Red.png" xy="55,0" visible="false">
+      <relation target="" sidePair="right-right,top-top"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

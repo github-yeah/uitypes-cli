@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="70,110">
+  <displayList>
+    <image id="n3_nj6y" name="bg" src="104svilxg" fileName="Images/BottomMiddle/bg_hp.png" xy="0,0" visible="false">
+      <relation target="" sidePair="bottom-bottom"/>
+    </image>
+    <graph id="n1_d43j" name="lineModHp" xy="30,48" size="20,10" type="rect" fillColor="#00ffffff"/>
+  </displayList>
+</component>

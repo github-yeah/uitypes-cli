@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="92,115" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="2"/>
+  <displayList>
+    <image id="n0_hd20" name="n0" src="hd20vilz5" fileName="Images/BottomMiddle/JobSwitch/img_job_switch_1_0.png" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n1_hd20" name="n1" src="hd20vilz6" fileName="Images/BottomMiddle/JobSwitch/img_job_switch_1_1.png" xy="0,0">
+      <gearDisplay controller="button" pages="1,2"/>
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <image id="n3_hqah" name="n3" src="hd20vilz7" fileName="Images/BottomMiddle/JobSwitch/img_job_switch_1_2.png" xy="0,0">
+      <gearDisplay controller="button" pages="3"/>
+    </image>
+  </displayList>
+  <Button/>
+</component>

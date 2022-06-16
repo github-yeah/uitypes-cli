@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="74,74" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="1"/>
+  <displayList>
+    <image id="n11_rlxo" name="n11" src="ihpxvilns" fileName="Images/bg_bgMid2.png" pkg="ev17b9fd" xy="0,0">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n8_ihpx" name="n8" src="ihpxvilnu" fileName="Images/bg_autoFightExit.png" pkg="ev17b9fd" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n7_ihpx" name="n7" src="ihpxvilnv" fileName="Images/txt_autoFight.png" pkg="ev17b9fd" xy="3,51">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <graph id="n10_rlxo" name="mod" xy="37,37" size="37,37" touchable="false" type="rect" fillColor="#00ffffff">
+      <gearDisplay controller="button" pages="1"/>
+    </graph>
+    <image id="n9_ihpx" name="n9" src="ihpxvilnw" fileName="Images/txt_autoFightExit.png" pkg="ev17b9fd" xy="3,51">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="206,48">
+  <displayList>
+    <image id="n21_jjjh" name="n21" src="jjjh65yzw2" fileName="Images/bg/img_render_bg2.png" pkg="uionr2r4" xy="0,0"/>
+    <component id="n15_q810" name="btnOepn" src="nd8l26" fileName="Components/button/CheckBox1.xml" pkg="uionr2r4" xy="11,10">
+      <Button checked="true"/>
+    </component>
+    <loader id="n18_q810" name="imgType" xy="43,12" size="180,26" url="image/bag/img_type_7.png" autoSize="true"/>
+  </displayList>
+</component>

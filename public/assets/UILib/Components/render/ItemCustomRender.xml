@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="78,78" extention="Button" designImage="ui://girdpe0yftpp4l" designImageOffsetX="-100" designImageOffsetY="-140" designImageAlpha="0" designImageLayer="1">
+  <displayList>
+    <image id="n41_v4j7" name="bg" src="9n2no" fileName="Images/item/icon_equip.png" xy="0,1" pivot="0.5,0.5"/>
+    <loader id="n42_v4j7" name="quality" xy="4,4" pivot="0.5,0.5" size="70,70" url="ui://uionr2r4nhb218" align="center" vAlign="middle" fill="scaleFree"/>
+    <loader id="n43_v4j7" name="icon" xy="0,0" pivot="0.5,0.5" size="78,78" url="ui://uionr2r49n2np" align="center" vAlign="middle"/>
+    <loader id="n44_v4j7" name="itemIcon" xy="3,3" pivot="0.5,0.5" size="72,72" align="center" vAlign="middle"/>
+    <image id="n45_v4j7" name="selecte" src="9n2nq" fileName="Images/item/icon_selected.png" xy="-3,-4" size="85,85" visible="false"/>
+    <image id="n46_v4j7" name="redImg" src="uwdi14" fileName="Images/common/icon_red.png" xy="56,0" size="20,20" visible="false"/>
+  </displayList>
+  <Button/>
+</component>

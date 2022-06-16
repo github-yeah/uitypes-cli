@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="252,314" designImage="ui://tdl95htaqaqciloh" designImageAlpha="0" designImageLayer="1">
+  <displayList>
+    <image id="n6_qaqc" name="n6" src="qaqcilol" fileName="Images/ActList/iconFrameAct2.png" xy="0,275" size="252,45"/>
+    <image id="n0_qaqc" name="iconFrame" src="qaqcilok" fileName="Images/ActList/iconFrameAct.png" xy="19,0" size="214,286"/>
+    <image id="n2_qaqc" name="iconFrame1" src="qaqciloj" fileName="Images/ActList/iconFrameAct1.png" xy="33,47" size="93,37"/>
+    <image id="n3_qaqc" name="iconFrame2" src="qaqciloj" fileName="Images/ActList/iconFrameAct1.png" xy="219,47" size="93,37" scale="-1,1"/>
+    <loader id="n5_qaqc" name="loaderIcon" xy="83,61" size="88,88" align="center" vAlign="middle"/>
+    <component id="n11_qaqc" name="btnClose" src="v9mliluq" fileName="Components/ActList/ButtonClose.xml" xy="190,2" size="45,42">
+      <Button icon="ui://uionr2r4pv885yzsf"/>
+    </component>
+    <component id="n7_qaqc" name="btnHint" src="nd8l26" fileName="Components/button/CheckBox1.xml" pkg="uionr2r4" xy="16,277"/>
+    <component id="n10_qaqc" name="btnEnter" src="v9mlilus" fileName="Components/ActList/ButtonEnter.xml" xy="51,210">
+      <Button title="立即前往" icon="ui://uionr2r4e8ir5yzp4"/>
+    </component>
+    <text id="n4_qaqc" name="txtName" xy="129,21" pivot="0.5,0" anchor="true" size="85,24" fontSize="20" color="#dcd2be" vAlign="middle" strokeColor="#000000" text="沙城争霸"/>
+    <text id="n8_qaqc" name="txtHint" xy="61,286" size="165,24" fontSize="20" color="#dcd2be" vAlign="middle" strokeColor="#000000" text="本次活动不再提示"/>
+    <text id="n9_qaqc" name="txtAward" xy="51,156" size="150,50" fontSize="18" color="#ffcc33" vAlign="middle" leading="8" autoSize="none" strokeColor="#000000" text="奖励：金币&#xA;宝金币"/>
+  </displayList>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="50,50" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n6_lnjz" name="n6" src="lnjzvilxx" fileName="Images/MiddleLeft/teamtaskopen.png" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n7_lnjz" name="n7" src="lnjzvilxy" fileName="Images/MiddleLeft/teamtaskclose.png" xy="0,0">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+  </displayList>
+  <Button mode="Check"/>
+</component>

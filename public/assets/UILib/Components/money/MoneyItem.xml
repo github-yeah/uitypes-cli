@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="168,38" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n5_fsw0" name="iconBg" src="kh2465yzsp" fileName="Images/attr/img_input_bg.png" xy="0,0" size="168,38"/>
+    <loader id="n0_ktn8" name="icon" xy="-20,1" size="39,36" url="ui://uionr2r49n2n10" align="center" vAlign="middle" autoSize="true"/>
+    <text id="n1_ktn8" name="title" xy="20,7" size="134,24" fontSize="20" color="#d7d1c8" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="99999999999"/>
+  </displayList>
+  <Button/>
+</component>

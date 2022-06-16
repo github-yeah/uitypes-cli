@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="208,23" designImage="ui://x3cshcj1w2ck1s" designImageOffsetX="-522" designImageOffsetY="-617" designImageAlpha="0">
+  <displayList>
+    <richtext id="n1_m2os" name="textchat" xy="104,0" pivot="0.5,0" anchor="true" size="165,24" fontSize="20" color="#cccccc" vAlign="middle" leading="2" ubb="true" strokeColor="#000000" text="人生若只如初见，"/>
+  </displayList>
+  <relation target="n1_m2os" sidePair="bottomext-bottom"/>
+</component>

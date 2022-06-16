@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="450,116" extention="Button" designImage="ui://t55ptsa9rpqq1z" designImageOffsetX="-102" designImageOffsetY="-150" designImageAlpha="0" designImageLayer="1">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_jnkz" name="iconFrame0" src="rpqqg" fileName="Images/iconFramBagMall0.png" pkg="ugjpa7s2" xy="2,0" size="445,116">
+      <gearDisplay controller="button" pages="0,2"/>
+    </image>
+    <image id="n8_jnkz" name="iconFrame1" src="rpqqh" fileName="Images/iconFramBagMall1.png" pkg="ugjpa7s2" xy="2,0" size="445,116">
+      <gearDisplay controller="button" pages="1,3"/>
+    </image>
+    <image id="n10_xs8g" name="iconValBg" src="9n2ny" fileName="Images/attr/attrBg.png" pkg="uionr2r4" xy="267,43" size="160,32"/>
+    <loader id="n11_xs8g" name="loaderCost" xy="252,34" size="50,50" url="ui://uionr2r49n2n10" align="center" vAlign="middle" autoSize="true"/>
+    <component id="n1_jnkz" name="item" src="9n2nr" fileName="Components/render/RewardRender.xml" pkg="uionr2r4" xy="27,18"/>
+    <text id="n2_jnkz" name="txtName" xy="119,45" pivot="0.5,0" size="125,28" fontSize="24" color="#428cae" align="right" vAlign="middle" ubb="true" underline="true" strokeColor="#000000" text="随机回城石"/>
+    <text id="n12_xs8g" name="txtPrice" xy="297,44" pivot="0.5,0" size="113,28" fontSize="24" color="#d3cdc4" align="center" vAlign="middle" strokeColor="#000000" text="100000000"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

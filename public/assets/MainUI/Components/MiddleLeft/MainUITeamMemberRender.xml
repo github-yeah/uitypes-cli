@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="267,75" extention="Button" designImage="ui://bc7rynheoq0xfjr5" designImageOffsetY="-254" designImageAlpha="0">
+  <displayList>
+    <image id="n18_nqnw" name="n18" src="nqnwvilzw" fileName="Images/MiddleLeft/taskbg.png" xy="0,0"/>
+    <image id="n6_l6te" name="isLeader" src="l0ar3h" fileName="Images/MiddleLeft/teamLeader.png" xy="211,11"/>
+    <component id="n8_opy8" name="hp" src="v7hnilpd" fileName="Components/TopLeft/progressBar_hp.xml" xy="10,49">
+      <ProgressBar value="100" max="100"/>
+    </component>
+    <text id="n3_hzga" name="roleLevel" xy="205,46" size="47,22" fontSize="18" color="#ffffff" align="center" vAlign="middle" leading="8" autoSize="height" text=""/>
+    <text id="n2_hzga" name="roleName" xy="10,13" size="185,26" fontSize="20" color="#d7d1c8" vAlign="middle" autoSize="none" strokeColor="#000000" text="玩家名号八个字呢"/>
+  </displayList>
+  <Button mode="Radio"/>
+</component>

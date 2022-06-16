@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="185,67" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <controller name="typeCtrl" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n3_tv2l" name="n3" src="tv2lvilyq" fileName="Images/Npc/npcQuickNew.png" xy="0,7">
+      <gearDisplay controller="typeCtrl" pages="0"/>
+    </image>
+    <image id="n4_tv2l" name="n4" src="tv2lvilyq" fileName="Images/Npc/npcQuickNew.png" xy="0,7">
+      <gearDisplay controller="typeCtrl" pages="1"/>
+    </image>
+    <text id="n1_qdfx" name="title" xy="67,22" size="105,24" fontSize="20" color="#39c754" vAlign="middle" strokeColor="#000000" singleLine="true" autoClearText="true" text="深渊奖励官"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.05"/>
+</component>

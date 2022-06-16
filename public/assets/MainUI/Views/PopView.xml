@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1334,750" overflow="hidden" opaque="false" designImage="ui://tdl95htafvsbilve" designImageAlpha="100">
+  <displayList>
+    <component id="n3_qzsf" name="noticeButtonView" src="p2kw9n" fileName="Components/BottomMiddle/NoticeButton/NoticeButtonView.xml" xy="463,582" pivot="0.5,0.5">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </component>
+    <component id="n4_hvmt" name="autoMove" src="kd9d1c" fileName="Components/BottomRight/TaskTransferView.xml" xy="560,485" touchable="false">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </component>
+    <component id="n5_rsy8" name="upgradeCom" src="rsy8ilof" fileName="Components/TopMiddle/ComUpgrade.xml" xy="492,160" visible="false" touchable="false">
+      <relation target="" sidePair="top-top,center-center"/>
+    </component>
+    <component id="n9_hk4a" name="dailyBossRe" src="hk4ailt3" fileName="Components/Pop/dailyBoss/DailyBossRe.xml" xy="783,205" visible="false">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </component>
+    <component id="n6_v7hn" name="actView" src="qaqcilog" fileName="Components/ActList/ActView.xml" xy="755,185" visible="false">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </component>
+    <component id="n10_mplo" name="actClientView" src="v9mlilut" fileName="Components/ActList/ActClientView.xml" xy="755,185" visible="false">
+      <relation target="" sidePair="right-right,middle-middle"/>
+    </component>
+  </displayList>
+</component>

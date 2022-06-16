@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="359,15" extention="Slider">
+  <displayList>
+    <image id="n0_nyu3" name="n0" src="nyu35yzsj" fileName="Images/slider/slider0_2.png" xy="0,0" size="359,15">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n1_nyu3" name="bar" src="nyu35yzsq" fileName="Components/slider/comSlider1.xml" xy="0,0" size="359,15"/>
+    <component id="n2_nyu3" name="grip" src="nyu35yzsk" fileName="Components/slider/Slider1_grip.xml" xy="344,-7">
+      <relation target="n1_nyu3" sidePair="right-right"/>
+    </component>
+  </displayList>
+  <Slider/>
+</component>

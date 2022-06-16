@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="124,112" pivot="0.5,0.5" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n3_wwob" name="iconFrame" src="wwob5yzrp" fileName="Images/disLimit/iconGiftView.png" xy="0,0"/>
+    <image id="n4_wwob" name="iconBack" src="wwob5yzrq" fileName="Images/disLimit/iconGift.png" xy="27,16"/>
+    <image id="n5_wwob" name="n5" src="wwob5yzrs" fileName="Images/disLimit/iconGiftText.png" xy="20,68"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.10"/>
+</component>

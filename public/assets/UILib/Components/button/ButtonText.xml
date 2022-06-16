@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="56,28" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <richtext id="n0_e8ir" name="title" xy="0,0" size="53,28" fontSize="24" color="#39c754" align="center" vAlign="middle" ubb="true" underline="true" strokeColor="#000000" text="说明"/>
+  </displayList>
+  <Button downEffect="scale" downEffectValue="1.10"/>
+  <relation target="n0_e8ir" sidePair="width-width,height-height"/>
+</component>

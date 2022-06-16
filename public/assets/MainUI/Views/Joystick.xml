@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="350,250" opaque="false" designImage="ui://tdl95htadakeilq8" designImageOffsetY="-500" designImageLayer="1">
+  <displayList>
+    <component id="n11_8apj" name="joystick_circle" src="kd9dc" fileName="Components/Joystick/Joystick_Circle.xml" xy="80,32"/>
+    <component id="n12_ofd2" name="touch" src="viw3lkm" fileName="Components/TopLeft/PlaceHolder.xml" xy="31,0" size="318,250" hideByEditor="true"/>
+  </displayList>
+</component>

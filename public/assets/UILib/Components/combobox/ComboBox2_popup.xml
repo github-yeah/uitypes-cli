@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="182,174" designImage="ui://uionr2r4vr4o2y" designImageOffsetX="-259" designImageOffsetY="-36" designImageAlpha="88">
+  <displayList>
+    <list id="n1_vr4o" name="list" xy="0,0" size="182,174" overflow="scroll" lineGap="-5" defaultItem="ui://uionr2r4v8zu65yzs5" autoClearItems="true">
+      <relation target="" sidePair="width-width"/>
+      <item/>
+      <item/>
+      <item/>
+      <item/>
+    </list>
+  </displayList>
+  <relation target="n1_vr4o" sidePair="width-width"/>
+</component>

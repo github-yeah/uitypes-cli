@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="102,50" extention="Button">
+  <controller name="button" pages="0,up,1,down" selected="0"/>
+  <displayList>
+    <image id="n4_hphl" name="n4" src="hphlilw2" fileName="Images/TopLeft/vip/btnVipBg.png" xy="0,0"/>
+    <image id="n7_c1du" name="redPoint" src="dfdo65yzsh" fileName="Images/common/icon_redIcon.png" pkg="uionr2r4" xy="72,6"/>
+    <loader id="n8_vbko" name="txtLoader" xy="30,18" size="40,20" url="ui://tdl95htaizgnvilys"/>
+  </displayList>
+  <Button mode="Check"/>
+</component>
