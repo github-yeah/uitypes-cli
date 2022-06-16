@@ -4,6 +4,6 @@
   "references": [
     {"path": "./uitypes"},
     {"path": "./cli"},
-    {"path": "./bin"}
+    // {"path": "./bin"}
   ]
 }
