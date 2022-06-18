@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.composite.json",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "outDir": "../dist/test",
+    "rootDir": "."
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "references": [
+    {"path": "../uitypes"},
+    {"path": "../cli"}
+  ]
+}
