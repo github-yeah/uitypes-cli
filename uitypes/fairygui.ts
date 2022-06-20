@@ -1,10 +1,71 @@
-import { xml2js, Element } from 'xml-js';
-import { existsSync, readFileSync } from 'fs';
-import { log } from './log';
-import { format as prettierFormat } from 'prettier';
+import { format as prettierFormat } from "prettier";
+import { xml2js, Element } from "xml-js";
+import { existsSync, readFileSync } from "fs";
+import { log } from "./log";
+import { tagTypesMapping } from "../configs/config.fairygui";
+
+export namespace fairygui {
+  /** @description 匹配无用名字（fariygui自动生成的名字或者纯数字名字）*/
+  const useless_name_reg = /^(\-|[0-9]|n[0-9]*$)/; // 数字或负号开头+n开头数字结尾
+
+  /** @description 名称是否合法*/
+  export const isValidName = (name: string) => {
+    return name.length > 0 && !useless_name_reg.test(name);
+  };
+
+  // 不能使用通用算法转换的组件类型映射
+  const typeMapping: Record<string, string | undefined> = tagTypesMapping;
+
+  /**
+   * @description 转换成`fairygui`内置类型
+   * @author xfy
+   * @param {string} type
+   * @returns {string}
+   */
+  export function toFairyguiType(type: string): string {
+    const existing = typeMapping[type];
+    if (existing !== undefined) {
+      return existing;
+    }
+
+    if (type.length < 1) {
+      return type;
+    }
+    return `fairygui.G${type.substr(0, 1).toUpperCase()}${type.substr(1)}`;
+  }
+
+  /**
+   * @description 相对路径转换成引用路径
+   * @author xfy
+   * @export
+   * @param {string} path
+   * @returns {string}
+   */
+  export function toRef(path: string): string {
+    return path.replace(/^(\/|\\)+|(\/|\\)+$/g, "").replace(/\/|\\/g, ".");
+  }
+
+  /**
+   * @description 代码格式化
+   * @author xfy
+   * @export
+   * @param {string} code
+   * @returns {string}
+   */
+  export function format(code: string): string {
+    return prettierFormat(code, { parser: "typescript" });
+  }
+
+  /**@description header*/
+  export const HEADER = `type __UIComponent<Base, Children, Controllers extends string = string, Transitions extends string = string> = Base & {
+getChild<Key extends keyof Children>(name: Key, explicitType: true): Children[Key];
+getController(name: Controllers): fairygui.Controller;
+getTransition(transName: Transitions): fairygui.Transition;
+};`;
+}
 
 /**
- * @description XML
+ * @description XML Config
  * @author xfy
  */
 export namespace fairygui.Config {
@@ -30,7 +91,7 @@ export namespace fairygui.Config {
    */
   export interface PackageRootNode extends Element {
     /** @description root tag name*/
-    readonly name: 'packageDescription';
+    readonly name: "packageDescription";
 
     /** @description 组件属性*/
     readonly attributes?: Readonly<{
@@ -46,7 +107,7 @@ export namespace fairygui.Config {
    */
   export interface PackagePublishNode extends Element {
     /** @description publish tag name*/
-    readonly name: 'publish';
+    readonly name: "publish";
 
     /** @description 组件属性*/
     readonly attributes?: Readonly<{
@@ -62,7 +123,7 @@ export namespace fairygui.Config {
    */
   export interface PackageResourcesNode extends Element {
     /** @description publish tag name*/
-    readonly name: 'resources';
+    readonly name: "resources";
 
     /** @description 组件列表*/
     readonly elements?: (Element & {
@@ -93,7 +154,7 @@ export namespace fairygui.Config {
    */
   export interface ComponentRootNode extends Element {
     /** @description root tag name*/
-    readonly name: 'component';
+    readonly name: "component";
 
     /** @description 组件属性*/
     readonly attributes?: Readonly<{
@@ -113,7 +174,6 @@ export namespace fairygui.Config {
 
     /** @description 组件属性信息*/
     readonly attributes: Readonly<{
-
       /** @description 属性名称*/
       name?: string;
 
@@ -131,84 +191,4 @@ export namespace fairygui.Config {
       pkg?: string;
     }>;
   }
-
-
 }
-
-
-
-
-
-
-
-
-/** @description /////////////////////////////////////// Utils ////////////////////////////////// */
-export namespace fairygui {
-  /** @description 匹配无用名字（fariygui自动生成的名字或者纯数字名字）*/
-  const useless_name_reg = /^(\-|[0-9]|n[0-9]*$)/;    // 数字或负号开头+n开头数字结尾
-
-  /** @description 名称是否合法*/
-  export const isLegalName = (name: string) => name.length > 0 && !useless_name_reg.test(name);
-
-  // 不能使用通用算法转换的组件类型映射
-  const FGUITypeMapping: Record<string, string | undefined> = {
-    text: 'fairygui.GTextField',
-    richtext: 'fairygui.GRichTextField',
-    progressar: 'fairygui.GProgressBar',
-    textinput: 'fairygui.GTextInput',
-    scrollbar: 'fairygui.GScrollBar',
-    movieclip: 'fairygui.GMovieClip'
-  };
-
-  /**
-   * @description 类型映射
-   * @author xfy
-   * @param {string} type
-   * @returns {string}
-   */
-  export function typeMapping(type: string): string {
-    const existing = FGUITypeMapping[type];
-    if (existing !== undefined) {
-      return existing;
-    }
-
-    if (type.length < 1) {
-      return type;
-    }
-    return `fairygui.G${type.substr(0, 1).toUpperCase()}${type.substr(1)}`
-  }
-
-  /**
-   * @description 相对路径转换成引用路径
-   * @author xfy
-   * @export
-   * @param {string} path
-   * @returns {string}
-   */
-  export function toReferencePath(path: string): string {
-    return path.replace(/^(\/|\\)+|(\/|\\)+$/g, '').replace(/\/|\\/g, '.');
-  }
-
-
-
-  /**
-   * @description 代码格式化
-   * @author xfy
-   * @export
-   * @param {string} code
-   * @returns {string}
-   */
-  export function format(code: string): string {
-    return prettierFormat(code, { filepath: '.ts' })
-  }
-
-  /**@description header*/
-  export const HEADER = `type __UIComponent<Base, Children, Controllers extends string = string, Transitions extends string = string> = Base & {
-getChild<Key extends keyof Children>(name: Key, explicitType: true): Children[Key];
-getController(name: Controllers): fairygui.Controller;
-getTransition(transName: Transitions): fairygui.Transition;
-};`;
-
-
-}
-

@@ -2,18 +2,15 @@
   "compilerOptions": {
     "target": "ES5",
     "lib": ["ESNext"],
-    "moduleResolution": "Node",
     "baseUrl": "./",
     "declaration": true,
     "sourceMap": true,
-    "resolveJsonModule": true,
-    // "isolatedModules": true,
     "incremental": true,
     "skipLibCheck": true,
     "strict": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "removeComments": true
+    "removeComments": true,
   }
 }

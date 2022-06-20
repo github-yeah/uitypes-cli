@@ -1,0 +1,25 @@
+[
+    {
+        "key": "rootDir",
+        "value": "public/assets/",
+        "description": "项目根目录"
+    }
+    ,
+    {
+        "key": "outDir",
+        "value": "./test/fairygui/uitypes",
+        "description": "输出目录"
+    }
+    ,
+    {
+        "key": "ns",
+        "value": "uit",
+        "description": "根命名空间"
+    }
+    ,
+    {
+        "key": "outFile",
+        "value": "uit.types",
+        "description": "输出文件名"
+    }
+]

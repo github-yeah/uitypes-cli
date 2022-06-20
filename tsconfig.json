@@ -2,6 +2,7 @@
   "files": [],
   "include": [],
   "references": [
+    {"path": "./configs"},
     {"path": "./uitypes"},
     {"path": "./cli"},
     // {"path": "./bin"}

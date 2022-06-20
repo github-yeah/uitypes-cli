@@ -3,9 +3,15 @@
   "compilerOptions": {
     "experimentalDecorators": true,
     "outDir": "../dist/uitypes",
-    "rootDir": "."
+    "rootDir": ".",
+    "paths": {
+      "@configs/*": ["configs/*"]
+    }
   },
   "include": [
     "**/*.ts"
+  ],
+  "references": [
+    {"path": "../configs"}
   ]
 }

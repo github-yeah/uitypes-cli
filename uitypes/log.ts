@@ -5,7 +5,9 @@
  * @param {string} msg
  */
 export function log(msg: string): void {
-  console.log(`[uitypes-cli] ${msg}`);
+  // const head = chalk.blueBright("[uitypes-cli]");
+  const head = "[uitypes-cli]";
+  console.log(`${head} ${msg}`);
 }
 
 /**
@@ -17,7 +19,11 @@ export function log(msg: string): void {
  * @param {TypedPropertyDescriptor<(...args: any[]) => any>} descriptor
  * @returns {(TypedPropertyDescriptor<(...args: any[]) => any> | void)}
  */
-export function logMethodTimeCost(_target: Object, key: string | symbol, descriptor: TypedPropertyDescriptor<(...args: any[]) => any>): TypedPropertyDescriptor<(...args: any[]) => any> | void {
+export function logMethodTimeCost(
+  _target: Object,
+  key: string | symbol,
+  descriptor: TypedPropertyDescriptor<(...args: any[]) => any>
+): TypedPropertyDescriptor<(...args: any[]) => any> | void {
   const method = descriptor.value;
   if (method === undefined) {
     return;

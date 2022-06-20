@@ -3,7 +3,11 @@
   "compilerOptions": {
     "experimentalDecorators": true,
     "outDir": "../dist/test",
-    "rootDir": "."
+    "rootDir": ".",
+    "paths": {
+      "@uitypes/*": ["uitypes/*"],
+      "@cli/*": ["cli/*"]
+    }
   },
   "include": [
     "**/*.ts"

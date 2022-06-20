@@ -1,9 +1,14 @@
 {
-    "extends": "../tsconfig-noncomposite-base.json",
+    "extends": "../tsconfig.composite.json",
     "compilerOptions": {
         "lib": [],
         "resolveJsonModule": true,
-        "outDir": "../dist"
+        "rootDir": ".",
+        "outDir": "../dist/configs"
     },
-    "files": ["uit-settings.json", "uit-settings-templete.json", "uit-fairygui-mapping.json"]
+    "include": ["**/*.ts"],
+    "files": [
+        "config-fairygui.json", 
+        "config-settings.json", 
+    ]
 }

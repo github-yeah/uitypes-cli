@@ -1,0 +1,8 @@
+{
+    "text": "fairygui.GTextField",
+    "richtext": "fairygui.GRichTextField",
+    "progressar": "fairygui.GProgressBar",
+    "textinput": "fairygui.GTextInput",
+    "scrollbar": "fairygui.GScrollBar",
+    "movieclip": "fairygui.GMovieClip"
+}
