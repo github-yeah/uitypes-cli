@@ -1,13 +1,13 @@
 [
     {
         "key": "rootDir",
-        "value": "public/assets/",
+        "value": "public/assets",
         "description": "项目根目录"
     }
     ,
     {
         "key": "outDir",
-        "value": "./test/fairygui/uitypes",
+        "value": "public/uitypes",
         "description": "输出目录"
     }
     ,

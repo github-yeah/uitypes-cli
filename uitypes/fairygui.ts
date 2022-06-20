@@ -53,7 +53,7 @@ export namespace fairygui {
    * @returns {string}
    */
   export function format(code: string): string {
-    return prettierFormat(code, { parser: "typescript" });
+    return prettierFormat(code, { parser: "typescript", printWidth: 120 });
   }
 
   /**@description header*/

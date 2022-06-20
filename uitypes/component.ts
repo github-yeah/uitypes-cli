@@ -49,18 +49,16 @@ export namespace UIComponent {
       log(`[组件配置文件不存在！] [file=${file}]`);
       return undefined;
     }
-    const rootElement = fileElement.elements?.find(
-      (e) => e.name === "component"
-    ) as fairygui.Config.ComponentRootNode | undefined;
+    const rootElement = fileElement.elements?.find((e) => e.name === "component") as
+      | fairygui.Config.ComponentRootNode
+      | undefined;
     if (!rootElement) {
       log(`[组件配置文件解析失败！] [file=${file}]`);
       return undefined;
     }
 
     // 解析组件扩展类型
-    const extention = fairygui.toFairyguiType(
-      rootElement.attributes?.extention ?? rootElement.name
-    );
+    const extention = fairygui.toFairyguiType(rootElement.attributes?.extention ?? rootElement.name);
 
     // 空组件
     if (rootElement.elements === undefined) {
@@ -113,6 +111,13 @@ export namespace UIComponent {
 
     // 解析组件导出名
     const publishName = basename(file, ".xml");
+
+    // 组件名不符合规则不予导出
+    if (fairygui.isValidName(publishName) === false) {
+      log("组件名不合法 file=" + file);
+      return extention;
+    }
+
     return {
       file,
       publishName,
@@ -133,10 +138,7 @@ export namespace UIComponent {
    */
   export function compile(
     component: UIComponent,
-    getReference: (
-      componentID: string,
-      packageID?: string
-    ) => string | undefined,
+    getReference: (componentID: string, packageID?: string) => string | undefined,
     format?: boolean
   ): string {
     // 编码子显示对象

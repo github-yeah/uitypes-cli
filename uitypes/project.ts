@@ -25,10 +25,7 @@ export namespace UIProejct {
    * @param {string} root UI根目录
    * @returns {(UIProject | undefined)}
    */
-  export function load(
-    publishname: string,
-    root: string
-  ): UIProject | undefined {
+  export function load(publishname: string, root: string): UIProject | undefined {
     if (existsSync(root) === false) {
       log(`UI项目根目录不存在! [root=${root}]`);
       return undefined;
@@ -56,11 +53,7 @@ export namespace UIProejct {
    * @param {boolean} [format]  是否格式化代码
    * @return {*}  {string}
    */
-  export function compile(
-    project: UIProject,
-    packages?: string[],
-    format: boolean = true
-  ): string {
+  export function compile(project: UIProject, packages?: string[], format: boolean = true): string {
     // 根据id获取包
     const getPackage = (packageID: string) => {
       return project.packageMap[packageID];
@@ -70,17 +63,12 @@ export namespace UIProejct {
     const packageCodeList: string[] = [];
     for (const packageID in packageMap) {
       const pkg = packageMap[packageID];
-      if (
-        pkg !== undefined &&
-        (packages === undefined || packages.includes(pkg.packagename))
-      ) {
+      if (pkg !== undefined && (packages === undefined || packages.includes(pkg.packagename))) {
         const packageCode = UIPackage.compile(pkg, getPackage);
         packageCodeList.push(packageCode);
       }
     }
-    const code = `declare namespace ${publishname} {${
-      fairygui.HEADER
-    } ${packageCodeList.join(" ")}}`;
+    const code = `declare namespace ${publishname} {${fairygui.HEADER} ${packageCodeList.join(" ")}}`;
     if (format) {
       return fairygui.format(code);
     }

@@ -8,10 +8,7 @@ import { settings, merge } from "../../configs/config.settings";
  * @param {Command} program
  */
 export function loadSettingsCommand(program: Command): void {
-  const cmd = program
-    .command("settings")
-    .alias("s")
-    .description(`修改本地配置 [path='configs/config-settings.json']`);
+  const cmd = program.command("settings").alias("s").description(`修改本地配置 [path='configs/config-settings.json']`);
 
   settings.forEach(({ key, description }) => {
     cmd.option(`--${key} [${key}]`, description);

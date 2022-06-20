@@ -30,9 +30,7 @@ export interface UIPackage {
    * @description 组件映射列表
    * - {命名空间: UIComponent[]}
    */
-  readonly componentsMap: Readonly<
-    Record<string, undefined | readonly UIComponent[]>
-  >;
+  readonly componentsMap: Readonly<Record<string, undefined | readonly UIComponent[]>>;
 
   /**
    * 组件引用地址映射列表
@@ -52,10 +50,7 @@ export namespace UIPackage {
    * @param {string} basePath 项目根目录
    * @returns {(UIPackage | undefined)}
    */
-  export function load(
-    packagename: string,
-    basePath: string
-  ): UIPackage | undefined {
+  export function load(packagename: string, basePath: string): UIPackage | undefined {
     const packagePath = join(basePath, packagename);
     if (statSync(packagePath).isDirectory() === false) {
       // 过滤包文件夹
@@ -69,14 +64,10 @@ export namespace UIPackage {
       return undefined;
     }
 
-    const pkgRootElement = fileElement.elements?.find(
-      (e) => e.name === "packageDescription"
-    ) as fairygui.Config.PackageRootNode | undefined;
-    if (
-      !pkgRootElement ||
-      !pkgRootElement.elements ||
-      !pkgRootElement.attributes
-    ) {
+    const pkgRootElement = fileElement.elements?.find((e) => e.name === "packageDescription") as
+      | fairygui.Config.PackageRootNode
+      | undefined;
+    if (!pkgRootElement || !pkgRootElement.elements || !pkgRootElement.attributes) {
       log(`[包件配置文件解析失败！] [file=${file}]`);
       return undefined;
     }
@@ -85,15 +76,15 @@ export namespace UIPackage {
     const id = pkgRootElement.attributes.id;
 
     // 解析包发布名
-    const publishnode = pkgRootElement.elements.find(
-      (e) => e.name === "publish"
-    ) as fairygui.Config.PackagePublishNode | undefined;
+    const publishnode = pkgRootElement.elements.find((e) => e.name === "publish") as
+      | fairygui.Config.PackagePublishNode
+      | undefined;
     const publishname = publishnode?.attributes?.name ?? packagename;
 
     // 读取包组件列表
-    const resourcesNode = pkgRootElement.elements.find(
-      (e) => e.name === "resources"
-    ) as fairygui.Config.PackageResourcesNode | undefined;
+    const resourcesNode = pkgRootElement.elements.find((e) => e.name === "resources") as
+      | fairygui.Config.PackageResourcesNode
+      | undefined;
     if (!resourcesNode?.elements?.length) {
       return undefined;
     }
@@ -118,15 +109,9 @@ export namespace UIPackage {
         return;
       }
 
-      // 解析没有自定义内容的组件
+      // 解析空组件为内置类型
       if (typeof component === "string") {
         componentsRefMap[attributes.id] = component;
-        return;
-      }
-
-      // 解析空组件，直接使用内置类型
-      if (!component.displayList?.length) {
-        componentsRefMap[attributes.id] = component.extention;
         return;
       }
 
@@ -181,18 +166,12 @@ export namespace UIPackage {
       const components = componentsMap[ns];
       // 编译同命名空间下的组件列表代码（未格式化）
       const componentsCode =
-        components
-          ?.map((component) => UIComponent.compile(component, getReference))
-          .join(" ") ?? "";
+        components?.map((component) => UIComponent.compile(component, getReference)).join(" ") ?? "";
       // 命名空间为空的话表示是包命名空间的直系子组件
-      namespaceCodeList.push(
-        ns.length === 0 ? componentsCode : `namespace ${ns} {${componentsCode}}`
-      );
+      namespaceCodeList.push(ns.length === 0 ? componentsCode : `namespace ${ns} {${componentsCode}}`);
     }
 
-    const code = `namespace ${pkg.packagename} {${namespaceCodeList.join(
-      " "
-    )}}`;
+    const code = `namespace ${pkg.packagename} {${namespaceCodeList.join(" ")}}`;
     if (format) {
       return fairygui.format(code);
     }
