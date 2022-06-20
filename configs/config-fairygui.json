@@ -4,5 +4,7 @@
     "progressar": "fairygui.GProgressBar",
     "textinput": "fairygui.GTextInput",
     "scrollbar": "fairygui.GScrollBar",
-    "movieclip": "fairygui.GMovieClip"
+    "movieclip": "fairygui.GMovieClip",
+    "controller": "fairygui.Controller",
+    "transition": "fairygui.Transition"
 }
