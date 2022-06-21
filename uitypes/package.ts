@@ -4,14 +4,30 @@ import { fairygui } from './fairygui';
 import { log } from './log';
 import { statSync } from 'fs';
 
+/**
+ * @description UIPackage
+ * @export
+ * @interface UIPackage
+ */
+export interface UIPackage {
+  /**@description id*/
+  readonly id: string;
+  /**@description 包名*/
+  readonly packagename: string;
+  /**@description 包内资源类型映射列表 {资源id : 类型（fairygui内置类型或自定义组件类型）}*/
+  readonly typesMap: ReadonlyMap<string, string>;
+  /**@description 组件映射列表（根据命名空间分组） - {命名空间: 同命名空间组件列表}*/
+  readonly componentsMap: ReadonlyMap<string, UIComponent[]>;
+}
+
 /**@description UIPackage*/
 export namespace UIPackage {
   /**
    * @description 包内资源配置
    * @export
-   * @interface ResourceItem
+   * @interface Resource
    */
-  interface ResourceItem {
+  interface Resource {
     /** @description element tag name*/
     readonly name: string;
 
@@ -31,7 +47,14 @@ export namespace UIPackage {
     }>;
   }
 
-  export function load(packagename: string, rootDir: string) {
+  /**
+   * @description 加载`UIPackage`
+   * @export
+   * @param {string} packagename
+   * @param {string} rootDir
+   * @return {*}  {(UIPackage | undefined)}
+   */
+  export function load(packagename: string, rootDir: string): UIPackage | undefined {
     const packagePath = join(rootDir, packagename);
     if (statSync(packagePath).isDirectory() === false) {
       return undefined;
@@ -41,7 +64,7 @@ export namespace UIPackage {
     const packageConfig = fairygui.Config.load(file);
     if (packageConfig === undefined) {
       log(`[UI包解析失败] [配置文件不存在！] [file=${file}]`);
-      return '';
+      return undefined;
     }
 
     const description = packageConfig.elements?.find(({ name }) => name === 'packageDescription');
@@ -52,96 +75,79 @@ export namespace UIPackage {
     }
 
     // 解析资源列表
-    const resourceItems = description?.elements?.find(({ name }) => name === 'resources')?.elements;
-    /**@description 资源类型映射列表 {资源id : 类型（fairygui内置类型或自定义组件类型）}*/
-    const resourcesMap: Record<string, string> = {};
-    resourceItems?.forEach((value) => {
-      const { name: tag, attributes } = value as ResourceItem;
+    const resources = description?.elements?.find(({ name }) => name === 'resources')?.elements;
+    /**@description 包内资源类型映射列表 {资源id : 类型（fairygui内置类型或自定义组件类型）}*/
+    const typesMap: Map<string, string> = new Map();
+    /**@description 组件映射列表（根据命名空间分组） - {命名空间: 同命名空间组件列表}*/
+    const componentsMap: Map<string, UIComponent[]> = new Map();
+    resources?.forEach((value) => {
+      const { name: tag, attributes } = value as Resource;
       const { id, name, path } = attributes;
-      // 解析内置类型
+      // 解析内置类型组件
       if (tag !== 'component') {
-        resourcesMap[id] = fairygui.toFairyguiType(tag);
+        typesMap.set(id, fairygui.toFairyguiType(tag));
         return;
       }
-
+      
       // 解析自定义组件类型
       const file = join(packagePath, path, name);
       const component = UIComponent.load(file);
-      if (!component) {
-        // 组件不存在或格式错误
+      if (!component) {/**@description 组件不存在或解析失败*/
         return;
       }
 
-      // if(component.children?.length)
+      // 解析不需要导出的组件
+      if(component.exportable === false) {
+        typesMap.set(id, component.supertype);
+        return;
+      }
+      const ns = fairygui.toRef(path);
+      const type = ns.length > 0 ? `${packagename}.${ns}.${component.name}` : `${packagename}.${component.name}`;
+      typesMap.set(id, type);
 
-      // const { name: classname, extention, children } = component;
+      // 根据命名空间分组
+      let components = componentsMap.get(ns);
+      if(components === undefined) {
+        components = [];
+        componentsMap.set(ns, components);
+      }
+      components.push(component);
     });
+    return {
+      id,
+      packagename,
+      typesMap,
+      componentsMap
+    }
   }
 
   /**
-   * @description 编译`UIPackage`
-   * @author xfy
+   * @description 编译
    * @export
-   * @param {string} packagename  包名
-   * @param {string} rootDir   项目根目录
-   * @param {boolean} [format]  是否格式化代码
-   * @returns {string}
+   * @param {UIPackage} pkg UIPackage
+   * @param {ReadonlyMap<string, UIPackage>} packagesMap key=包id
+   * @param {boolean} [format] 是否格式化代码
+   * @return {*}  {string}
    */
-  export function compile(packagename: string, rootDir: string, format?: boolean): string {
-    const packagePath = join(rootDir, packagename);
-    // 过滤包文件夹
-    if (statSync(packagePath).isDirectory() === false) {
-      return '';
+  export function compile(pkg: UIPackage, packagesMap: ReadonlyMap<string, UIPackage>, format?:boolean): string {
+    const { packagename, componentsMap, typesMap } = pkg;
+    const getType = (componentID: string, packageID?: string) => {
+      const _typesMap = packageID ? packagesMap.get(packageID)?.typesMap : typesMap;
+      return _typesMap?.get(componentID);
     }
 
-    const file = join(packagePath, 'package.xml');
-    const fileElement = fairygui.Config.load(file);
-    if (fileElement === undefined) {
-      log(`[包配置文件不存在！] [file=${file}]`);
-      return '';
-    }
-
-    // 读取包组件列表
-    const packageConfig = fileElement.elements?.find(({ name }) => name === 'packageDescription');
-    const componentConfigs = packageConfig?.elements?.find(({ name }) => name === 'resources')?.elements as
-      | ResourceItem[]
-      | undefined;
-
-    // 子命名空间代码映射 {子命名空间: 命名空间内组件代码-不包含子命名空间}
-    const subNamespaceCodeMap: Record<string, string | undefined> = {};
-    componentConfigs?.forEach(({ name: tagname, attributes }) => {
-      // 解析非自定义组件，直接跳过
-      if (tagname !== 'component') {
+    let code = '';
+    componentsMap.forEach((components, ns) => {
+      const componentsCode = components.map(component => UIComponent.compile(component, getType)).join(' ');
+      if(ns.length === 0) {
+        code = `${code}${componentsCode}`;
         return;
       }
-
-      // 解析自定义组件代码
-      const componentFile = join(packagePath, attributes.path, attributes.name);
-      const componentCode = UIComponent.compile(componentFile);
-      if (componentCode.length < 1) {
-        return;
-      }
-
-      // 解析自定义组件所属命名空间，按照命名空间分组代码
-      const subNamespace = fairygui.toRef(attributes.path);
-      const subNamespaceCode = subNamespaceCodeMap[subNamespace] ?? '';
-      subNamespaceCodeMap[subNamespace] = `${subNamespaceCode} ${componentCode}`;
+      code = `${code}namespace ${ns} {${componentsCode}}`;
     });
 
-    // 解析包命名空间别名
-    const packageAttributes = packageConfig?.attributes as { id: string } | undefined;
-    const id = packageAttributes?.id;
-    // 以包id为命名空间别名，需加前缀`_`，防止数字开头的包id
-    const packageAliasCode = id === undefined ? '' : `import _${id} = ${packagename};`;
-
-    // 整合代码
-    let namespaceCode = '';
-    for (const ns in subNamespaceCodeMap) {
-      const nsCode = subNamespaceCodeMap[ns];
-      namespaceCode += ns.length > 0 ? `namespace ${ns} {${nsCode}}` : nsCode;
-    }
-    const code = `${packageAliasCode} namespace ${packagename} {${namespaceCode}}`;
-    if (format) {
+    code = `namespace ${packagename} {${code}}`;
+    if(format) {
       return fairygui.format(code);
     }
     return code;

@@ -1,5 +1,5 @@
 import { writeFileSync } from 'fs';
-import { UIProejct } from '../uitypes/project';
+import { UIProject } from '../uitypes/project';
 import { fairygui } from '../uitypes/fairygui.config';
 
 function startup(): void {
@@ -12,7 +12,7 @@ function startup(): void {
 
   const timeLabel = '[uitypes-cli] 耗时';
   console.time(timeLabel);
-  const code = UIProejct.compile(root, publishName, false);
+  const code = UIProject.compile(root, publishName, true);
   writeFileSync(outFile, code);
   console.timeEnd(timeLabel);
 }
