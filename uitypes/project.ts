@@ -1,7 +1,7 @@
-import { existsSync, readdirSync } from "fs";
-import { fairygui } from "./fairygui";
-import { log } from "./log";
-import { UIPackage } from "./package";
+import { existsSync, readdirSync } from 'fs';
+import { fairygui } from './fairygui';
+import { log } from './log';
+import { UIPackage } from './package';
 
 /**@description UIProject*/
 export namespace UIProejct {
@@ -19,9 +19,9 @@ export namespace UIProejct {
       return '';
     }
     const packagenames = readdirSync(root);
-    const packageCode = packagenames.map(packagename => UIPackage.compile(packagename, root)).join(' ');
-    const code = `declare namespace ${publishname} {${fairygui.HEADER} ${packageCode}}`;
-    if(format) {
+    const packageCode = packagenames.map((packagename) => UIPackage.compile(packagename, root)).join(' ');
+    const code = `declare namespace ${publishname} {${fairygui.ComponentTypeCode} ${packageCode}}`;
+    if (format) {
       return fairygui.format(code);
     }
     return code;

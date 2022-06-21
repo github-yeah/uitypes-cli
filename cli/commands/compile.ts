@@ -38,19 +38,19 @@ function compile(packages: string[], options: typeof settingsRecord) {
   const timeLabel = "[uitypes-cli] 导出完成！耗时";
   console.time(timeLabel);
 
-  const rootDir = options.rootDir ?? settingsRecord.rootDir;
-  const outDir = options.outDir ?? settingsRecord.outDir;
-  const ns = options.ns ?? settingsRecord.ns;
-  const outFile = options.outFile ?? settingsRecord.outFile;
+  // const rootDir = options.rootDir ?? settingsRecord.rootDir;
+  // const outDir = options.outDir ?? settingsRecord.outDir;
+  // const ns = options.ns ?? settingsRecord.ns;
+  // const outFile = options.outFile ?? settingsRecord.outFile;
 
-  const project = UIProejct.load(ns, rootDir);
-  if (project === undefined) {
-    console.timeEnd(timeLabel);
-    return;
-  }
-  const code = UIProejct.compile(project, packages);
-  const file = join(outDir, outFile);
-  writeFileSync(file, code);
+  // const project = UIProejct.load(ns, rootDir);
+  // if (project === undefined) {
+  //   console.timeEnd(timeLabel);
+  //   return;
+  // }
+  // const code = UIProejct.compile(project, packages);
+  // const file = join(outDir, outFile);
+  // writeFileSync(file, code);
 
   console.timeEnd(timeLabel);
 }

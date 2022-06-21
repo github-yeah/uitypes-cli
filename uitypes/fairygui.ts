@@ -1,10 +1,21 @@
-import { format as prettierFormat } from "prettier";
-import { xml2js, Element } from "xml-js";
-import { existsSync, readFileSync } from "fs";
-import { log } from "./log";
-import { tagTypesMapping } from "../configs/config.fairygui";
+import { format as prettierFormat } from 'prettier';
+import { xml2js, Element } from 'xml-js';
+import { existsSync, readFileSync } from 'fs';
+import { log } from './log';
+import { tagTypesMapping } from '../configs/config.fairygui';
 
 export namespace fairygui {
+  /**
+   * @description 代码格式化
+   * @author xfy
+   * @export
+   * @param {string} code
+   * @returns {string}
+   */
+  export function format(code: string): string {
+    return prettierFormat(code, { parser: 'typescript', printWidth: 120, singleQuote: true });
+  }
+
   /** @description 匹配无用名字（fariygui自动生成的名字或者纯数字名字）*/
   const useless_name_reg = /^(\-|[0-9]|n[0-9]*$)/; // 数字或负号开头+n开头数字结尾
 
@@ -42,37 +53,30 @@ export namespace fairygui {
    * @returns {string}
    */
   export function toRef(path: string): string {
-    return path.replace(/^(\/|\\)+|(\/|\\)+$/g, "").replace(/\/|\\/g, ".");
+    return path.replace(/^(\/|\\)+|(\/|\\)+$/g, '').replace(/\/|\\/g, '.');
   }
 
+  /**@description 组件类型*/
+  export const ComponentTypeCode =
+    'type __UIComponent<Base, Children, Controllers extends string = string, Transitions extends string = string> = Base & {getChild<Key extends keyof Children>(name: Key, explicitType: true): Children[Key];getController(name: Controllers): fairygui.Controller;getTransition(transName: Transitions): fairygui.Transition;};';
 
   /**
-   * @description 包id转换成命名空间别名，防止id时数字开头
-   * @export
-   * @param {string} id
-   * @return {*}  {string}
-   */
-  export function toNamespaceAlias(id: string): string {
-    return '_' + id;
-  }
-
-  /**
-   * @description 代码格式化
+   * @description 组件类型代码
    * @author xfy
    * @export
-   * @param {string} code
    * @returns {string}
    */
-  export function format(code: string): string {
-    return prettierFormat(code, { parser: "typescript", printWidth: 120 });
-  }
 
-  /**@description header*/
-  export const HEADER = `type __UIComponent<Base, Children, Controllers extends string = string, Transitions extends string = string> = Base & {
-getChild<Key extends keyof Children>(name: Key, explicitType: true): Children[Key];
-getController(name: Controllers): fairygui.Controller;
-getTransition(transName: Transitions): fairygui.Transition;
-};`;
+  /**@description 生成组件类型代码*/
+  export function toComponentTypeCode(
+    name: string,
+    supertype: string,
+    children: string,
+    controllers: string,
+    transitions: string
+  ): string {
+    return `type ${name} = __UIComponent<${supertype}, ${children}, ${controllers}, ${transitions}>;`;
+  }
 }
 
 /**
