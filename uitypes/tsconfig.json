@@ -12,6 +12,7 @@
     "**/*.ts"
   ],
   "references": [
-    {"path": "../configs"}
+    {"path": "../utils"},
+    {"path": "../configs"},
   ]
 }

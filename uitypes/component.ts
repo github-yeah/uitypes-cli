@@ -2,33 +2,124 @@ import { basename } from 'path';
 import { fairygui } from './fairygui';
 import { log } from './log';
 
-/**@description UIComponent*/
+/**
+ * @description Controller
+ * @author xfy
+ * @interface Controller
+ */
+interface Controller {
+  name: 'controller';
+  attributes: {
+    name: string;
+  };
+}
+
+/**
+ * @description Transition
+ * @author xfy
+ * @interface Transition
+ */
+interface Transition {
+  name: 'transition';
+  attributes: {
+    name: string;
+  };
+}
+
+/**
+ * @description Child
+ * @author xfy
+ * @interface Child
+ */
+interface Child {
+  name: string;
+  attributes: {
+    name: string;
+    src?: string;
+    pkg?: string;
+  };
+}
+
+/**
+ * @description UIComponent
+ * @author xfy
+ * @export
+ * @interface UIComponent
+ */
+export interface UIComponent {
+  name: string;
+  extention: string;
+  children?: Child[];
+  controllers?: Controller[];
+  transitions?: Transition[];
+}
+
+/**@description UIComponent */
 export namespace UIComponent {
   /**
-   * @description 组件属性配置
-   * @interface AttributeConfig
+   * @description 加载组件
+   * @export
+   * @param {string} file 组件配置文件路径
+   * @return {string}
    */
-  interface AttributeConfig {
-    /** @description 组件属性类型名称*/
-    readonly name: string;
+  export function load(file: string): UIComponent | undefined {
+    // 解析组件名
+    const name = basename(file, '.xml');
+    if (fairygui.isValidName(name) === false) {
+      log(`[组件解析失败！] [组件名称不合规] [file=${file}]`);
+      return undefined;
+    }
 
-    /** @description 组件属性信息*/
-    readonly attributes: Readonly<{
-      /** @description 属性名称*/
-      name?: string;
+    // 读取自定义组件
+    const fileConfig = fairygui.Config.load(file);
+    if (!fileConfig) {
+      log(`[组件解析失败！] [组件配置文件不存在] [file=${file}]`);
+      return undefined;
+    }
+    const rootConfig = fileConfig.elements?.find((e) => e.name === 'component');
+    if (rootConfig === undefined) {
+      log(`[组件解析失败！] [组件配置文件格式不合规] [file=${file}]`);
+      return undefined;
+    }
 
-      /**@description 属性引用的自定义组件id*/
-      src?: string;
+    // 解析组件属性列表
+    /**@description Children */
+    let children = '';
+    /**@description Controller names type */
+    let controllers: string | undefined = undefined;
+    /**@description Transition names type*/
+    let transitions: string | undefined = undefined;
 
-      /**
-       * @description 属性引用的自定义组件所属包的id
-       * - 不存则在本包内查找具体组件类型
-       * */
-      pkg?: string;
+    rootConfig.elements?.forEach((e) => {
+      switch (e.name) {
+        case 'controller':
+          const controllerName = (e as Child).attributes.name;
+          if (controllerName !== undefined) {
+            controllers = controllers === undefined ? `'${controllerName}'` : `${controllers} | '${controllerName}'`;
+          }
+          break;
+        case 'transition':
+          const transitionName = (e as Child).attributes.name;
+          if (transitionName !== undefined) {
+            transitions = transitions === undefined ? `'${transitionName}'` : `${transitions} | '${transitionName}'`;
+          }
+          break;
+        case 'displayList':
+          if (e.elements === undefined) {
+            return;
+          }
+          children += compileChildren(e.elements as Child[]);
+          break;
+      }
+    });
+    controllers = controllers ?? 'string';
+    transitions = transitions ?? 'string';
+    children = `{${children}}`;
 
-      /**@description 引用的自定义组件在其包内的相对路径*/
-      fileName?: string;
-    }>;
+    // 解析组件扩展类型
+    const rootAttributes = rootConfig.attributes as undefined | { extention?: string };
+    const tagname = rootAttributes?.extention ?? rootConfig.name ?? 'component';
+    const supertype = fairygui.toFairyguiType(tagname);
   }
 
   /**
@@ -69,13 +160,13 @@ export namespace UIComponent {
     rootConfig.elements?.forEach((e) => {
       switch (e.name) {
         case 'controller':
-          const controllerName = (e as AttributeConfig).attributes.name;
+          const controllerName = (e as Child).attributes.name;
           if (controllerName !== undefined) {
             controllers = controllers === undefined ? `'${controllerName}'` : `${controllers} | '${controllerName}'`;
           }
           break;
         case 'transition':
-          const transitionName = (e as AttributeConfig).attributes.name;
+          const transitionName = (e as Child).attributes.name;
           if (transitionName !== undefined) {
             transitions = transitions === undefined ? `'${transitionName}'` : `${transitions} | '${transitionName}'`;
           }
@@ -84,7 +175,7 @@ export namespace UIComponent {
           if (e.elements === undefined) {
             return;
           }
-          children += compileChildren(e.elements as AttributeConfig[]);
+          children += compileChildren(e.elements as Child[]);
           break;
       }
     });
@@ -108,10 +199,10 @@ export namespace UIComponent {
   /**
    * @description 编译子显示对象列表
    * @author xfy
-   * @param {AttributeConfig[]} elements
+   * @param {Child[]} elements
    * @returns {string}
    */
-  function compileChildren(elements: AttributeConfig[]): string {
+  function compileChildren(elements: Child[]): string {
     //子显示对象Record - {属性名: 属性类型}
     const children: Record<string, string | undefined> = {};
     let code = '';
@@ -122,20 +213,20 @@ export namespace UIComponent {
         return;
       }
 
-      // 解析非自定义组件属性
-      if (tagName !== 'component' || !attributes.fileName?.length) {
-        const type = fairygui.toFairyguiType(tagName);
-        children[name] = type;
-        code = `${code}${name}: ${type};`;
-        return;
-      }
+      // // 解析非自定义组件属性
+      // if (tagName !== 'component' || !attributes.fileName?.length) {
+      //   const type = fairygui.toFairyguiType(tagName);
+      //   children[name] = type;
+      //   code = `${code}${name}: ${type};`;
+      //   return;
+      // }
 
-      // 解析自定义组件属性
-      const pkg = attributes.pkg;
-      const ref = fairygui.toRef(attributes.fileName.replace('.xml', ''));
-      const type = pkg?.length ? `_${pkg}.${ref}` : ref; // 以包id为命名空间别名，需加前缀`_`，防止数字开头的包id
-      children[name] = type;
-      code = `${code}${name}: ${type};`;
+      // // 解析自定义组件属性
+      // const pkg = attributes.pkg;
+      // const ref = fairygui.toRef(attributes.fileName.replace('.xml', ''));
+      // const type = pkg?.length ? `_${pkg}.${ref}` : ref; // 以包id为命名空间别名，需加前缀`_`，防止数字开头的包id
+      // children[name] = type;
+      // code = `${code}${name}: ${type};`;
     });
     return code;
     // return JSON.stringify(children).replace(/\"/g, '');

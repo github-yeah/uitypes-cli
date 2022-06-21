@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.composite.json",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "incremental": true,
+    "outDir": "../dist/utils",
+    "rootDir": ".",
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}

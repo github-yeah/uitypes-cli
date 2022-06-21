@@ -1,22 +1,36 @@
 import { readFileSync } from 'fs';
+import Attribute from '../utils/xml/attribute';
 
+/**@description Config*/
 export namespace fairygui.Config {
-  export function loadPackage(file: string): void {
+  export function loadPackage(file: string) {
     const content = readFileSync(file).toString('utf-8');
-    const result = parseElement(content, 'resources');
-    console.log(result);
+
+    // 读取description
+    const description = Element.parse(content, 'packageDescription');
+    if (description === undefined) {
+      return undefined;
+    }
+
+    // 读取id
+    const id = Attribute.parse(description.attributes).id;
+    if (id === undefined) {
+      return undefined;
+    }
+
+    // 读取组件列表
+    const resources = Element.parse(description.content, 'resources');
   }
+}
 
-  ///////////////////////////////////////////////////////////////////////////////
-  ////////////////////////////// 类型 //////////////////////////////////////
-  ///////////////////////////////////////////////////////////////////////////////
-
+/**@description 元素*/
+export namespace fairygui.Config.Element {
   /**
    * @description 元素解析结果
    * @author xfy
-   * @interface ElementResult
+   * @interface Result
    */
-  interface ElementResult {
+  interface Result {
     /**@description 标签名*/
     tag: string;
     /**@description 属性文本*/
@@ -24,10 +38,6 @@ export namespace fairygui.Config {
     /**@description 内容文本*/
     content: string;
   }
-
-  ///////////////////////////////////////////////////////////////////////////////
-  ////////////////////////////// 正则表达式 //////////////////////////////////////
-  ///////////////////////////////////////////////////////////////////////////////
 
   /**@description 元素正则对象池*/
   const elementRegPools: Record<string, RegExp | undefined> = {};
@@ -51,9 +61,9 @@ export namespace fairygui.Config {
    * @author xfy
    * @param {string} xml
    * @param {string} [tagname]
-   * @returns {(ElementResult | undefined)}
+   * @returns {(Result | undefined)}
    */
-  function parseElement(xml: string, tagname?: string): ElementResult | undefined {
+  export function parse(xml: string, tagname?: string): Result | undefined {
     const key = tagname ?? 'root';
     let reg = elementRegPools[key];
     if (reg === undefined) {

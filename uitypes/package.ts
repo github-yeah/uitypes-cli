@@ -7,11 +7,11 @@ import { statSync } from 'fs';
 /**@description UIPackage*/
 export namespace UIPackage {
   /**
-   * @description 包内组件基本配置
+   * @description 包内资源配置
    * @export
-   * @interface ComponentConfig
+   * @interface ResourceItem
    */
-  interface ComponentConfig {
+  interface ResourceItem {
     /** @description element tag name*/
     readonly name: string;
 
@@ -29,6 +29,53 @@ export namespace UIPackage {
       /** @description 组件是否被导出 */
       exported?: string;
     }>;
+  }
+
+  export function load(packagename: string, rootDir: string) {
+    const packagePath = join(rootDir, packagename);
+    if (statSync(packagePath).isDirectory() === false) {
+      return undefined;
+    }
+
+    const file = join(packagePath, 'package.xml');
+    const packageConfig = fairygui.Config.load(file);
+    if (packageConfig === undefined) {
+      log(`[UI包解析失败] [配置文件不存在！] [file=${file}]`);
+      return '';
+    }
+
+    const description = packageConfig.elements?.find(({ name }) => name === 'packageDescription');
+    const id = description?.attributes?.id as string | undefined;
+    if (id === undefined) {
+      log(`[UI包解析失败] [UI包id不存在！] [file=${file}]`);
+      return undefined;
+    }
+
+    // 解析资源列表
+    const resourceItems = description?.elements?.find(({ name }) => name === 'resources')?.elements;
+    /**@description 资源类型映射列表 {资源id : 类型（fairygui内置类型或自定义组件类型）}*/
+    const resourcesMap: Record<string, string> = {};
+    resourceItems?.forEach((value) => {
+      const { name: tag, attributes } = value as ResourceItem;
+      const { id, name, path } = attributes;
+      // 解析内置类型
+      if (tag !== 'component') {
+        resourcesMap[id] = fairygui.toFairyguiType(tag);
+        return;
+      }
+
+      // 解析自定义组件类型
+      const file = join(packagePath, path, name);
+      const component = UIComponent.load(file);
+      if (!component) {
+        // 组件不存在或格式错误
+        return;
+      }
+
+      // if(component.children?.length)
+
+      // const { name: classname, extention, children } = component;
+    });
   }
 
   /**
@@ -55,9 +102,9 @@ export namespace UIPackage {
     }
 
     // 读取包组件列表
-    const packageConfig = fileElement.elements?.find((e) => e.name === 'packageDescription');
-    const componentConfigs = packageConfig?.elements?.find((e) => e.name === 'resources')?.elements as
-      | ComponentConfig[]
+    const packageConfig = fileElement.elements?.find(({ name }) => name === 'packageDescription');
+    const componentConfigs = packageConfig?.elements?.find(({ name }) => name === 'resources')?.elements as
+      | ResourceItem[]
       | undefined;
 
     // 子命名空间代码映射 {子命名空间: 命名空间内组件代码-不包含子命名空间}
