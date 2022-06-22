@@ -66,8 +66,8 @@ npm install uitypes-cli --save
 
 ### 设置
 
-1. 第一种方式是通过 `uitypes compile --input 绝对路径-你的ui项目目录`进行编译
-2. 第二种方式是先通过 `uitypes settings --input 绝对路径-你的ui项目目录`来进行本地设置，然后再 `uitypes compile` 不需要加其他参数（推荐）
+1. 第一种方式是通过 `uitypes compile --rootDir ui项目目录`进行编译（fairygui设置到`assets`）
+2. 第二种方式是先通过 `uitypes settings --rootDir ui项目目录`来进行本地设置，然后再 `uitypes compile` 不需要加其他参数（推荐）
 
 ### 常用指令
 
