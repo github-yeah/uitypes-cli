@@ -1,28 +1,41 @@
+import { program } from 'commander';
+import { loadCommands } from './cli.loader';
+import * as chalk from 'chalk';
+
 /**
- * @description Option Item
+ * @description startup
  * @author xfy
- * @interface _Option
+ * @export
  */
-interface _Option {
-  /**@description 值*/
-  value: string;
-  /**@description 说明*/
-  desc: string;
+export function startup(): void {
+  const pkg = require('../package.json');
+  const version = pkg.version;
+
+  program
+    .version(version, '-v, --version', 'uitypes-cli 版本.')
+    .usage('<command> [options]')
+    .helpOption('-h, --help', '帮助.');
+
+  // 处理无效命令
+  invalidCommandHandler();
+  // 加载命令列表
+  loadCommands(program);
+
+  program.parse(process.argv);
+  const [, , cmd] = process.argv;
+  if (cmd === undefined) {
+    program.outputHelp();
+  }
 }
 
 /**
- * @description Options
+ * @description 处理无效命令
  * @author xfy
- * @export
- * @interface Options
+ * @param {CommanderStatic} program
  */
-export interface Options {
-  /**@description UI项目根目录*/
-  root: _Option;
-  /**@description UI项目类型命名空间*/
-  ns: _Option;
-  /**@description UI项目类型输出目录（不设置则生成在`input`目录）*/
-  dest?: _Option;
-  /**@description UI项目类型输出文件（所有的类型合并到一个文件内，每个文件单独输出）*/
-  destFile?: _Option;
+function invalidCommandHandler(): void {
+  program.on('command:*', () => {
+    console.error(`[ERROR]\n无效命令：${chalk.red(program.args.join(' '))}`);
+    console.log(`[Log] 使用${chalk.red('--help')}查看命令列表`);
+  });
 }

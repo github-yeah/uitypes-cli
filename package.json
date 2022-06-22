@@ -1,14 +1,16 @@
 {
   "name": "uitypes-cli",
-  "version": "2.0.01",
+  "version": "2.0.02",
   "description": "fairygui types",
   "bin": {
-    "uitypes": "dist/uitypes.js"
+    "uitypes": "dist/bin/uitypes.js"
   },
   "scripts": {
     "clean": "rimraf dist/*",
-    "build": "tsc -b --clean && tsc -b",
-    "dev": "tsc -b --clean && tsc -b --watch",
+    "prebuild": "npm run clean",
+    "build": "tsc -b",
+    "predev": "npm run clean",
+    "dev": "tsc -b --watch",
     "test": "ts-node test/index.test.ts"
   },
   "keywords": [
@@ -38,7 +40,7 @@
     "typescript": "^4.7.3"
   },
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "^4.1.2",
     "commander": "^9.3.0",
     "prettier": "^2.7.1",
     "xml-js": "^1.6.11"

@@ -1,2 +1,3 @@
 #!/usr/bin/env node
-console.log('[uitypes-cli] 启动...');
+import { startup } from '../cli/cli';
+startup();

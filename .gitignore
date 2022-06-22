@@ -1,3 +1,5 @@
 dist
 node_modules
 package-lock.json
+*.tsbuildinfo
+test/types/uit.types.d.ts

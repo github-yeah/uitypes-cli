@@ -9,6 +9,6 @@
     "include": ["**/*.ts"],
     "files": [
         "config-fairygui.json", 
-        "config-settings.json", 
+        "config-settings.json"
     ]
 }

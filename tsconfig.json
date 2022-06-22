@@ -1,10 +1,11 @@
 {
-  "files": [],
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "outDir": "dist"
+  },
+  "files": ["./package.json"],
   "include": [],
   "references": [
-    {"path": "./configs"},
-    {"path": "./uitypes"},
-    {"path": "./cli"},
-    // {"path": "./bin"}
+    {"path": "./bin"}
   ]
 }

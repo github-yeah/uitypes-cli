@@ -7,7 +7,7 @@
     ,
     {
         "key": "outDir",
-        "value": "public/uitypes",
+        "value": "test/types",
         "description": "输出目录"
     }
     ,
