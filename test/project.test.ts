@@ -15,4 +15,4 @@ function startup(): void {
   });
   console.timeEnd(timeLabel);
 }
-// startup();
+startup();

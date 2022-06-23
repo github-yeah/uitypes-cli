@@ -1,21 +1,22 @@
 import Attribute from './attribute';
 
+/**tag symbol*/
+export const tag = Symbol.for('xml.tag');
+
+/**content symbol*/
+export const content = Symbol.for('xml.content');
+
 /**
  * @description 元素解析结果
  * @author xfy
  * @interface Result
  */
-interface Result {
+export interface Result extends Record<string, string | undefined> {
   /**@description 标签名*/
-  tag: string;
-  /**@description 属性文本*/
-  attributes: string;
+  [tag]: string;
   /**@description 内容文本*/
-  content: string;
+  [content]: string;
 }
-
-/**@description 元素正则对象池*/
-const elementRegPools: Record<string, RegExp | undefined> = {};
 
 /**
  * @description 从根节点开始查找第一个符合`<tagname></tagname>`的成对节点
@@ -26,35 +27,35 @@ const elementRegPools: Record<string, RegExp | undefined> = {};
  * @param {string} [tagname]
  * @returns {RegExp}
  */
-function createElementReg(tagname?: string): RegExp {
+function getElementReg(tagname?: string): RegExp {
   const tag = tagname ?? `[\\w]+`;
   return new RegExp(`\\<(${tag})([^\\>]*)\\>([\\w\\W]+)\\<\\/\\1\\>`, 'm');
 }
+
+/**@description 从根节点开始查找第一个符合`<tagname></tagname>`的成对节点*/
+const ElementReg = getElementReg();
+
+const CloseElementReg = /<(\w+)([^<>]+)\/>/gm;
 
 /**
  * @description 解析元素
  * @author xfy
  * @param {string} xml
- * @param {string} [tagname]
  * @returns {(Result | undefined)}
  */
-function parse(xml: string, tagname?: string): Result | undefined {
-  const key = tagname ?? 'root';
-  let reg = elementRegPools[key];
-  if (reg === undefined) {
-    reg = createElementReg(tagname);
-    elementRegPools[key] = reg;
-  } else {
-    reg.lastIndex = 0;
-  }
-
-  const result = reg.exec(xml);
+export function parse(xml: string): Result | undefined {
+  ElementReg.lastIndex = 0;
+  const result = ElementReg.exec(xml);
   if (result === null) {
     return undefined;
   }
-  const [_, tag, attributes, content] = result;
-  return { tag, attributes, content };
+  const [_, tagStr, attributesStr, contentStr] = result;
+  const attributes = Attribute.parse(attributesStr);
+  return {
+    [tag]: tagStr,
+    [content]: contentStr,
+    ...attributes,
+  };
 }
 
-export { parse };
-export default { parse };
+export default { tag, content, parse };

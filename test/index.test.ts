@@ -1,2 +1,2 @@
-export * from './project.test';
-export * from './xml.test';
+// import './project.test';
+import './xml.test';

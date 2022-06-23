@@ -1,30 +1,29 @@
 /**
  * @description 属性匹配正则
  * - $1 属性名
- * - $2 属性值
+ * - $2 属性值，双引号内的属性值
+ * - $3 属性值，单引号内的属性值
+ * - $4 属性值，没有引号的属性值
  */
-const AttributeReg = /(\w+)=\"(\w+)\"/gm;
+const AttributeReg = /([\w:-]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|(\w+))\s*/g;
 
 /**
  * @description 解析属性
  * @author xfy
  * @export
  * @param {string} text
- * @returns {(Record<string, string | undefined>)}
+ * @returns {(Partial<Record<string, string>>)}
  */
-function parse(text: string): Record<string, string | undefined> {
+export function parse(text: string): Partial<Record<string, string>> {
   AttributeReg.lastIndex = 0;
   const attributes: Record<string, string> = {};
-  while (true) {
-    const result = AttributeReg.exec(text);
-    if (result === null) {
-      break;
-    }
-    const [_, name, value] = result;
-    attributes[name] = value;
+  let result = AttributeReg.exec(text);
+  while (result !== null) {
+    const [, key, value, value1, value2] = result;
+    attributes[key] = value ?? value1 ?? value2;
+    result = AttributeReg.exec(text);
   }
   return attributes;
 }
 
-export { parse };
 export default { parse };
