@@ -1,6 +1,7 @@
 import { basename } from 'path';
 import { fairygui } from './fairygui';
 import { log } from './log';
+import formatter from './code';
 
 /**
  * @description Attribute
@@ -9,7 +10,7 @@ import { log } from './log';
  */
 interface Attribute {
   /** @description element tag name*/
-  readonly name: string; 
+  readonly name: string;
   readonly attributes: Readonly<{
     /** @description 属性name*/
     name: string;
@@ -72,14 +73,14 @@ export namespace UIComponent {
           break;
         case 'displayList':
           const children = e.elements as Attribute[] | undefined;
-          if(children === undefined) {
+          if (children === undefined) {
             return;
           }
-          children.forEach(child => {
+          children.forEach((child) => {
             const n = child.attributes.name;
-            if(existChildren[n] === true || fairygui.isValidName(n) === false) {
+            if (existChildren[n] === true || fairygui.isValidName(n) === false) {
               return;
-            } 
+            }
             existChildren[n] = true;
             attributes.push(child);
           });
@@ -95,10 +96,10 @@ export namespace UIComponent {
     const tagname = extention ?? rootConfig.name ?? 'component';
     const supertype = fairygui.toFairyguiType(tagname);
     return {
-      name, 
+      name,
       supertype,
-      exportable, 
-      attributes
+      exportable,
+      attributes,
     };
   }
 
@@ -110,7 +111,11 @@ export namespace UIComponent {
    * @param {boolean} [format] 是否格式化代码
    * @return {*}  {string}
    */
-  export function compile(component: UIComponent, getType: (componentID: string, packageID?: string) => string | undefined, format?: boolean): string;
+  export function compile(
+    component: UIComponent,
+    getType: (componentID: string, packageID?: string) => string | undefined,
+    format?: boolean
+  ): string;
   /**
    * @description 编译
    * @export
@@ -119,10 +124,18 @@ export namespace UIComponent {
    * @param {boolean} [format] 是否格式化代码
    * @return {*}  {string}
    */
-  export function compile(file: string, getType: (componentID: string, packageID?: string) => string | undefined, format?: boolean): string;
-  export function compile(data: string | UIComponent, getType: (componentID: string, packageID?: string) => string | undefined, format?: boolean): string {
+  export function compile(
+    file: string,
+    getType: (componentID: string, packageID?: string) => string | undefined,
+    format?: boolean
+  ): string;
+  export function compile(
+    data: string | UIComponent,
+    getType: (componentID: string, packageID?: string) => string | undefined,
+    format?: boolean
+  ): string {
     const component = typeof data === 'string' ? load(data) : data;
-    if(component === undefined) {
+    if (component === undefined) {
       return '';
     }
 
@@ -130,23 +143,23 @@ export namespace UIComponent {
     let children = '';
     let controllers: string | undefined = undefined;
     let transitions: string | undefined = undefined;
-    component.attributes.forEach(({name: tag, attributes}) => {
-      const {name, pkg, src} = attributes;
-      switch(tag) {
+    component.attributes.forEach(({ name: tag, attributes }) => {
+      const { name, pkg, src } = attributes;
+      switch (tag) {
         case 'controller':
           controllers = controllers === undefined ? `'${name}'` : `${controllers} | '${name}'`;
           break;
-          case 'transition':
+        case 'transition':
           transitions = transitions === undefined ? `'${name}'` : `${transitions} | '${name}'`;
-        break;
+          break;
         case 'component':
-          if(src === undefined) {
+          if (src === undefined) {
             const type = fairygui.toFairyguiType(tag);
             children = `${children}${name}: ${type};`;
             return;
           }
           const ref = getType(src, pkg);
-          if(ref === undefined) {
+          if (ref === undefined) {
             // 找不到类型说明组件有错误，不予导出
             return;
           }
@@ -161,10 +174,10 @@ export namespace UIComponent {
     children = `{${children}}`;
     controllers = controllers ?? 'string';
     transitions = transitions ?? 'string';
-    const {name, supertype} = component;
+    const { name, supertype } = component;
     const code = fairygui.toComponentTypeCode(name, supertype, children, controllers, transitions);
     if (format) {
-      return fairygui.format(code);
+      return formatter.format(code);
     }
     return code;
   }

@@ -2,6 +2,7 @@ import { existsSync, readdirSync } from 'fs';
 import { emitter } from './emitter';
 import { fairygui } from './fairygui';
 import { log } from './log';
+import formatter from './code';
 import { UIPackage } from './package';
 
 /**
@@ -91,7 +92,7 @@ export namespace UIProject {
     code = `declare namespace ${publishname} {${fairygui.ComponentTypeCode} ${code}}`;
 
     if (format) {
-      code = fairygui.format(code);
+      code = formatter.format(code);
     }
 
     if (options?.outFile !== undefined) {

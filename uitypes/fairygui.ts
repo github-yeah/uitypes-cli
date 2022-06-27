@@ -1,21 +1,9 @@
-import { format as prettierFormat } from 'prettier';
 import { xml2js, Element } from 'xml-js';
 import { existsSync, readFileSync } from 'fs';
 import { log } from './log';
 import { tagTypesMapping } from '../configs/config.fairygui';
 
 export namespace fairygui {
-  /**
-   * @description 代码格式化
-   * @author xfy
-   * @export
-   * @param {string} code
-   * @returns {string}
-   */
-  export function format(code: string): string {
-    return prettierFormat(code, { parser: 'typescript', printWidth: 120, singleQuote: true });
-  }
-
   /** @description 匹配无用名字（fariygui自动生成的名字或者纯数字名字）*/
   const useless_name_reg = /^(\-|[0-9]|n[0-9]*$)/; // 数字或负号开头+n开头数字结尾
 

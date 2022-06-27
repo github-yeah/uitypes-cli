@@ -2,6 +2,7 @@ import { join } from 'path';
 import { UIComponent } from './component';
 import { fairygui } from './fairygui';
 import { log } from './log';
+import formatter from './code';
 import { statSync } from 'fs';
 
 /**
@@ -88,16 +89,17 @@ export namespace UIPackage {
         typesMap.set(id, fairygui.toFairyguiType(tag));
         return;
       }
-      
+
       // 解析自定义组件类型
       const file = join(packagePath, path, name);
       const component = UIComponent.load(file);
-      if (!component) {/**@description 组件不存在或解析失败*/
+      if (!component) {
+        /**@description 组件不存在或解析失败*/
         return;
       }
 
       // 解析不需要导出的组件
-      if(component.exportable === false) {
+      if (component.exportable === false) {
         typesMap.set(id, component.supertype);
         return;
       }
@@ -107,7 +109,7 @@ export namespace UIPackage {
 
       // 根据命名空间分组
       let components = componentsMap.get(ns);
-      if(components === undefined) {
+      if (components === undefined) {
         components = [];
         componentsMap.set(ns, components);
       }
@@ -117,8 +119,8 @@ export namespace UIPackage {
       id,
       packagename,
       typesMap,
-      componentsMap
-    }
+      componentsMap,
+    };
   }
 
   /**
@@ -129,17 +131,17 @@ export namespace UIPackage {
    * @param {boolean} [format] 是否格式化代码
    * @return {*}  {string}
    */
-  export function compile(pkg: UIPackage, packagesMap: ReadonlyMap<string, UIPackage>, format?:boolean): string {
+  export function compile(pkg: UIPackage, packagesMap: ReadonlyMap<string, UIPackage>, format?: boolean): string {
     const { packagename, componentsMap, typesMap } = pkg;
     const getType = (componentID: string, packageID?: string) => {
       const _typesMap = packageID ? packagesMap.get(packageID)?.typesMap : typesMap;
       return _typesMap?.get(componentID);
-    }
+    };
 
     let code = '';
     componentsMap.forEach((components, ns) => {
-      const componentsCode = components.map(component => UIComponent.compile(component, getType)).join(' ');
-      if(ns.length === 0) {
+      const componentsCode = components.map((component) => UIComponent.compile(component, getType)).join(' ');
+      if (ns.length === 0) {
         code = `${code}${componentsCode}`;
         return;
       }
@@ -147,8 +149,8 @@ export namespace UIPackage {
     });
 
     code = `namespace ${packagename} {${code}}`;
-    if(format) {
-      return fairygui.format(code);
+    if (format) {
+      return formatter.format(code);
     }
     return code;
   }

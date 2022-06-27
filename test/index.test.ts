@@ -1,2 +1,2 @@
-// import './project.test';
-import './xml.test';
+import './project.test';
+// import './xml.test';

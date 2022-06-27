@@ -29,7 +29,7 @@ export interface Result extends Record<string, string | undefined> {
  */
 function getElementReg(tagname?: string): RegExp {
   const tag = tagname ?? `[\\w]+`;
-  return new RegExp(`\\<(${tag})([^\\>]*)\\>([\\w\\W]+)\\<\\/\\1\\>`, 'm');
+  return new RegExp(`\\<(${tag})([^\\>]*)\>([\\w\\W]+)\<\\/\\1\\>`, 'm');
 }
 
 /**@description 从根节点开始查找第一个符合`<tagname></tagname>`的成对节点*/
