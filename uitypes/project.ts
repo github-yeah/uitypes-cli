@@ -1,9 +1,9 @@
-import { existsSync, readdirSync } from 'fs';
-import { emitter } from './emitter';
+import { existsSync, readdirSync, mkdirSync, writeFileSync } from 'fs';
 import { fairygui } from './fairygui';
 import { log } from './log';
 import formatter from './code';
 import { UIPackage } from './package';
+import { dirname } from 'path';
 
 /**
  * @description UIProject
@@ -96,7 +96,9 @@ export namespace UIProject {
     }
 
     if (options?.outFile !== undefined) {
-      emitter(options.outFile, code);
+      const dir = dirname(options.outFile);
+      mkdirSync(dir, { recursive: true });
+      writeFileSync(options.outFile, code);
     }
     return code;
   }
